@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>民生证券厦门分公司 · 招聘候选人库</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="list">
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <div>
+        <h1>民生证券厦门分公司 · 招聘候选人库</h1>
+        <div class="subtitle">汇集 BOSS直聘 / 猎聘 / 智联招聘 候选人简历，供招聘专员内部查阅</div>
+      </div>
+      <a class="btn btn-secondary" style="background:transparent; color:#fff; border-color:rgba(255,255,255,0.5);" href="upload.html">+ 录入新简历</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="toolbar">
+      <div class="search-box">
+        <input id="search-input" type="text" placeholder="搜索姓名、公司（如“平安银行”）、职位、院校、备注…">
+      </div>
+      <div class="source-filters">
+        <button class="filter-chip active" data-source="all">全部来源</button>
+        <button class="filter-chip" data-source="BOSS直聘">BOSS直聘</button>
+        <button class="filter-chip" data-source="猎聘">猎聘</button>
+        <button class="filter-chip" data-source="智联招聘">智联招聘</button>
+      </div>
+      <label class="qual-toggle">
+        <input type="checkbox" id="qual-only">
+        仅显示持证候选人
+      </label>
+      <label class="qual-toggle">
+        <input type="checkbox" id="contact-only">
+        仅显示已获取联系方式
+      </label>
+    </div>
+
+    <div id="result-meta" class="result-meta"></div>
+
+    <div class="table-card">
+      <div class="table-scroll">
+        <table id="candidate-table">
+          <thead>
+            <tr>
+              <th class="sortable" data-sort-key="acquiredDate">获取时间 <span class="arrow"></span></th>
+              <th class="sortable" data-sort-key="name">姓名 <span class="arrow"></span></th>
+              <th>来源</th>
+              <th>联系方式</th>
+              <th>学历</th>
+              <th>证券从业资格证</th>
+              <th>毕业院校</th>
+              <th class="sortable" data-sort-key="currentCompany">目前/最近单位 <span class="arrow"></span></th>
+              <th>目前/最近职位</th>
+              <th class="sortable" data-sort-key="yearsOfExperience">工作年限 <span class="arrow"></span></th>
+              <th>意向职位</th>
+              <th>现居地</th>
+              <th>状态</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div id="empty-state" class="empty-state" style="display:none;">没有匹配的候选人</div>
+    </div>
+  </main>
+
+  <script src="data/candidates.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

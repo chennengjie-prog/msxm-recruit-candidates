@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>简历录入助手</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="upload">
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <div>
+        <a class="detail-back" href="index.html">← 返回候选人列表</a>
+        <h1>简历录入助手</h1>
+        <div class="subtitle">上传简历截图或 PDF，自动识别文字并预填表单，核对无误后生成可直接粘贴的候选人数据</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="note-box" style="margin-bottom:18px;">
+      这是一个纯浏览器端工具：识别过程都在你自己的电脑上完成，不会把简历文件上传到任何服务器。因为网站本身是静态网页，浏览器没有权限直接写回 GitHub 仓库，所以最后一步需要你把生成的代码<strong>手动粘贴</strong>进
+      <code>data/candidates.js</code> 并保存/推送——识别和填表都帮你自动做了，只差这一步确认。
+    </div>
+
+    <div class="card">
+      <h2>① 上传简历文件</h2>
+      <div id="dropzone" class="dropzone">
+        <div id="dropzone-text">点击选择文件，或将图片 / PDF 拖到这里</div>
+        <input id="file-input" type="file" accept="image/*,.pdf,application/pdf" hidden>
+      </div>
+      <div id="file-status" class="file-status"></div>
+      <div id="progress-wrap" class="progress-wrap" hidden>
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>② 识别出的原始文字（可编辑，供你对照核对）</h2>
+      <textarea id="raw-text" class="raw-text" placeholder="上传文件后，识别出的文字会显示在这里…"></textarea>
+    </div>
+
+    <div id="duplicate-warning" class="note-box duplicate-warning" hidden></div>
+
+    <div class="card">
+      <h2>③ 核对并补充候选人信息</h2>
+      <form id="candidate-form">
+        <div class="form-grid">
+          <label class="field">编号 ID
+            <input type="text" name="id" id="field-id" readonly>
+          </label>
+          <label class="field">简历来源
+            <select name="source" id="field-source">
+              <option value="BOSS直聘">BOSS直聘</option>
+              <option value="猎聘">猎聘</option>
+              <option value="智联招聘">智联招聘</option>
+            </select>
+          </label>
+          <label class="field">获取时间
+            <input type="date" name="acquiredDate" id="field-acquiredDate">
+          </label>
+          <label class="field checkbox-field">
+            <input type="checkbox" name="contactObtained" id="field-contactObtained">
+            已获取联系方式
+          </label>
+          <label class="field">姓名
+            <input type="text" name="name" id="field-name" placeholder="真实姓名，未拿到联系方式时可先填平台显示的称呼">
+          </label>
+          <label class="field">电话
+            <input type="text" name="phone" id="field-phone" placeholder="未获取可留空">
+          </label>
+          <label class="field">邮箱
+            <input type="text" name="email" id="field-email">
+          </label>
+          <label class="field">性别
+            <select name="gender" id="field-gender">
+              <option value="">未知</option>
+              <option value="男">男</option>
+              <option value="女">女</option>
+            </select>
+          </label>
+          <label class="field">年龄
+            <input type="number" name="age" id="field-age" min="18" max="70">
+          </label>
+          <label class="field">现居地
+            <input type="text" name="location" id="field-location">
+          </label>
+          <label class="field">学历
+            <input type="text" name="education" id="field-education" placeholder="本科/硕士/大专…">
+          </label>
+          <label class="field">毕业院校
+            <input type="text" name="school" id="field-school">
+          </label>
+          <label class="field">专业
+            <input type="text" name="major" id="field-major">
+          </label>
+          <label class="field">目前/最近单位
+            <input type="text" name="currentCompany" id="field-currentCompany">
+          </label>
+          <label class="field">目前/最近职位
+            <input type="text" name="currentPosition" id="field-currentPosition">
+          </label>
+          <label class="field">工作年限（年）
+            <input type="number" name="yearsOfExperience" id="field-yearsOfExperience" min="0" max="50">
+          </label>
+          <label class="field">意向职位
+            <input type="text" name="expectedPosition" id="field-expectedPosition">
+          </label>
+          <label class="field">期望薪资
+            <input type="text" name="expectedSalary" id="field-expectedSalary" placeholder="如 15-20K">
+          </label>
+          <label class="field">求职状态
+            <input type="text" name="jobSeekingStatus" id="field-jobSeekingStatus" placeholder="如 在职-考虑机会">
+          </label>
+          <label class="field">跟进状态
+            <select name="status" id="field-status">
+              <option value="待联系">待联系</option>
+              <option value="已初筛">已初筛</option>
+              <option value="已淘汰">已淘汰</option>
+              <option value="已录用">已录用</option>
+            </select>
+          </label>
+          <label class="field checkbox-field">
+            <input type="checkbox" name="hasSecQualification" id="field-hasSecQualification">
+            有证券从业资格证
+          </label>
+        </div>
+
+        <label class="field full-width">资格证书（用、分隔，识别到的常见证书已自动勾选参考原文，可直接编辑）
+          <input type="text" name="certificates" id="field-certificates" placeholder="证券从业资格证、基金从业资格证">
+        </label>
+
+        <label class="field full-width">自我评价
+          <textarea name="selfEvaluation" id="field-selfEvaluation" rows="3"></textarea>
+        </label>
+
+        <label class="field full-width">招聘备注
+          <textarea name="notes" id="field-notes" rows="2"></textarea>
+        </label>
+
+        <div class="repeat-section">
+          <div class="repeat-header">
+            <h2 style="margin:0;">工作经历</h2>
+            <button type="button" class="btn btn-secondary" id="add-work">+ 添加一段工作经历</button>
+          </div>
+          <div id="work-rows"></div>
+        </div>
+
+        <div class="repeat-section">
+          <div class="repeat-header">
+            <h2 style="margin:0;">教育经历</h2>
+            <button type="button" class="btn btn-secondary" id="add-edu">+ 添加一段教育经历</button>
+          </div>
+          <div id="edu-rows"></div>
+        </div>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>④ 生成候选人代码</h2>
+      <button type="button" class="btn btn-primary" id="generate-btn">生成候选人数据</button>
+      <div id="output-wrap" hidden>
+        <p class="output-hint">复制下面的代码，粘贴进 <code>data/candidates.js</code> 数组里（放在最后一个候选人的 <code>}</code> 后面，记得补一个逗号），保存后刷新列表页就能看到。</p>
+        <textarea id="output-box" class="raw-text output-box" readonly></textarea>
+        <div class="output-actions">
+          <button type="button" class="btn btn-secondary" id="copy-btn">复制代码</button>
+          <button type="button" class="btn btn-secondary" id="download-btn">下载为文件</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3/build/pdf.min.js"></script>
+  <script src="data/candidates.js"></script>
+  <script src="assets/app.js"></script>
+  <script src="assets/upload.js"></script>
+</body>
+</html>
