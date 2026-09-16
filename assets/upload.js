@@ -270,6 +270,8 @@ function initUploadPage() {
       name: val("name"),
       source: val("source"),
       acquiredDate: val("acquiredDate"),
+      resumeContact: val("resumeContact"),
+      activityStatus: val("activityStatus"),
       contactObtained: document.querySelector("#field-contactObtained").checked,
       gender: val("gender"),
       age: val("age") ? parseInt(val("age"), 10) : null,

@@ -59,6 +59,16 @@
           <label class="field">获取时间
             <input type="date" name="acquiredDate" id="field-acquiredDate">
           </label>
+          <label class="field">简历联系人
+            <select name="resumeContact" id="field-resumeContact">
+              <option value="陈彦汐">陈彦汐</option>
+              <option value="李祖荃">李祖荃</option>
+              <option value="蔡家宝">蔡家宝</option>
+            </select>
+          </label>
+          <label class="field">活跃状态
+            <input type="text" name="activityStatus" id="field-activityStatus" placeholder="如 本周活跃、2周内活跃">
+          </label>
           <label class="field checkbox-field">
             <input type="checkbox" name="contactObtained" id="field-contactObtained">
             已获取联系方式
@@ -116,6 +126,7 @@
             <select name="status" id="field-status">
               <option value="待联系">待联系</option>
               <option value="已初筛">已初筛</option>
+              <option value="面试中">面试中</option>
               <option value="已淘汰">已淘汰</option>
               <option value="已录用">已录用</option>
             </select>

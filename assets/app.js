@@ -8,6 +8,10 @@ function sourceTagClass(source) {
   return SOURCE_CLASS[source] || "tag-other";
 }
 
+function isPlaceholderName(name) {
+  return /^[一-龥]{1,3}(先生|女士)$/.test(name || "");
+}
+
 function maskPhone(phone) {
   if (!phone || phone.length < 7) return phone || "-";
   return phone.slice(0, 3) + "****" + phone.slice(-4);
@@ -28,6 +32,7 @@ function buildSearchIndex(c) {
     c.name, c.source, c.education, c.school, c.major,
     c.currentCompany, c.currentPosition, c.expectedPosition,
     c.location, c.status, c.jobSeekingStatus, c.email,
+    c.resumeContact, c.activityStatus,
     c.hasSecQualification ? "证券从业资格证" : "",
     ...(c.certificates || []),
     c.selfEvaluation, c.notes,
@@ -51,7 +56,8 @@ async function loadCandidates() {
 function initListPage() {
   const tbody = document.querySelector("#candidate-table tbody");
   const searchInput = document.querySelector("#search-input");
-  const filterChips = document.querySelectorAll(".filter-chip");
+  const sourceChips = document.querySelectorAll(".filter-chip[data-source]");
+  const contactChips = document.querySelectorAll(".filter-chip[data-contact]");
   const qualOnly = document.querySelector("#qual-only");
   const contactOnly = document.querySelector("#contact-only");
   const resultMeta = document.querySelector("#result-meta");
@@ -61,6 +67,7 @@ function initListPage() {
 
   let allCandidates = [];
   let activeSource = "all";
+  let activeResumeContact = "all";
   let sortKey = "acquiredDate";
   let sortDir = "desc";
 
@@ -69,10 +76,11 @@ function initListPage() {
 
     let filtered = allCandidates.filter((c) => {
       const matchesSource = activeSource === "all" || c.source === activeSource;
+      const matchesResumeContact = activeResumeContact === "all" || c.resumeContact === activeResumeContact;
       const matchesQuery = !q || c._searchIndex.includes(q);
       const matchesQual = !qualOnly.checked || c.hasSecQualification;
       const matchesContact = !contactOnly.checked || c.contactObtained;
-      return matchesSource && matchesQuery && matchesQual && matchesContact;
+      return matchesSource && matchesResumeContact && matchesQuery && matchesQual && matchesContact;
     });
 
     filtered.sort((a, b) => {
@@ -102,6 +110,7 @@ function initListPage() {
         <td class="muted">${escapeHtml(c.acquiredDate)}</td>
         <td class="name-cell">${escapeHtml(c.name)}</td>
         <td><span class="tag ${sourceTagClass(c.source)}">${escapeHtml(c.source)}</span></td>
+        <td class="muted">${escapeHtml(c.activityStatus)}</td>
         <td>${c.contactObtained
           ? '<span class="status-pill pill-yes">' + escapeHtml(maskPhone(c.phone)) + '</span>'
           : '<span class="status-pill pill-pending">待获取</span>'}</td>
@@ -116,6 +125,7 @@ function initListPage() {
         <td>${escapeHtml(c.expectedPosition)}</td>
         <td class="muted">${escapeHtml(c.location)}</td>
         <td><span class="status-pill">${escapeHtml(c.status || "-")}</span></td>
+        <td>${escapeHtml(c.resumeContact)}</td>
       </tr>
     `).join("");
 
@@ -148,11 +158,20 @@ function initListPage() {
     });
   });
 
-  filterChips.forEach((chip) => {
+  sourceChips.forEach((chip) => {
     chip.addEventListener("click", () => {
-      filterChips.forEach((c) => c.classList.remove("active"));
+      sourceChips.forEach((c) => c.classList.remove("active"));
       chip.classList.add("active");
       activeSource = chip.dataset.source;
+      applyAndRender();
+    });
+  });
+
+  contactChips.forEach((chip) => {
+    chip.addEventListener("click", () => {
+      contactChips.forEach((c) => c.classList.remove("active"));
+      chip.classList.add("active");
+      activeResumeContact = chip.dataset.contact;
       applyAndRender();
     });
   });
@@ -225,13 +244,15 @@ function renderDetail(c) {
           <div class="profile-header">
             <div class="avatar-circle">${escapeHtml(initial)}</div>
             <div>
-              <div class="name">${escapeHtml(c.name)}${!c.contactObtained ? '<span class="mask-hint">（平台展示称呼，非真实姓名）</span>' : ""}</div>
+              <div class="name">${escapeHtml(c.name)}${isPlaceholderName(c.name) ? '<span class="mask-hint">（平台展示称呼，非真实姓名）</span>' : ""}</div>
               <div class="meta-line">${escapeHtml(c.gender || "")}${c.age ? " · " + c.age + "岁" : ""}${c.location ? " · " + escapeHtml(c.location) : ""}</div>
             </div>
           </div>
           <div class="info-list">
             <div class="item"><label>简历来源</label><div class="value"><span class="tag ${sourceTagClass(c.source)}">${escapeHtml(c.source)}</span></div></div>
             <div class="item"><label>获取时间</label><div class="value">${escapeHtml(c.acquiredDate)}</div></div>
+            <div class="item"><label>简历联系人</label><div class="value">${escapeHtml(c.resumeContact) || "-"}</div></div>
+            <div class="item"><label>活跃状态</label><div class="value">${escapeHtml(c.activityStatus) || "-"}</div></div>
             <div class="item"><label>联系电话</label>${contactBlock}</div>
             ${c.email ? `<div class="item"><label>邮箱</label><div class="value">${escapeHtml(c.email)}</div></div>` : ""}
             ${c.jobSeekingStatus ? `<div class="item"><label>求职状态</label><div class="value">${escapeHtml(c.jobSeekingStatus)}</div></div>` : ""}
