@@ -17,6 +17,39 @@ function maskPhone(phone) {
   return phone.slice(0, 3) + "****" + phone.slice(-4);
 }
 
+// Contact numbers a recruiter types in via the "待获取" button on the list page
+// are saved to this browser's localStorage only — the static site has no backend
+// to write them back to data/candidates.js, so they don't sync to other people or
+// devices until someone merges them into the real data file and pushes.
+const CONTACT_OVERRIDE_KEY = "recruit_contact_overrides_v1";
+
+function loadContactOverrides() {
+  try {
+    return JSON.parse(localStorage.getItem(CONTACT_OVERRIDE_KEY) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function saveContactOverride(id, phone) {
+  const all = loadContactOverrides();
+  all[id] = { phone, savedAt: new Date().toISOString() };
+  try {
+    localStorage.setItem(CONTACT_OVERRIDE_KEY, JSON.stringify(all));
+  } catch {
+    // localStorage unavailable (private mode, etc.) — edit still shows for this
+    // page view via the in-memory candidate object, just won't persist on reload.
+  }
+}
+
+function clearContactOverride(id) {
+  const all = loadContactOverrides();
+  delete all[id];
+  try {
+    localStorage.setItem(CONTACT_OVERRIDE_KEY, JSON.stringify(all));
+  } catch {}
+}
+
 function escapeHtml(str) {
   return String(str ?? "").replace(/[&<>"']/g, (c) => ({
     "&": "&amp;",
@@ -46,8 +79,14 @@ async function loadCandidates() {
   if (!Array.isArray(window.CANDIDATES_DATA)) {
     throw new Error("未找到候选人数据，请确认 data/candidates.js 已正确引入");
   }
+  const overrides = loadContactOverrides();
   const list = window.CANDIDATES_DATA.map((c) => ({ ...c }));
-  list.forEach((c) => { c._searchIndex = buildSearchIndex(c); });
+  list.forEach((c) => {
+    if (!c.contactObtained && overrides[c.id]) {
+      c._localPhone = overrides[c.id].phone;
+    }
+    c._searchIndex = buildSearchIndex(c);
+  });
   return list;
 }
 
@@ -70,6 +109,7 @@ function initListPage() {
   let activeResumeContact = "all";
   let sortKey = "acquiredDate";
   let sortDir = "desc";
+  let editingContactId = null;
 
   function applyAndRender() {
     const q = searchInput.value.trim().toLowerCase();
@@ -104,6 +144,29 @@ function initListPage() {
     emptyState.style.display = filtered.length ? "none" : "block";
   }
 
+  function contactCellHtml(c) {
+    if (c.contactObtained) {
+      return '<span class="status-pill pill-yes">' + escapeHtml(maskPhone(c.phone)) + '</span>';
+    }
+    if (c.id === editingContactId) {
+      return `
+        <span class="contact-edit">
+          <input type="text" class="contact-input" data-id="${c.id}" value="${escapeHtml(c._localPhone || "")}" placeholder="手机号">
+          <button type="button" class="btn-mini contact-save" data-id="${c.id}">保存</button>
+          <button type="button" class="btn-mini contact-cancel">取消</button>
+        </span>`;
+    }
+    if (c._localPhone) {
+      return `
+        <span class="status-pill pill-yes contact-local" title="仅保存在你当前浏览器，尚未同步进 data/candidates.js">
+          ${escapeHtml(maskPhone(c._localPhone))}
+          <button type="button" class="contact-icon-btn contact-edit-btn" data-id="${c.id}" title="修改">✎</button>
+          <button type="button" class="contact-icon-btn contact-clear-btn" data-id="${c.id}" title="清除本地记录">×</button>
+        </span>`;
+    }
+    return `<button type="button" class="contact-btn" data-id="${c.id}">+ 录入联系方式</button>`;
+  }
+
   function renderRows(list) {
     tbody.innerHTML = list.map((c) => `
       <tr data-id="${c.id}">
@@ -111,9 +174,7 @@ function initListPage() {
         <td class="name-cell">${escapeHtml(c.name)}</td>
         <td><span class="tag ${sourceTagClass(c.source)}">${escapeHtml(c.source)}</span></td>
         <td class="muted">${escapeHtml(c.activityStatus)}</td>
-        <td>${c.contactObtained
-          ? '<span class="status-pill pill-yes">' + escapeHtml(maskPhone(c.phone)) + '</span>'
-          : '<span class="status-pill pill-pending">待获取</span>'}</td>
+        <td class="contact-cell">${contactCellHtml(c)}</td>
         <td>${escapeHtml(c.education)}</td>
         <td>${c.hasSecQualification
           ? '<span class="status-pill pill-yes">有</span>'
@@ -130,11 +191,91 @@ function initListPage() {
     `).join("");
 
     tbody.querySelectorAll("tr").forEach((row) => {
-      row.addEventListener("click", () => {
+      row.addEventListener("click", (e) => {
+        if (e.target.closest(".contact-cell")) return;
         window.location.href = "candidate.html?id=" + encodeURIComponent(row.dataset.id);
       });
     });
+
+    if (editingContactId) {
+      const input = tbody.querySelector(`.contact-input[data-id="${editingContactId}"]`);
+      if (input) {
+        input.focus();
+        input.select();
+      }
+    }
   }
+
+  function saveContactEdit(id) {
+    const input = tbody.querySelector(`.contact-input[data-id="${id}"]`);
+    const value = input ? input.value.trim() : "";
+    if (value) {
+      saveContactOverride(id, value);
+      const c = allCandidates.find((item) => item.id === id);
+      if (c) c._localPhone = value;
+    }
+    if (editingContactId === id) editingContactId = null;
+  }
+
+  // If another row's edit box is still open with unsaved typed text, any
+  // full re-render (opening/clearing a *different* row) would otherwise wipe
+  // it silently. Auto-save it first instead of discarding what was typed.
+  function flushPendingEditExcept(exceptId) {
+    if (editingContactId && editingContactId !== exceptId) {
+      saveContactEdit(editingContactId);
+    }
+  }
+
+  // Delegated once on tbody (which persists across re-renders — only its
+  // innerHTML is replaced) so these handlers keep working after every render.
+  tbody.addEventListener("click", (e) => {
+    const addBtn = e.target.closest(".contact-btn");
+    if (addBtn) {
+      flushPendingEditExcept(addBtn.dataset.id);
+      editingContactId = addBtn.dataset.id;
+      applyAndRender();
+      return;
+    }
+    const editBtn = e.target.closest(".contact-edit-btn");
+    if (editBtn) {
+      flushPendingEditExcept(editBtn.dataset.id);
+      editingContactId = editBtn.dataset.id;
+      applyAndRender();
+      return;
+    }
+    const clearBtn = e.target.closest(".contact-clear-btn");
+    if (clearBtn) {
+      flushPendingEditExcept(clearBtn.dataset.id);
+      clearContactOverride(clearBtn.dataset.id);
+      const c = allCandidates.find((item) => item.id === clearBtn.dataset.id);
+      if (c) delete c._localPhone;
+      applyAndRender();
+      return;
+    }
+    const saveBtn = e.target.closest(".contact-save");
+    if (saveBtn) {
+      saveContactEdit(saveBtn.dataset.id);
+      applyAndRender();
+      return;
+    }
+    const cancelBtn = e.target.closest(".contact-cancel");
+    if (cancelBtn) {
+      editingContactId = null;
+      applyAndRender();
+    }
+  });
+
+  tbody.addEventListener("keydown", (e) => {
+    if (!e.target.classList.contains("contact-input")) return;
+    if (e.key === "Enter" || e.keyCode === 13 || e.which === 13) {
+      e.preventDefault();
+      saveContactEdit(e.target.dataset.id);
+      applyAndRender();
+    } else if (e.key === "Escape" || e.keyCode === 27 || e.which === 27) {
+      editingContactId = null;
+      applyAndRender();
+    }
+  });
 
   function updateSortHeaders() {
     headers.forEach((th) => {
@@ -233,9 +374,14 @@ function renderDetail(c) {
     </div>
   `).join("") || `<div class="empty-state">暂无教育经历记录</div>`;
 
-  const contactBlock = c.contactObtained
-    ? `<div class="value">${escapeHtml(maskPhone(c.phone))}<span class="mask-hint">（已隐藏部分号码）</span></div>`
-    : `<div class="value"><span class="status-pill pill-pending">待获取</span><span class="mask-hint">需通过BOSS直聘自行联系</span></div>`;
+  let contactBlock;
+  if (c.contactObtained) {
+    contactBlock = `<div class="value">${escapeHtml(maskPhone(c.phone))}<span class="mask-hint">（已隐藏部分号码）</span></div>`;
+  } else if (c._localPhone) {
+    contactBlock = `<div class="value">${escapeHtml(maskPhone(c._localPhone))}<span class="mask-hint">（本地录入，仅你当前浏览器可见，尚未同步进数据文件）</span></div>`;
+  } else {
+    contactBlock = `<div class="value"><span class="status-pill pill-pending">待获取</span><span class="mask-hint">需通过BOSS直聘自行联系，可在列表页点"+ 录入联系方式"记录</span></div>`;
+  }
 
   return `
     <div class="detail-grid">

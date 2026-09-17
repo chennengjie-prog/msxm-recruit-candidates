@@ -249,6 +249,84 @@ td.muted {
   font-weight: 600;
 }
 
+.contact-cell {
+  white-space: nowrap;
+}
+
+.contact-btn {
+  border: 1px dashed var(--color-border);
+  background: transparent;
+  color: var(--color-primary);
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  border-color: var(--color-primary);
+  background: var(--color-row-hover);
+}
+
+.contact-local {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.contact-icon-btn {
+  border: none;
+  background: transparent;
+  color: inherit;
+  opacity: 0.6;
+  cursor: pointer;
+  font-size: 11px;
+  padding: 0 1px;
+  line-height: 1;
+}
+
+.contact-icon-btn:hover {
+  opacity: 1;
+}
+
+.contact-edit {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.contact-input {
+  width: 118px;
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  padding: 4px 6px;
+  font-size: 12.5px;
+  font-family: inherit;
+}
+
+.contact-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(23, 64, 107, 0.15);
+}
+
+.btn-mini {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  border-radius: 5px;
+  padding: 3px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.contact-save {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.contact-save:hover {
+  background: var(--color-row-hover);
+}
+
 .qual-toggle {
   display: flex;
   align-items: center;
