@@ -165,6 +165,59 @@ function initListPage() {
   let sortDir = "desc";
   let editingContactId = null;
 
+  // Keeps the current search/filter/sort state reflected in the URL (via
+  // replaceState, no new history entries) so that navigating to a candidate's
+  // detail page and back restores the exact same filtered view instead of
+  // dropping back to the full unfiltered list — see restoreStateFromUrl().
+  function syncUrlFromState() {
+    const params = new URLSearchParams();
+    const q = searchInput.value.trim();
+    if (q) params.set("q", q);
+    if (activeSource !== "all") params.set("source", activeSource);
+    if (activeResumeContact !== "all") params.set("contact", activeResumeContact);
+    if (qualOnly.checked) params.set("qual", "1");
+    if (contactOnly.checked) params.set("hascontact", "1");
+    if (sortKey !== "acquiredDate") params.set("sort", sortKey);
+    if (sortDir !== "desc") params.set("dir", sortDir);
+    const qs = params.toString();
+    const newUrl = window.location.pathname + (qs ? "?" + qs : "");
+    window.history.replaceState(null, "", newUrl);
+  }
+
+  function restoreStateFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get("q");
+    if (q) searchInput.value = q;
+
+    const source = params.get("source");
+    if (source) {
+      const chip = document.querySelector(`.filter-chip[data-source="${CSS.escape(source)}"]`);
+      if (chip) {
+        activeSource = source;
+        sourceChips.forEach((c) => c.classList.remove("active"));
+        chip.classList.add("active");
+      }
+    }
+
+    const contact = params.get("contact");
+    if (contact) {
+      const chip = document.querySelector(`.filter-chip[data-contact="${CSS.escape(contact)}"]`);
+      if (chip) {
+        activeResumeContact = contact;
+        contactChips.forEach((c) => c.classList.remove("active"));
+        chip.classList.add("active");
+      }
+    }
+
+    if (params.get("qual") === "1") qualOnly.checked = true;
+    if (params.get("hascontact") === "1") contactOnly.checked = true;
+
+    const sort = params.get("sort");
+    if (sort) sortKey = sort;
+    const dir = params.get("dir");
+    if (dir === "asc" || dir === "desc") sortDir = dir;
+  }
+
   function applyAndRender() {
     const q = searchInput.value.trim().toLowerCase();
 
@@ -196,6 +249,7 @@ function initListPage() {
     resultMeta.innerHTML = `共 <strong>${allCandidates.length}</strong> 位候选人，当前显示 <strong>${filtered.length}</strong> 位`;
     table.style.display = filtered.length ? "" : "none";
     emptyState.style.display = filtered.length ? "none" : "block";
+    syncUrlFromState();
   }
 
   function contactCellHtml(c) {
@@ -394,6 +448,7 @@ function initListPage() {
   qualOnly.addEventListener("change", applyAndRender);
   contactOnly.addEventListener("change", applyAndRender);
 
+  restoreStateFromUrl();
   loadCandidates()
     .then((list) => {
       allCandidates = list;
@@ -413,6 +468,20 @@ function initDetailPage() {
   const params = new URLSearchParams(window.location.search);
   const id = params.get("id");
   const container = document.querySelector("#detail-container");
+
+  // If we arrived here from the list page, its URL (captured via
+  // document.referrer) carries whatever search/filter state was active —
+  // send "back" there instead of a bare index.html so a filtered view (e.g.
+  // searching "兴业银行") isn't lost when the recruiter clicks back.
+  const backLink = document.querySelector(".detail-back");
+  if (backLink && document.referrer) {
+    try {
+      const ref = new URL(document.referrer);
+      if (ref.origin === window.location.origin && /(^|\/)index\.html$/.test(ref.pathname)) {
+        backLink.href = ref.pathname + ref.search;
+      }
+    } catch {}
+  }
 
   loadCandidates()
     .then((list) => {
