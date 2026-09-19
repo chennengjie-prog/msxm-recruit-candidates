@@ -111,6 +111,7 @@ async function updateContact(id, phone, editor, env) {
     const today = new Date().toISOString().slice(0, 10);
     c.phone = phone;
     c.contactObtained = true;
+    c.contactEnteredBy = who;
     c.notes = ((c.notes || "").trim() + ` [${today} 由${who}通过网页录入联系方式]`).trim();
     return `录入联系方式：${c.name}（${id}），由${who}通过网页提交`;
   }, env);
@@ -121,6 +122,7 @@ async function updateFeedback(id, date, feedback, editor, env) {
   return updateCandidateFile(id, (c) => {
     c.lastContactDate = date;
     c.contactFeedback = feedback;
+    c.feedbackEnteredBy = who;
     return `记录沟通反馈：${c.name}（${id}），由${who}通过网页提交`;
   }, env);
 }

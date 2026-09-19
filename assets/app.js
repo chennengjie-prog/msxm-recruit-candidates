@@ -26,9 +26,9 @@ function loadContactOverrides() {
   }
 }
 
-function saveContactOverride(id, phone) {
+function saveContactOverride(id, phone, editor) {
   const all = loadContactOverrides();
-  all[id] = { phone, savedAt: new Date().toISOString() };
+  all[id] = { phone, editor, savedAt: new Date().toISOString() };
   try {
     localStorage.setItem(CONTACT_OVERRIDE_KEY, JSON.stringify(all));
   } catch {
@@ -78,11 +78,10 @@ function getEditorName() {
 // Returns { synced: true } on success (written straight to GitHub, visible to
 // everyone), or { synced: false, reason } if the backend isn't configured yet
 // or the request failed — callers should fall back to the local-only save.
-async function syncContactToGitHub(id, phone) {
+async function syncContactToGitHub(id, phone, editor) {
   if (!CONTACT_API_URL) return { synced: false, reason: "未配置同步服务" };
   const secret = getTeamSecret();
   if (!secret) return { synced: false, reason: "未输入团队口令" };
-  const editor = getEditorName();
   try {
     const res = await fetch(CONTACT_API_URL, {
       method: "POST",
@@ -115,9 +114,9 @@ function loadFeedbackOverrides() {
   }
 }
 
-function saveFeedbackOverride(id, date, feedback) {
+function saveFeedbackOverride(id, date, feedback, editor) {
   const all = loadFeedbackOverrides();
-  all[id] = { date, feedback, savedAt: new Date().toISOString() };
+  all[id] = { date, feedback, editor, savedAt: new Date().toISOString() };
   try {
     localStorage.setItem(FEEDBACK_OVERRIDE_KEY, JSON.stringify(all));
   } catch {}
@@ -131,11 +130,10 @@ function clearFeedbackOverride(id) {
   } catch {}
 }
 
-async function syncFeedbackToGitHub(id, date, feedback) {
+async function syncFeedbackToGitHub(id, date, feedback, editor) {
   if (!FEEDBACK_API_URL) return { synced: false, reason: "未配置同步服务" };
   const secret = getTeamSecret();
   if (!secret) return { synced: false, reason: "未输入团队口令" };
-  const editor = getEditorName();
   try {
     const res = await fetch(FEEDBACK_API_URL, {
       method: "POST",
@@ -187,10 +185,12 @@ async function loadCandidates() {
   list.forEach((c) => {
     if (!c.contactObtained && overrides[c.id]) {
       c._localPhone = overrides[c.id].phone;
+      c._localContactEnteredBy = overrides[c.id].editor;
     }
     if (!c.contactFeedback && feedbackOverrides[c.id]) {
       c._localFeedbackDate = feedbackOverrides[c.id].date;
       c._localFeedback = feedbackOverrides[c.id].feedback;
+      c._localFeedbackEnteredBy = feedbackOverrides[c.id].editor;
     }
     c._searchIndex = buildSearchIndex(c);
   });
@@ -431,18 +431,24 @@ function initListPage() {
     if (editingContactId === id) editingContactId = null;
     if (!value) return;
 
-    saveContactOverride(id, value);
+    const editor = CONTACT_API_URL ? getEditorName() : "";
+    saveContactOverride(id, value, editor);
     const c = allCandidates.find((item) => item.id === id);
-    if (c) c._localPhone = value;
+    if (c) {
+      c._localPhone = value;
+      c._localContactEnteredBy = editor;
+    }
     applyAndRender();
 
-    const result = await syncContactToGitHub(id, value);
+    const result = await syncContactToGitHub(id, value, editor);
     if (result.synced) {
       clearContactOverride(id);
       if (c) {
         c.phone = value;
         c.contactObtained = true;
+        c.contactEnteredBy = editor;
         delete c._localPhone;
+        delete c._localContactEnteredBy;
       }
     } else if (CONTACT_API_URL) {
       window.alert(
@@ -463,22 +469,26 @@ function initListPage() {
     if (editingFeedbackId === id) editingFeedbackId = null;
     if (!date && !feedback) return;
 
-    saveFeedbackOverride(id, date, feedback);
+    const editor = FEEDBACK_API_URL ? getEditorName() : "";
+    saveFeedbackOverride(id, date, feedback, editor);
     const c = allCandidates.find((item) => item.id === id);
     if (c) {
       c._localFeedbackDate = date;
       c._localFeedback = feedback;
+      c._localFeedbackEnteredBy = editor;
     }
     applyAndRender();
 
-    const result = await syncFeedbackToGitHub(id, date, feedback);
+    const result = await syncFeedbackToGitHub(id, date, feedback, editor);
     if (result.synced) {
       clearFeedbackOverride(id);
       if (c) {
         c.lastContactDate = date;
         c.contactFeedback = feedback;
+        c.feedbackEnteredBy = editor;
         delete c._localFeedbackDate;
         delete c._localFeedback;
+        delete c._localFeedbackEnteredBy;
       }
     } else if (FEEDBACK_API_URL) {
       window.alert(
@@ -715,9 +725,9 @@ function renderDetail(c) {
 
   let contactBlock;
   if (c.contactObtained) {
-    contactBlock = `<div class="value">${escapeHtml(c.phone)}</div>`;
+    contactBlock = `<div class="value">${escapeHtml(c.phone)}${c.contactEnteredBy ? `<span class="mask-hint">（由 ${escapeHtml(c.contactEnteredBy)} 录入）</span>` : ""}</div>`;
   } else if (c._localPhone) {
-    contactBlock = `<div class="value">${escapeHtml(c._localPhone)}<span class="mask-hint">（本地录入，仅你当前浏览器可见，尚未同步进数据文件）</span></div>`;
+    contactBlock = `<div class="value">${escapeHtml(c._localPhone)}<span class="mask-hint">（${c._localContactEnteredBy ? "由 " + escapeHtml(c._localContactEnteredBy) + " " : ""}本地录入，仅你当前浏览器可见，尚未同步进数据文件）</span></div>`;
   } else {
     contactBlock = `<div class="value"><span class="status-pill pill-pending">待获取</span><span class="mask-hint">需通过BOSS直聘自行联系，可在列表页点"+ 录入联系方式"记录</span></div>`;
   }
@@ -758,6 +768,7 @@ function renderDetail(c) {
           <h2>📞 沟通反馈</h2>
           <div class="feedback-highlight-date">最近联系时间：<strong>${escapeHtml(c.lastContactDate || c._localFeedbackDate) || "暂无"}</strong></div>
           <div class="feedback-highlight-text">${escapeHtml(c.contactFeedback || c._localFeedback) || "暂无反馈记录，可在列表页点\"+ 记录反馈\"填写"}</div>
+          ${(c.feedbackEnteredBy || c._localFeedbackEnteredBy) ? `<div class="feedback-highlight-by">由 ${escapeHtml(c.feedbackEnteredBy || c._localFeedbackEnteredBy)} 记录${!c.contactFeedback && c._localFeedback ? "（本地录入，尚未同步）" : ""}</div>` : ""}
         </div>
         <div class="card">
           <h2>资格证书</h2>
