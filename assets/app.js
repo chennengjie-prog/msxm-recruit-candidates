@@ -12,11 +12,6 @@ function isPlaceholderName(name) {
   return /^[一-龥]{1,3}(先生|女士)$/.test(name || "");
 }
 
-function maskPhone(phone) {
-  if (!phone || phone.length < 7) return phone || "-";
-  return phone.slice(0, 3) + "****" + phone.slice(-4);
-}
-
 // Contact numbers a recruiter types in via the "待获取" button on the list page
 // are saved to this browser's localStorage only — the static site has no backend
 // to write them back to data/candidates.js, so they don't sync to other people or
@@ -313,7 +308,7 @@ function initListPage() {
 
   function contactCellHtml(c) {
     if (c.contactObtained) {
-      return '<span class="status-pill pill-yes">' + escapeHtml(maskPhone(c.phone)) + '</span>';
+      return '<span class="status-pill pill-yes">' + escapeHtml(c.phone) + '</span>';
     }
     if (c.id === editingContactId) {
       return `
@@ -326,7 +321,7 @@ function initListPage() {
     if (c._localPhone) {
       return `
         <span class="status-pill pill-yes contact-local" title="仅保存在你当前浏览器，尚未同步进 data/candidates.js">
-          ${escapeHtml(maskPhone(c._localPhone))}
+          ${escapeHtml(c._localPhone)}
           <button type="button" class="contact-icon-btn contact-edit-btn" data-id="${c.id}" title="修改">✎</button>
           <button type="button" class="contact-icon-btn contact-clear-btn" data-id="${c.id}" title="清除本地记录">×</button>
         </span>`;
@@ -714,9 +709,9 @@ function renderDetail(c) {
 
   let contactBlock;
   if (c.contactObtained) {
-    contactBlock = `<div class="value">${escapeHtml(maskPhone(c.phone))}<span class="mask-hint">（已隐藏部分号码）</span></div>`;
+    contactBlock = `<div class="value">${escapeHtml(c.phone)}</div>`;
   } else if (c._localPhone) {
-    contactBlock = `<div class="value">${escapeHtml(maskPhone(c._localPhone))}<span class="mask-hint">（本地录入，仅你当前浏览器可见，尚未同步进数据文件）</span></div>`;
+    contactBlock = `<div class="value">${escapeHtml(c._localPhone)}<span class="mask-hint">（本地录入，仅你当前浏览器可见，尚未同步进数据文件）</span></div>`;
   } else {
     contactBlock = `<div class="value"><span class="status-pill pill-pending">待获取</span><span class="mask-hint">需通过BOSS直聘自行联系，可在列表页点"+ 录入联系方式"记录</span></div>`;
   }
