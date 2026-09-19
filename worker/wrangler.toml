@@ -1,0 +1,5 @@
+# Only needed if you deploy with the `wrangler` CLI instead of the Cloudflare
+# dashboard's paste-and-deploy editor (see ../SETUP-BACKEND.md for both routes).
+name = "msxm-recruit-contact-sync"
+main = "index.js"
+compatibility_date = "2024-01-01"

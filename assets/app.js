@@ -50,6 +50,60 @@ function clearContactOverride(id) {
   } catch {}
 }
 
+// If set, contact numbers are POSTed here and committed straight into
+// data/candidates.js on GitHub (see worker/index.js + SETUP-BACKEND.md), so
+// they show up for every recruiter instead of staying stuck in one browser.
+// Left blank until the Cloudflare Worker is deployed; until then every save
+// silently falls back to the localStorage-only behavior above.
+const CONTACT_API_URL = "";
+
+const TEAM_SECRET_KEY = "recruit_team_secret";
+const EDITOR_NAME_KEY = "recruit_editor_name";
+
+function getTeamSecret() {
+  let v = localStorage.getItem(TEAM_SECRET_KEY);
+  if (!v) {
+    v = window.prompt("请输入团队口令（向管理员获取，只需输入一次，会记住在这台电脑上）") || "";
+    if (v) localStorage.setItem(TEAM_SECRET_KEY, v);
+  }
+  return v;
+}
+
+function getEditorName() {
+  let v = localStorage.getItem(EDITOR_NAME_KEY);
+  if (!v) {
+    v = window.prompt("请输入你的姓名（用于记录是谁录入的，只需输入一次）") || "";
+    if (v) localStorage.setItem(EDITOR_NAME_KEY, v);
+  }
+  return v;
+}
+
+// Returns { synced: true } on success (written straight to GitHub, visible to
+// everyone), or { synced: false, reason } if the backend isn't configured yet
+// or the request failed — callers should fall back to the local-only save.
+async function syncContactToGitHub(id, phone) {
+  if (!CONTACT_API_URL) return { synced: false, reason: "未配置同步服务" };
+  const secret = getTeamSecret();
+  if (!secret) return { synced: false, reason: "未输入团队口令" };
+  const editor = getEditorName();
+  try {
+    const res = await fetch(CONTACT_API_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "X-Team-Secret": secret },
+      body: JSON.stringify({ id, phone, editor }),
+    });
+    const data = await res.json().catch(() => ({}));
+    if (res.ok && data.ok) return { synced: true };
+    if (res.status === 401) {
+      // Wrong/stale secret — clear it so the next attempt re-prompts.
+      localStorage.removeItem(TEAM_SECRET_KEY);
+    }
+    return { synced: false, reason: data.error || ("请求失败（" + res.status + "）") };
+  } catch (err) {
+    return { synced: false, reason: "网络错误：" + err.message };
+  }
+}
+
 function escapeHtml(str) {
   return String(str ?? "").replace(/[&<>"']/g, (c) => ({
     "&": "&amp;",
@@ -206,15 +260,36 @@ function initListPage() {
     }
   }
 
-  function saveContactEdit(id) {
+  // Saves immediately to this browser's localStorage (so nothing is lost even
+  // if the network request fails), then tries to sync straight to GitHub in
+  // the background so every recruiter sees it, not just this one. Renders
+  // once optimistically and again once the sync attempt resolves.
+  async function saveContactEdit(id) {
     const input = tbody.querySelector(`.contact-input[data-id="${id}"]`);
     const value = input ? input.value.trim() : "";
-    if (value) {
-      saveContactOverride(id, value);
-      const c = allCandidates.find((item) => item.id === id);
-      if (c) c._localPhone = value;
-    }
     if (editingContactId === id) editingContactId = null;
+    if (!value) return;
+
+    saveContactOverride(id, value);
+    const c = allCandidates.find((item) => item.id === id);
+    if (c) c._localPhone = value;
+    applyAndRender();
+
+    const result = await syncContactToGitHub(id, value);
+    if (result.synced) {
+      clearContactOverride(id);
+      if (c) {
+        c.phone = value;
+        c.contactObtained = true;
+        delete c._localPhone;
+      }
+    } else if (CONTACT_API_URL) {
+      window.alert(
+        "联系方式已保存在这台电脑上，但同步到共享数据失败：" + result.reason +
+        "\n（其他人暂时还看不到，请稍后重试一次，或联系管理员手动更新）"
+      );
+    }
+    applyAndRender();
   }
 
   // If another row's edit box is still open with unsaved typed text, any
@@ -255,7 +330,6 @@ function initListPage() {
     const saveBtn = e.target.closest(".contact-save");
     if (saveBtn) {
       saveContactEdit(saveBtn.dataset.id);
-      applyAndRender();
       return;
     }
     const cancelBtn = e.target.closest(".contact-cancel");
@@ -270,7 +344,6 @@ function initListPage() {
     if (e.key === "Enter" || e.keyCode === 13 || e.which === 13) {
       e.preventDefault();
       saveContactEdit(e.target.dataset.id);
-      applyAndRender();
     } else if (e.key === "Escape" || e.keyCode === 27 || e.which === 27) {
       editingContactId = null;
       applyAndRender();
