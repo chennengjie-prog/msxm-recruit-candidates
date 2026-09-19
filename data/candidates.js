@@ -1433,7 +1433,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-09-16",
     "resumeContact": "陈彦汐",
     "activityStatus": "本周活跃",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "",
     "age": 32,
     "education": "",
@@ -1445,7 +1445,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "理财顾问",
     "expectedSalary": "13-16K",
     "location": "厦门",
-    "phone": "",
+    "phone": "13003988313",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "离职",
@@ -1454,7 +1454,7 @@ window.CANDIDATES_DATA = [
       "证券从业资格证"
     ],
     "selfEvaluation": "",
-    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。",
+    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。 [2026-09-19 由cnj通过网页录入联系方式]",
     "workExperience": [
       {
         "company": "厦门农村商业银行",
