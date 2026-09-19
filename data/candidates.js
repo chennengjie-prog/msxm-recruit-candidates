@@ -1,5 +1,3 @@
-// 候选人数据。直接编辑这个数组即可，格式和 JSON 一样，只是包了一层变量赋值，
-// 目的是让 index.html / candidate.html 可以直接双击打开使用，不需要额外启动本地服务器。
 window.CANDIDATES_DATA = [
   {
     "id": "c001",
@@ -143,7 +141,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-09-16",
     "resumeContact": "陈彦汐",
     "activityStatus": "本月活跃",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "",
     "age": 28,
     "education": "硕士",
@@ -155,7 +153,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "用户运营",
     "expectedSalary": "7-10K",
     "location": "厦门",
-    "phone": "",
+    "phone": "13552495425",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职",
@@ -2101,7 +2099,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-09-17",
     "resumeContact": "蔡家宝",
     "activityStatus": "",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "",
     "age": 29,
     "education": "本科",
@@ -2113,7 +2111,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "银行零售",
     "expectedSalary": "",
     "location": "厦门",
-    "phone": "",
+    "phone": "18259187681",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职",

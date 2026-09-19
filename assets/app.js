@@ -663,12 +663,18 @@ function initDetailPage() {
   // If we arrived here from the list page, its URL (captured via
   // document.referrer) carries whatever search/filter state was active —
   // send "back" there instead of a bare index.html so a filtered view (e.g.
-  // searching "兴业银行") isn't lost when the recruiter clicks back.
+  // searching "兴业银行") isn't lost when the recruiter clicks back. The list
+  // page is normally reached via the bare directory URL (.../repo-name/,
+  // no filename — that's the link everyone actually uses), which GitHub
+  // Pages serves as index.html but whose pathname has no "index.html" in
+  // it, so this must accept an empty last path segment too, not just an
+  // explicit "index.html" — matching only the latter was the original bug.
   const backLink = document.querySelector(".detail-back");
   if (backLink && document.referrer) {
     try {
       const ref = new URL(document.referrer);
-      if (ref.origin === window.location.origin && /(^|\/)index\.html$/.test(ref.pathname)) {
+      const lastSegment = ref.pathname.split("/").pop();
+      if (ref.origin === window.location.origin && (lastSegment === "" || lastSegment === "index.html")) {
         backLink.href = ref.pathname + ref.search;
       }
     } catch {}
