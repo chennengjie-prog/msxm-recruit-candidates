@@ -61,7 +61,9 @@ window.CANDIDATES_DATA = [
         "major": "土木工程",
         "period": "2009.09 - 2013.07"
       }
-    ]
+    ],
+    "lastContactDate": "2026-09-19",
+    "contactFeedback": "候选人反馈近两月不考虑"
   },
   {
     "id": "c002",
