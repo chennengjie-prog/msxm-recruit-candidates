@@ -726,3 +726,58 @@ td.muted {
   gap: 10px;
   margin-top: 10px;
 }
+
+/* Contact-feedback columns on the list page */
+
+.feedback-cell {
+  max-width: 220px;
+}
+
+.feedback-view {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  max-width: 100%;
+}
+
+.feedback-view.feedback-local {
+  color: #b8860b;
+}
+
+.feedback-text {
+  display: inline-block;
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+
+.feedback-edit {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.feedback-text-input {
+  width: 200px;
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  padding: 4px 6px;
+  font-size: 12.5px;
+  font-family: inherit;
+}
+
+.feedback-date-input {
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  padding: 4px 6px;
+  font-size: 12.5px;
+  font-family: inherit;
+}
+
+.feedback-text-input:focus,
+.feedback-date-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(23, 64, 107, 0.15);
+}

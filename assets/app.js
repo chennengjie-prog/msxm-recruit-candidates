@@ -50,12 +50,14 @@ function clearContactOverride(id) {
   } catch {}
 }
 
-// If set, contact numbers are POSTed here and committed straight into
-// data/candidates.js on GitHub (see worker/index.js + SETUP-BACKEND.md), so
-// they show up for every recruiter instead of staying stuck in one browser.
-// Left blank until the Cloudflare Worker is deployed; until then every save
-// silently falls back to the localStorage-only behavior above.
-const CONTACT_API_URL = "";
+// If set, edits are POSTed to <WORKER_BASE_URL>/<path> and committed straight
+// into data/candidates.js on GitHub (see worker/index.js + SETUP-BACKEND.md),
+// so they show up for every recruiter instead of staying stuck in one
+// browser. Left blank until the Cloudflare Worker is deployed; until then
+// every save silently falls back to the localStorage-only behavior below.
+const WORKER_BASE_URL = "";
+const CONTACT_API_URL = WORKER_BASE_URL ? WORKER_BASE_URL + "/update-contact" : "";
+const FEEDBACK_API_URL = WORKER_BASE_URL ? WORKER_BASE_URL + "/update-feedback" : "";
 
 const TEAM_SECRET_KEY = "recruit_team_secret";
 const EDITOR_NAME_KEY = "recruit_editor_name";
@@ -104,6 +106,56 @@ async function syncContactToGitHub(id, phone) {
   }
 }
 
+// Same local-first pattern as the contact-number override above, but for the
+// "联系完候选人后的反馈" pair of fields (when you talked to them + what they
+// said). Kept as a separate localStorage key/override so it doesn't interfere
+// with the phone-number editing state.
+const FEEDBACK_OVERRIDE_KEY = "recruit_feedback_overrides_v1";
+
+function loadFeedbackOverrides() {
+  try {
+    return JSON.parse(localStorage.getItem(FEEDBACK_OVERRIDE_KEY) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function saveFeedbackOverride(id, date, feedback) {
+  const all = loadFeedbackOverrides();
+  all[id] = { date, feedback, savedAt: new Date().toISOString() };
+  try {
+    localStorage.setItem(FEEDBACK_OVERRIDE_KEY, JSON.stringify(all));
+  } catch {}
+}
+
+function clearFeedbackOverride(id) {
+  const all = loadFeedbackOverrides();
+  delete all[id];
+  try {
+    localStorage.setItem(FEEDBACK_OVERRIDE_KEY, JSON.stringify(all));
+  } catch {}
+}
+
+async function syncFeedbackToGitHub(id, date, feedback) {
+  if (!FEEDBACK_API_URL) return { synced: false, reason: "未配置同步服务" };
+  const secret = getTeamSecret();
+  if (!secret) return { synced: false, reason: "未输入团队口令" };
+  const editor = getEditorName();
+  try {
+    const res = await fetch(FEEDBACK_API_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "X-Team-Secret": secret },
+      body: JSON.stringify({ id, date, feedback, editor }),
+    });
+    const data = await res.json().catch(() => ({}));
+    if (res.ok && data.ok) return { synced: true };
+    if (res.status === 401) localStorage.removeItem(TEAM_SECRET_KEY);
+    return { synced: false, reason: data.error || ("请求失败（" + res.status + "）") };
+  } catch (err) {
+    return { synced: false, reason: "网络错误：" + err.message };
+  }
+}
+
 function escapeHtml(str) {
   return String(str ?? "").replace(/[&<>"']/g, (c) => ({
     "&": "&amp;",
@@ -120,6 +172,7 @@ function buildSearchIndex(c) {
     c.currentCompany, c.currentPosition, c.expectedPosition,
     c.location, c.status, c.jobSeekingStatus, c.email,
     c.resumeContact, c.activityStatus,
+    c.lastContactDate, c.contactFeedback,
     c.hasSecQualification ? "证券从业资格证" : "",
     ...(c.certificates || []),
     c.selfEvaluation, c.notes,
@@ -134,10 +187,15 @@ async function loadCandidates() {
     throw new Error("未找到候选人数据，请确认 data/candidates.js 已正确引入");
   }
   const overrides = loadContactOverrides();
+  const feedbackOverrides = loadFeedbackOverrides();
   const list = window.CANDIDATES_DATA.map((c) => ({ ...c }));
   list.forEach((c) => {
     if (!c.contactObtained && overrides[c.id]) {
       c._localPhone = overrides[c.id].phone;
+    }
+    if (!c.contactFeedback && feedbackOverrides[c.id]) {
+      c._localFeedbackDate = feedbackOverrides[c.id].date;
+      c._localFeedback = feedbackOverrides[c.id].feedback;
     }
     c._searchIndex = buildSearchIndex(c);
   });
@@ -164,6 +222,7 @@ function initListPage() {
   let sortKey = "acquiredDate";
   let sortDir = "desc";
   let editingContactId = null;
+  let editingFeedbackId = null;
 
   // Keeps the current search/filter/sort state reflected in the URL (via
   // replaceState, no new history entries) so that navigating to a candidate's
@@ -275,14 +334,59 @@ function initListPage() {
     return `<button type="button" class="contact-btn" data-id="${c.id}">+ 录入联系方式</button>`;
   }
 
+  // Renders the 联系时间/反馈内容 pair together (one edit toggle spans both
+  // cells, since a single feedback entry always has both a date and a note).
+  function feedbackCellsHtml(c) {
+    const date = c.lastContactDate || c._localFeedbackDate || "";
+    const feedback = c.contactFeedback || c._localFeedback || "";
+    const isLocalOnly = !c.contactFeedback && (c._localFeedback || c._localFeedbackDate);
+
+    if (c.id === editingFeedbackId) {
+      return {
+        dateCell: `<input type="date" class="feedback-date-input" data-id="${c.id}" value="${escapeHtml(date)}">`,
+        feedbackCell: `
+          <span class="feedback-edit">
+            <input type="text" class="feedback-text-input" data-id="${c.id}" value="${escapeHtml(feedback)}" placeholder="简要反馈，如：已加微信，本周约面">
+            <button type="button" class="btn-mini feedback-save" data-id="${c.id}">保存</button>
+            <button type="button" class="btn-mini feedback-cancel">取消</button>
+          </span>`,
+      };
+    }
+
+    if (!date && !feedback) {
+      return {
+        dateCell: `<button type="button" class="contact-btn feedback-btn" data-id="${c.id}">+ 记录反馈</button>`,
+        feedbackCell: `<span class="muted">-</span>`,
+      };
+    }
+
+    const dateTitle = isLocalOnly ? ' title="仅保存在你当前浏览器，尚未同步进 data/candidates.js"' : "";
+    const textTitle = feedback
+      ? ` title="${escapeHtml(feedback)}${isLocalOnly ? "（仅保存在你当前浏览器，尚未同步）" : ""}"`
+      : "";
+    return {
+      dateCell: `<span class="muted"${dateTitle}>${escapeHtml(date || "-")}</span>`,
+      feedbackCell: `
+        <span class="feedback-view${isLocalOnly ? " feedback-local" : ""}">
+          <span class="feedback-text"${textTitle}>${escapeHtml(feedback || "-")}</span>
+          <button type="button" class="contact-icon-btn feedback-edit-btn" data-id="${c.id}" title="修改">✎</button>
+          ${isLocalOnly ? `<button type="button" class="contact-icon-btn feedback-clear-btn" data-id="${c.id}" title="清除本地记录">×</button>` : ""}
+        </span>`,
+    };
+  }
+
   function renderRows(list) {
-    tbody.innerHTML = list.map((c) => `
+    tbody.innerHTML = list.map((c) => {
+      const fb = feedbackCellsHtml(c);
+      return `
       <tr data-id="${c.id}">
         <td class="muted">${escapeHtml(c.acquiredDate)}</td>
         <td class="name-cell">${escapeHtml(c.name)}</td>
         <td><span class="tag ${sourceTagClass(c.source)}">${escapeHtml(c.source)}</span></td>
         <td class="muted">${escapeHtml(c.activityStatus)}</td>
         <td class="contact-cell">${contactCellHtml(c)}</td>
+        <td class="feedback-cell">${fb.dateCell}</td>
+        <td class="feedback-cell">${fb.feedbackCell}</td>
         <td>${escapeHtml(c.education)}</td>
         <td>${c.hasSecQualification
           ? '<span class="status-pill pill-yes">有</span>'
@@ -296,17 +400,25 @@ function initListPage() {
         <td><span class="status-pill">${escapeHtml(c.status || "-")}</span></td>
         <td>${escapeHtml(c.resumeContact)}</td>
       </tr>
-    `).join("");
+    `;
+    }).join("");
 
     tbody.querySelectorAll("tr").forEach((row) => {
       row.addEventListener("click", (e) => {
-        if (e.target.closest(".contact-cell")) return;
+        if (e.target.closest(".contact-cell") || e.target.closest(".feedback-cell")) return;
         window.location.href = "candidate.html?id=" + encodeURIComponent(row.dataset.id);
       });
     });
 
     if (editingContactId) {
       const input = tbody.querySelector(`.contact-input[data-id="${editingContactId}"]`);
+      if (input) {
+        input.focus();
+        input.select();
+      }
+    }
+    if (editingFeedbackId) {
+      const input = tbody.querySelector(`.feedback-text-input[data-id="${editingFeedbackId}"]`);
       if (input) {
         input.focus();
         input.select();
@@ -346,6 +458,42 @@ function initListPage() {
     applyAndRender();
   }
 
+  // Mirrors saveContactEdit above: local-first save, background sync to
+  // GitHub if configured, falls back silently to local-only otherwise.
+  async function saveFeedbackEdit(id) {
+    const dateInput = tbody.querySelector(`.feedback-date-input[data-id="${id}"]`);
+    const textInput = tbody.querySelector(`.feedback-text-input[data-id="${id}"]`);
+    const date = dateInput ? dateInput.value.trim() : "";
+    const feedback = textInput ? textInput.value.trim() : "";
+    if (editingFeedbackId === id) editingFeedbackId = null;
+    if (!date && !feedback) return;
+
+    saveFeedbackOverride(id, date, feedback);
+    const c = allCandidates.find((item) => item.id === id);
+    if (c) {
+      c._localFeedbackDate = date;
+      c._localFeedback = feedback;
+    }
+    applyAndRender();
+
+    const result = await syncFeedbackToGitHub(id, date, feedback);
+    if (result.synced) {
+      clearFeedbackOverride(id);
+      if (c) {
+        c.lastContactDate = date;
+        c.contactFeedback = feedback;
+        delete c._localFeedbackDate;
+        delete c._localFeedback;
+      }
+    } else if (FEEDBACK_API_URL) {
+      window.alert(
+        "反馈已保存在这台电脑上，但同步到共享数据失败：" + result.reason +
+        "\n（其他人暂时还看不到，请稍后重试一次，或联系管理员手动更新）"
+      );
+    }
+    applyAndRender();
+  }
+
   // If another row's edit box is still open with unsaved typed text, any
   // full re-render (opening/clearing a *different* row) would otherwise wipe
   // it silently. Auto-save it first instead of discarding what was typed.
@@ -353,11 +501,55 @@ function initListPage() {
     if (editingContactId && editingContactId !== exceptId) {
       saveContactEdit(editingContactId);
     }
+    if (editingFeedbackId && editingFeedbackId !== exceptId) {
+      saveFeedbackEdit(editingFeedbackId);
+    }
   }
 
   // Delegated once on tbody (which persists across re-renders — only its
   // innerHTML is replaced) so these handlers keep working after every render.
   tbody.addEventListener("click", (e) => {
+    // Feedback-button checks come first: the "+ 记录反馈" button also carries
+    // the generic .contact-btn class for shared styling, so it would
+    // otherwise match the .contact-btn check below too.
+    const fbAddBtn = e.target.closest(".feedback-btn");
+    if (fbAddBtn) {
+      flushPendingEditExcept(fbAddBtn.dataset.id);
+      editingFeedbackId = fbAddBtn.dataset.id;
+      applyAndRender();
+      return;
+    }
+    const fbEditBtn = e.target.closest(".feedback-edit-btn");
+    if (fbEditBtn) {
+      flushPendingEditExcept(fbEditBtn.dataset.id);
+      editingFeedbackId = fbEditBtn.dataset.id;
+      applyAndRender();
+      return;
+    }
+    const fbClearBtn = e.target.closest(".feedback-clear-btn");
+    if (fbClearBtn) {
+      flushPendingEditExcept(fbClearBtn.dataset.id);
+      clearFeedbackOverride(fbClearBtn.dataset.id);
+      const c = allCandidates.find((item) => item.id === fbClearBtn.dataset.id);
+      if (c) {
+        delete c._localFeedbackDate;
+        delete c._localFeedback;
+      }
+      applyAndRender();
+      return;
+    }
+    const fbSaveBtn = e.target.closest(".feedback-save");
+    if (fbSaveBtn) {
+      saveFeedbackEdit(fbSaveBtn.dataset.id);
+      return;
+    }
+    const fbCancelBtn = e.target.closest(".feedback-cancel");
+    if (fbCancelBtn) {
+      editingFeedbackId = null;
+      applyAndRender();
+      return;
+    }
+
     const addBtn = e.target.closest(".contact-btn");
     if (addBtn) {
       flushPendingEditExcept(addBtn.dataset.id);
@@ -394,12 +586,16 @@ function initListPage() {
   });
 
   tbody.addEventListener("keydown", (e) => {
-    if (!e.target.classList.contains("contact-input")) return;
+    const isContactInput = e.target.classList.contains("contact-input");
+    const isFeedbackInput = e.target.classList.contains("feedback-text-input") || e.target.classList.contains("feedback-date-input");
+    if (!isContactInput && !isFeedbackInput) return;
     if (e.key === "Enter" || e.keyCode === 13 || e.which === 13) {
       e.preventDefault();
-      saveContactEdit(e.target.dataset.id);
+      if (isContactInput) saveContactEdit(e.target.dataset.id);
+      else saveFeedbackEdit(e.target.dataset.id);
     } else if (e.key === "Escape" || e.keyCode === 27 || e.which === 27) {
-      editingContactId = null;
+      if (isContactInput) editingContactId = null;
+      else editingFeedbackId = null;
       applyAndRender();
     }
   });
@@ -545,6 +741,7 @@ function renderDetail(c) {
             ${c.email ? `<div class="item"><label>邮箱</label><div class="value">${escapeHtml(c.email)}</div></div>` : ""}
             ${c.jobSeekingStatus ? `<div class="item"><label>求职状态</label><div class="value">${escapeHtml(c.jobSeekingStatus)}</div></div>` : ""}
             <div class="item"><label>跟进状态</label><div class="value"><span class="status-pill">${escapeHtml(c.status || "-")}</span></div></div>
+            <div class="item"><label>联系时间</label><div class="value">${escapeHtml(c.lastContactDate || c._localFeedbackDate) || "-"}</div></div>
             <div class="item"><label>证券从业资格证</label><div class="value">${c.hasSecQualification ? '<span class="status-pill pill-yes">有</span>' : '<span class="status-pill pill-no">无</span>'}</div></div>
             <div class="item"><label>学历</label><div class="value">${escapeHtml(c.education)}</div></div>
             <div class="item"><label>毕业院校</label><div class="value">${escapeHtml(c.school)}</div></div>
@@ -559,6 +756,10 @@ function renderDetail(c) {
         <div class="card">
           <h2>资格证书</h2>
           <div class="tag-list">${certs || '<span class="empty-state">暂无</span>'}</div>
+        </div>
+        <div class="card">
+          <h2>沟通反馈</h2>
+          <div class="note-box">${escapeHtml(c.contactFeedback || c._localFeedback) || "暂无反馈记录"}</div>
         </div>
         <div class="card">
           <h2>招聘备注</h2>
