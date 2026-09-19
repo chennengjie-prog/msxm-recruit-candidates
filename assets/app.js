@@ -55,7 +55,7 @@ function clearContactOverride(id) {
 // so they show up for every recruiter instead of staying stuck in one
 // browser. Left blank until the Cloudflare Worker is deployed; until then
 // every save silently falls back to the localStorage-only behavior below.
-const WORKER_BASE_URL = "";
+const WORKER_BASE_URL = "https://msxm-recruit-contact-sync.chennengjie.workers.dev";
 const CONTACT_API_URL = WORKER_BASE_URL ? WORKER_BASE_URL + "/update-contact" : "";
 const FEEDBACK_API_URL = WORKER_BASE_URL ? WORKER_BASE_URL + "/update-feedback" : "";
 
