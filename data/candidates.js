@@ -59,7 +59,9 @@ window.CANDIDATES_DATA = [
         "major": "土木工程",
         "period": "2009.09 - 2013.07"
       }
-    ]
+    ],
+    "lastContactDate": "2026-09-19",
+    "contactFeedback": "候选人反馈近两月不考虑"
   },
   {
     "id": "c002",
@@ -1132,7 +1134,9 @@ window.CANDIDATES_DATA = [
         "major": "金融学",
         "period": ""
       }
-    ]
+    ],
+    "lastContactDate": "2026-09-19",
+    "contactFeedback": "内部了解，放弃"
   },
   {
     "id": "c023",
@@ -1141,7 +1145,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-09-16",
     "resumeContact": "陈彦汐",
     "activityStatus": "2月内活跃",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "",
     "age": 34,
     "education": "",
@@ -1153,7 +1157,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "风控",
     "expectedSalary": "10-15K",
     "location": "厦门",
-    "phone": "",
+    "phone": "15959683601",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职",
@@ -1162,7 +1166,7 @@ window.CANDIDATES_DATA = [
       "证券从业资格证"
     ],
     "selfEvaluation": "",
-    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。",
+    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。 [2026-09-19 由cnj通过网页录入联系方式]",
     "workExperience": [
       {
         "company": "兴业证券",
@@ -1483,7 +1487,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-09-16",
     "resumeContact": "陈彦汐",
     "activityStatus": "2月内活跃",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "",
     "age": 25,
     "education": "",
@@ -1495,7 +1499,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "物流运营",
     "expectedSalary": "8-13K",
     "location": "厦门",
-    "phone": "",
+    "phone": "15506969814",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职",
@@ -1504,7 +1508,7 @@ window.CANDIDATES_DATA = [
       "证券从业资格证"
     ],
     "selfEvaluation": "",
-    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。",
+    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。 [2026-09-19 由cnj通过网页录入联系方式]",
     "workExperience": [
       {
         "company": "兴业证券深圳前海分公司",
@@ -2189,7 +2193,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-09-17",
     "resumeContact": "蔡家宝",
     "activityStatus": "",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "",
     "age": 35,
     "education": "硕士",
@@ -2201,7 +2205,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "行业研究",
     "expectedSalary": "",
     "location": "厦门",
-    "phone": "",
+    "phone": "18805959575",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职",
@@ -2210,7 +2214,7 @@ window.CANDIDATES_DATA = [
       "证券从业资格证"
     ],
     "selfEvaluation": "",
-    "notes": "来自猎聘，招聘专员整理表格导入，联系方式尚未获取。 沟通状态：已读。 工作经历原表格式为连续书写、未分段，已整段保留原文，建议核实后手动拆分为多段。",
+    "notes": "来自猎聘，招聘专员整理表格导入，联系方式尚未获取。 沟通状态：已读。 工作经历原表格式为连续书写、未分段，已整段保留原文，建议核实后手动拆分为多段。 [2026-09-19 由cnj通过网页录入联系方式]",
     "workExperience": [
       {
         "company": "兴业证券",
