@@ -754,13 +754,14 @@ function renderDetail(c) {
             <div class="item"><label>期望薪资</label><div class="value">${escapeHtml(c.expectedSalary)}</div></div>
           </div>
         </div>
+        <div class="card feedback-highlight">
+          <h2>📞 沟通反馈</h2>
+          <div class="feedback-highlight-date">最近联系时间：<strong>${escapeHtml(c.lastContactDate || c._localFeedbackDate) || "暂无"}</strong></div>
+          <div class="feedback-highlight-text">${escapeHtml(c.contactFeedback || c._localFeedback) || "暂无反馈记录，可在列表页点\"+ 记录反馈\"填写"}</div>
+        </div>
         <div class="card">
           <h2>资格证书</h2>
           <div class="tag-list">${certs || '<span class="empty-state">暂无</span>'}</div>
-        </div>
-        <div class="card">
-          <h2>沟通反馈</h2>
-          <div class="note-box">${escapeHtml(c.contactFeedback || c._localFeedback) || "暂无反馈记录"}</div>
         </div>
         <div class="card">
           <h2>招聘备注</h2>

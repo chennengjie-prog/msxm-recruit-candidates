@@ -781,3 +781,29 @@ td.muted {
   outline: none;
   box-shadow: 0 0 0 2px rgba(23, 64, 107, 0.15);
 }
+
+/* Prominent "沟通反馈" block on the candidate detail page */
+
+.feedback-highlight {
+  border: 1.5px solid var(--color-primary);
+  background: linear-gradient(135deg, #eef4fb 0%, #ffffff 55%);
+  box-shadow: 0 2px 8px rgba(23, 64, 107, 0.12);
+}
+
+.feedback-highlight h2 {
+  border-left-color: var(--color-primary);
+  color: var(--color-primary-dark);
+}
+
+.feedback-highlight-date {
+  font-size: 13px;
+  color: var(--color-primary-dark);
+  margin-bottom: 8px;
+}
+
+.feedback-highlight-text {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--color-text);
+  white-space: pre-wrap;
+}
