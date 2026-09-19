@@ -1134,7 +1134,9 @@ window.CANDIDATES_DATA = [
         "major": "金融学",
         "period": ""
       }
-    ]
+    ],
+    "lastContactDate": "2026-09-19",
+    "contactFeedback": "内部了解，放弃"
   },
   {
     "id": "c023",
