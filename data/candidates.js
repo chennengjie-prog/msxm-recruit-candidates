@@ -2138,7 +2138,9 @@ window.CANDIDATES_DATA = [
         "major": "金融与国际企业",
         "period": ""
       }
-    ]
+    ],
+    "lastContactDate": "2026-09-29",
+    "contactFeedback": "已联系，加微信，待见面"
   },
   {
     "id": "c043",
