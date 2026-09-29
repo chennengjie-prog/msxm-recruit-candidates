@@ -638,7 +638,9 @@ window.CANDIDATES_DATA = [
         "major": "国际经济与贸易",
         "period": ""
       }
-    ]
+    ],
+    "lastContactDate": "2026-09-29",
+    "contactFeedback": "暂时不考虑"
   },
   {
     "id": "c013",
