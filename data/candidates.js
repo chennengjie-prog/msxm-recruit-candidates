@@ -144,47 +144,61 @@ window.CANDIDATES_DATA = [
     "resumeContact": "陈彦汐",
     "activityStatus": "本月活跃",
     "contactObtained": true,
-    "gender": "",
+    "gender": "女",
     "age": 28,
     "education": "硕士",
     "school": "首都经济贸易大学",
     "major": "商务经济学",
     "currentCompany": "兴业银行",
     "currentPosition": "理财顾问",
-    "yearsOfExperience": null,
+    "yearsOfExperience": 4,
     "expectedPosition": "用户运营",
     "expectedSalary": "7-10K",
     "location": "厦门",
     "phone": "13552495425",
     "email": "",
     "status": "待联系",
-    "jobSeekingStatus": "在职",
+    "jobSeekingStatus": "在职-考虑机会",
     "hasSecQualification": true,
     "certificates": [
-      "证券从业资格证"
+      "证券从业资格证",
+      "大学英语六级",
+      "基金从业资格证"
     ],
-    "selfEvaluation": "",
-    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。",
+    "selfEvaluation": "1. 具备3年以上银行从业经验，熟悉银行对私、对公各类金融产品，持有CET-6、基金从业资格证、证券从业资格证。2. 2023、2024年连续两年位列同序列理财经理综合考评第一。",
+    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。 2026-10-01 招聘专员重新上传了该候选人的BOSS直聘简历截图，已据此补充工作经历/证书等信息。 该候选人在猎聘上也有简历（蔡家宝，2026-10-01截图，平台显示为“赖锶琦”，在职，急寻新工作，期望用户运营 7-12k×14薪），已合并到本条，未重复录入。",
     "workExperience": [
       {
-        "company": "兴业银行",
-        "position": "理财顾问",
+        "company": "兴业银行股份有限公司厦门分行",
+        "position": "理财经理",
         "period": "2022.07-至今",
-        "description": ""
+        "description": "1.投研分析：熟悉公募/私募基金、固收、理财、信托等各类投资品逻辑，每日跟踪宏观经济数据、行业政策及市场波动，定期输出市场观点简报、投资参考材料。2.活动策划：自2023年以来举办投资论坛、理财沙龙、产品路演、高净值客户峰会等活动150余场，现场扫码参与客户超3000位，新获客数超1000位，VIP客户提升率达47%，成交率达16%。3.数据运营：搭建客户运营数据台账，基于数据分析优化客户分层维护策略，设计营销话术沉淀SOP，2025年新增客户日均AUM7996万元。4.协调合作：协助财富团队与零售团队、企金团队跨部门协调合作，公私联动共同达成复杂类理财产品销售1.3亿，并以公私联动案例参与第十五届理财师大赛，获全国一等奖。"
+      },
+      {
+        "company": "用友网络科技",
+        "position": "数字化项目管理",
+        "period": "2021.08-2021.12",
+        "description": "负责企业数字化转型相关政策、技术、产业和应用研究；参与某大型国企数字化转型项目，负责行业研究分析、信息搜集、调研问卷设计及数据分析、规划方案PPT制作等。"
+      },
+      {
+        "company": "坤元资产管理",
+        "position": "投后管理",
+        "period": "2021.04-2021.08",
+        "description": "负责跟踪已投子基金项目的后续管理，独立撰写子基金投后管理报告，参与证监会对基金的现场检查；协助子基金所投企业的IPO工作，独立编制公司首个月度投后管理简报。"
       }
     ],
     "educationExperience": [
       {
         "school": "首都经济贸易大学",
-        "degree": "本科",
-        "major": "商务经济学",
-        "period": ""
+        "degree": "硕士",
+        "major": "金融（统招）",
+        "period": "2020.09-2022.06"
       },
       {
         "school": "首都经济贸易大学",
-        "degree": "硕士",
-        "major": "金融学",
-        "period": ""
+        "degree": "本科",
+        "major": "商务经济学（统招）",
+        "period": "2016.09-2020.06"
       }
     ]
   },
@@ -602,41 +616,41 @@ window.CANDIDATES_DATA = [
     "source": "BOSS直聘",
     "acquiredDate": "2026-09-16",
     "resumeContact": "陈彦汐",
-    "activityStatus": "2月内活跃",
+    "activityStatus": "3月内活跃",
     "contactObtained": false,
-    "gender": "",
+    "gender": "男",
     "age": 33,
-    "education": "",
+    "education": "本科",
     "school": "厦门工学院",
     "major": "国际经济与贸易",
     "currentCompany": "兴业银行厦门分行",
     "currentPosition": "客户经理",
-    "yearsOfExperience": null,
+    "yearsOfExperience": 10,
     "expectedPosition": "渠道销售",
-    "expectedSalary": "10-15K",
+    "expectedSalary": "8-13K",
     "location": "厦门",
     "phone": "",
     "email": "",
     "status": "待联系",
-    "jobSeekingStatus": "在职",
+    "jobSeekingStatus": "在职-考虑机会",
     "hasSecQualification": false,
     "certificates": [],
-    "selfEvaluation": "",
-    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。",
+    "selfEvaluation": "1.10年银行客户经理销售经验，擅长客户开发谈判与商务维护 2.风控意识强、稳定抗压，学习能力强。",
+    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。 2026-10-01 招聘专员重新上传了该候选人的BOSS直聘简历截图，已据此补充工作经历/证书等信息。",
     "workExperience": [
       {
-        "company": "兴业银行厦门分行",
+        "company": "兴业银行股份有限公司厦门分行",
         "position": "客户经理",
         "period": "2017.01-至今",
-        "description": ""
+        "description": "拥有十年银行零售从业经验，深耕高净值客户维护与企业业务拓展，经手8000万私行资产、3.5亿贷款业务，具备扎实获客谈判与商务对接能力。风控合规意识强，擅长客户关系长期经营与转化成交。定居海沧稳定性高，心态归零愿意快速学习跨境电商与阿里国际站业务，执行力强、抗压能力足，适配To B销售岗位。"
       }
     ],
     "educationExperience": [
       {
         "school": "厦门工学院",
-        "degree": "",
+        "degree": "本科",
         "major": "国际经济与贸易",
-        "period": ""
+        "period": "2011-2015"
       }
     ],
     "lastContactDate": "2026-09-29",
@@ -752,59 +766,62 @@ window.CANDIDATES_DATA = [
     "source": "BOSS直聘",
     "acquiredDate": "2026-09-16",
     "resumeContact": "陈彦汐",
-    "activityStatus": "4月内活跃",
+    "activityStatus": "5月内活跃",
     "contactObtained": false,
-    "gender": "",
+    "gender": "女",
     "age": 34,
-    "education": "",
+    "education": "本科",
     "school": "重庆大学",
     "major": "日语",
     "currentCompany": "平安银行厦门分公司",
     "currentPosition": "贵宾理财经理",
-    "yearsOfExperience": null,
+    "yearsOfExperience": 10,
     "expectedPosition": "理财顾问",
     "expectedSalary": "7-12K",
     "location": "厦门",
     "phone": "",
     "email": "",
     "status": "待联系",
-    "jobSeekingStatus": "在职",
+    "jobSeekingStatus": "在职-考虑机会",
     "hasSecQualification": false,
-    "certificates": [],
-    "selfEvaluation": "",
-    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。",
+    "certificates": [
+      "基金从业资格证",
+      "大学英语六级"
+    ],
+    "selfEvaluation": "学习能力强，善于与人沟通，注重细节，工作高效且能按时有质量完成。",
+    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。 2026-10-01 招聘专员重新上传了该候选人的BOSS直聘简历截图，已据此补充工作经历/证书等信息。",
     "workExperience": [
       {
-        "company": "厦门霖普管理咨询有限公司",
-        "position": "行政专员",
-        "period": "2014.07-2015.03",
-        "description": ""
+        "company": "平安银行股份有限公司厦门分公司",
+        "position": "贵宾理财经理",
+        "period": "2018.03-至今",
+        "description": "深耕高净值财富管理领域，专注50万以上核心客群全周期经营，独立负责3-4亿存量客户资产，资产规模持续稳健增长。聚焦客户大类资产配置，擅长结合市场周期与客户需求，统筹私募基金、保险、资产传承等综合配置规划，实现客户资产保值增值与风险对冲。具备成熟的高净值客户深度维护及业务转化能力，客户粘性强、复购率高，能快速对接高端客群财富需求。"
       },
       {
         "company": "深圳市银雁科技有限公司厦门分公司",
         "position": "大堂经理",
         "period": "2015.03-2018.01",
-        "description": ""
+        "description": "业绩：年度kpi前三且连续晋升。三年大堂一线服务经验，熟悉内勤支持流程，擅长跨部门协调，缩短业务响应时间。善于与人沟通，抗压能力强，客户满意度95%以上。内容：1.客户服务：负责客户咨询与办理，与客户进行有效沟通，提高厅堂运营效率。2.识别客户：根据客户需求实施差异化营销。3.日常巡检：日终巡检厅堂各机械设备，及时解决设备问题。"
       },
       {
-        "company": "平安银行厦门分公司",
-        "position": "贵宾理财经理",
-        "period": "2018.03-至今",
-        "description": ""
+        "company": "厦门霖普管理咨询有限公司",
+        "position": "行政专员/助理",
+        "period": "2014.07-2015.03",
+        "description": "1.协助上级领导制定公司行政工作发展和规划，修订行政管理规章制度和计划。2.协助HR完成绩效管理，考勤，采购等事物。3.组织企业文化建设，包括公司会务组织，员工培训等安排。4.负责日常行政办公事务，会议组织和会议纪要的记载。"
       }
     ],
     "educationExperience": [
       {
         "school": "重庆大学",
-        "degree": "",
-        "major": "日语",
-        "period": ""
+        "degree": "本科",
+        "major": "法学（辅修，非全日制）",
+        "period": "2011-2014"
       },
       {
         "school": "重庆大学",
-        "degree": "",
-        "major": "法学（辅修）",
-        "period": ""
+        "degree": "本科",
+        "major": "日语（985院校）",
+        "period": "2010-2014"
       }
     ]
   },
@@ -1096,45 +1113,56 @@ window.CANDIDATES_DATA = [
     "resumeContact": "陈彦汐",
     "activityStatus": "刚刚活跃",
     "contactObtained": false,
-    "gender": "",
+    "gender": "男",
     "age": 32,
-    "education": "",
+    "education": "本科",
     "school": "华侨大学",
     "major": "金融学",
     "currentCompany": "兴业银行",
     "currentPosition": "客户经理",
-    "yearsOfExperience": null,
+    "yearsOfExperience": 10,
     "expectedPosition": "地产中介",
     "expectedSalary": "13-14K",
     "location": "厦门",
     "phone": "",
     "email": "",
     "status": "待联系",
-    "jobSeekingStatus": "在职",
-    "hasSecQualification": false,
-    "certificates": [],
-    "selfEvaluation": "",
-    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。 证从资格原表未注明，请核实。",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": true,
+    "certificates": [
+      "银行从业资格证",
+      "证券从业资格证",
+      "基金从业资格证",
+      "期货从业资格证"
+    ],
+    "selfEvaluation": "1. 具备出色的团队合作能力，能够与团队成员紧密协作，共同完成业务目标。2. 拥有丰富的客户服务经验，擅长通过有效沟通满足客户需求，提升客户满意度。",
+    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。 2026-10-01 招聘专员重新上传了该候选人的BOSS直聘简历截图，已据此补充工作经历/证书等信息。 该候选人在猎聘上也有简历（蔡家宝，2026-10-01截图，平台显示为“刘先生”，在职，看看新机会，期望客户经理 20-22k×12薪），已合并到本条，未重复录入。",
     "workExperience": [
       {
-        "company": "中国邮储银行",
-        "position": "零售客户经理",
-        "period": "2016.07-2022.10",
-        "description": ""
-      },
-      {
-        "company": "兴业银行",
+        "company": "兴业银行股份有限公司",
         "position": "客户经理",
         "period": "2022.11-至今",
-        "description": ""
+        "description": "客户拓展与维护：积极开拓新客户资源，负责客户关系的日常维护。金融产品销售：深入了解银行各类金融产品，为客户量身定制个性化的金融产品组合方案，制定并执行销售计划。业务办理与风险管理：高效办理开户、存取款、转账汇款、贷款审批等业务，全面评估客户信用风险。"
+      },
+      {
+        "company": "中国邮政储蓄银行股份有限公司",
+        "position": "零售客户经理",
+        "period": "2016.07-2022.10",
+        "description": "客户拓展与维护、金融产品销售、业务办理与风险管理（内容与上一段类似），保险销售。"
       }
     ],
     "educationExperience": [
       {
         "school": "华侨大学",
-        "degree": "",
-        "major": "金融学",
-        "period": ""
+        "degree": "本科",
+        "major": "物流管理（统招）",
+        "period": "2012.09-2016.06"
+      },
+      {
+        "school": "华侨大学",
+        "degree": "本科",
+        "major": "金融学（统招）",
+        "period": "2012.09-2016.06"
       }
     ],
     "lastContactDate": "2026-09-19",
@@ -2863,7 +2891,7 @@ window.CANDIDATES_DATA = [
     "major": "物流管理（统招）",
     "currentCompany": "平安银行股份有限公司",
     "currentPosition": "理财经理",
-    "yearsOfExperience": null,
+    "yearsOfExperience": 10,
     "expectedPosition": "理财顾问",
     "expectedSalary": "1万-1.5万",
     "location": "思明区",
@@ -2872,9 +2900,13 @@ window.CANDIDATES_DATA = [
     "status": "待联系",
     "jobSeekingStatus": "在职-暂不找工作",
     "hasSecQualification": false,
-    "certificates": [],
-    "selfEvaluation": "",
-    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。 求职意向城市为厦门（与现居地思明区不同）。 岗位经验：理财顾问8年4个月。该候选人当前状态为“暂不找工作”，优先级可能较低，建议核实近况后再联系。两份工作经历间存在6个月空档期（平台标注）。所获证书：理财证书、银行从业资格证（未见证券从业资格证）。",
+    "certificates": [
+      "大学英语四级",
+      "基金从业资格证",
+      "银行从业资格证"
+    ],
+    "selfEvaluation": "本人性格开朗、稳重、有活力，待人热情、真诚。工作认真负责，用心主动，能吃苦耐劳，能认真完成赋予我的每一项任务。有较强的组织潜质、实际动手潜质和团体协作精神，能迅速的适应各种环境，并融合其中。",
+    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。 求职意向城市为厦门（与现居地思明区不同）。 岗位经验：理财顾问8年4个月。该候选人当前状态为“暂不找工作”，优先级可能较低，建议核实近况后再联系。两份工作经历间存在6个月空档期（平台标注）。所获证书：理财证书、银行从业资格证（未见证券从业资格证）。 该候选人在BOSS直聘上也有简历（陈彦汐，2026-10-01截图，平台显示为“石**”，在职-暂不考虑，期望其他职位 10-12K），已合并到本条，未重复录入。",
     "workExperience": [
       {
         "company": "平安银行股份有限公司",
@@ -2899,7 +2931,7 @@ window.CANDIDATES_DATA = [
       {
         "school": "厦门大学嘉庚学院",
         "degree": "本科",
-        "major": "物流管理（统招）",
+        "major": "物流管理",
         "period": "2012-2016"
       }
     ]
@@ -3514,5 +3546,2222 @@ window.CANDIDATES_DATA = [
         "period": "2008-2012"
       }
     ]
+  },
+  {
+    "id": "c068",
+    "name": "程**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "本月活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 26,
+    "education": "本科",
+    "school": "云南大学旅游文化学院",
+    "major": "金融学",
+    "currentCompany": "平安银行股份有限公司厦门分行",
+    "currentPosition": "理财经理岗",
+    "yearsOfExperience": 4,
+    "expectedPosition": "国内电商运营",
+    "expectedSalary": "6-9K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "1.熟练掌握厅堂服务与营销策略，有效提升客户满意度及业务成果。2.擅长跨岗位、跨部门沟通协调，优化工作流程，提升团队协作效率。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 截图中资格证书一栏未能完整显示，证书情况请核实。",
+    "workExperience": [
+      {
+        "company": "平安银行股份有限公司厦门分行",
+        "position": "理财经理岗",
+        "period": "2026.04-至今",
+        "description": "1.负责零售客户财富管理业务，开展客户开发、存量客户维护，为客户提供资产配置方案，涵盖理财、基金、保险、贵金属、国债等产品；2.挖掘客户金融需求，完成理财、基金、保险等产品销售任务，做好客户风险测评、适当性管理，严格落实监管合规要求；3.维护网点存量客户，通过沙龙、电话、线下面谈开展客户经营，提升客户AUM，推动客户升级转化；4.跟进客户资产变动，定期做持仓复盘、市场解读，做好客户沟通，提升客户粘性与转介绍；5.协同支行团队完成零售指标，处理客户咨询、投诉，做好客户关系维护。"
+      },
+      {
+        "company": "中国平安银行厦门分公司",
+        "position": "大堂经理",
+        "period": "2022.07-2026.04",
+        "description": "客户服务与支持：负责对进店客户识别分流，与客户进行有效沟通，准确理解并解决客户诉求，协助客户在自助设备完成业务办理。营销与推广：识别不同客户营销不同产品，对新开卡客户主动营销信用卡，介绍新客活动以及相关产品优势，促进客户达成千万元户等；对进店转账等存量客户，利用达标活动促进客户资产达标更高层级，对有价值客户进行转介理财经理。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "云南大学旅游文化学院",
+        "degree": "本科",
+        "major": "金融学",
+        "period": "2018-2022"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c069",
+    "name": "江**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "近半年活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 36,
+    "education": "本科",
+    "school": "江南大学",
+    "major": "汉语言文学（211院校）",
+    "currentCompany": "平安银行股份有限公司厦门分行",
+    "currentPosition": "团队经理",
+    "yearsOfExperience": 10,
+    "expectedPosition": "法务专员/助理",
+    "expectedSalary": "面议",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "基金从业资格证",
+      "法律职业资格证"
+    ],
+    "selfEvaluation": "丰富的客户维护经验：9年外资、中资银行工作经历，专注高端客户经营，擅长客户沟通与关系经营。金融和法律的复合专业背景：同时具备法律、金融等专业知识，已通过基金从业资格考试和法律职业资格考试。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "workExperience": [
+      {
+        "company": "平安银行股份有限公司厦门分行",
+        "position": "团队经理",
+        "period": "2019.07-至今",
+        "description": "团队长：培训与沙龙演讲、客户陪访、团队管理；通过制定团队管理细则、激励措施，组织团队培训，增强团队的组织纪律性，提高团队成员的专业能力，收入培育团队获得2022年度总行金奖，2023年度分行开门红勋单位。产品经理：产品策略制定与培训、业务推动、监管对接；整合总行的策略和市场导向，制定相应的产品策略，撰写产品宣传文案并进行培训；在职期间公募月均销量超1亿，单月最高销量突破2亿达成总行百亿公募项目，排名总行前三。"
+      },
+      {
+        "company": "渣打银行(中国)有限公司",
+        "position": "理财经理",
+        "period": "2017.11-2019.07",
+        "description": "岗位职责：客户维护，完善家庭财富规划。在职期间管理客户资产增长40%。"
+      },
+      {
+        "company": "广发银行股份有限公司上海分行",
+        "position": "理财经理",
+        "period": "2015.06-2017.05",
+        "description": "岗位职责：负责高净值和私人银行客户开拓与维护，提升客户价值，扩大资产规模；月拓客8-15个。"
+      },
+      {
+        "company": "花旗银行",
+        "position": "客户经理",
+        "period": "2014.07-2015.06",
+        "description": "岗位职责：高净值客户的开拓，渠道开发；一年内拓展高净值客户80+。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "江南大学",
+        "degree": "本科",
+        "major": "汉语言文学（211院校）",
+        "period": "2010-2014"
+      },
+      {
+        "school": "江南大学",
+        "degree": "本科",
+        "major": "会计学（211院校）",
+        "period": "2010-2014"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c070",
+    "name": "张**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "今日活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 37,
+    "education": "本科",
+    "school": "福州工商学院",
+    "major": "金融学",
+    "currentCompany": "平安银行股份有限公司泉州分行",
+    "currentPosition": "理财顾问·安溪厅堂",
+    "yearsOfExperience": 10,
+    "expectedPosition": "客户经理",
+    "expectedSalary": "9-10K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "银行从业资格证",
+      "期货从业资格证"
+    ],
+    "selfEvaluation": "对数据比较敏感，比较会识别客户并跟客户沟通。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "workExperience": [
+      {
+        "company": "平安银行股份有限公司泉州分行",
+        "position": "理财顾问·安溪厅堂",
+        "period": "2023.03-至今",
+        "description": "业绩：1.银保业绩完成率百分百 2.客户管户金融资产1.4亿，存款日均4200万，信用卡50-60张，微信客户5500人。内容：1.大堂秩序维护，厅堂客户二次开发 2.管户客户资产提升，高净值客户提升和维护，客户资产配置 3.信用卡，贷款，理财，基金，银保的综合开发和销售"
+      },
+      {
+        "company": "安溪县民政局",
+        "position": "民政协理员",
+        "period": "2021.04-2023.02",
+        "description": "困难群众低保，临时救助窗口服务工作"
+      },
+      {
+        "company": "民生银行泉州分行",
+        "position": "柜员·厅堂",
+        "period": "2018.09-2021.03",
+        "description": "业绩：2019年销售之星，2020年分行综合技能大赛第四名，微信客户累积5000人，管户客户非储蓄金融资产600万，储蓄400万，信用卡50张，推荐办理贷款平均每月2笔左右。内容：大堂和柜台业务的办理，以及人行方面的交接"
+      },
+      {
+        "company": "中国邮政集团安溪分公司",
+        "position": "柜员",
+        "period": "2017.10-2018.09",
+        "description": "大堂秩序维护，客户开销户"
+      },
+      {
+        "company": "益硕控股集团有限公司",
+        "position": "风控",
+        "period": "2014.05-2017.09",
+        "description": "产品风险率把控，客户投诉管理"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "福州工商学院",
+        "degree": "本科",
+        "major": "金融学",
+        "period": "2009-2013"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c071",
+    "name": "周**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "2月内活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 32,
+    "education": "本科",
+    "school": "湖南工业大学",
+    "major": "市场营销",
+    "currentCompany": "平安银行股份有限公司福州分行",
+    "currentPosition": "理财顾问",
+    "yearsOfExperience": 9,
+    "expectedPosition": "市场推广/地推",
+    "expectedSalary": "5-10K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-月内到岗",
+    "hasSecQualification": true,
+    "certificates": [
+      "基金从业资格证",
+      "证券从业资格证",
+      "AFP"
+    ],
+    "selfEvaluation": "1、上海销售工作两年，带领团队20余人 2、目前从事银行理财经理，已考取基金从业资格证和证券从业资格证。客户管理5亿资产 3、银行从业3年，销售非保中收300万，保险销售分行排名前5。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 资格证书来自候选人自述和工作标签，截图中无单独证书栏。",
+    "workExperience": [
+      {
+        "company": "平安银行股份有限公司福州分行",
+        "position": "理财顾问",
+        "period": "2020.06-至今",
+        "description": "1、客户的日常对接与维护 2、银行理财、存款、保险、私募、信用卡、贷款日常营销 3、柜台办理业务和风险控制"
+      },
+      {
+        "company": "国金黄金股份有限公司",
+        "position": "营销主管",
+        "period": "2017.12-2020.02",
+        "description": "1产品渠道营销 2管理团队，实现团队利益最大化 3提升团队技能，提高整体营销水平"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "湖南工业大学",
+        "degree": "本科",
+        "major": "市场营销",
+        "period": "2013-2017"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c072",
+    "name": "杨**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "3月内活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 37,
+    "education": "本科",
+    "school": "三明学院",
+    "major": "财务管理",
+    "currentCompany": "平安银行股份有限公司",
+    "currentPosition": "理财顾问",
+    "yearsOfExperience": 10,
+    "expectedPosition": "理财顾问",
+    "expectedSalary": "10-15K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": true,
+    "certificates": [
+      "证券从业资格证",
+      "大学英语四级",
+      "会计初级职称",
+      "会计从业资格证",
+      "基金从业资格证",
+      "计算机一级",
+      "理财规划师一级"
+    ],
+    "selfEvaluation": "获得业绩：2015年分行优秀新人；2015年平安银行资产新增奖；2016年分行金牌渠道经理；2018年分行演讲大比武第一名；2018年优秀渠道经理；2019年分行资产大咖；2020年分行荣誉之星；2021年开门红（财富）综金百佳；2021年开门红（获客）综金百佳；2022年开门红荣获总行客户旅程ATO大赛区域第三；2022年配置线上运营活动荣获总行案例分享；2022年担任业务推动岗期间多次受邀总行分享指标推动心得。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "workExperience": [
+      {
+        "company": "平安银行股份有限公司",
+        "position": "理财顾问",
+        "period": "2014.01-至今",
+        "description": "1、2014年1月～2021年8月：平安银行渠道经理，负责渠道业务推动，包含人员培训、激励方案设置、各种活动组织；2、2021年9月～2023年7月：平安银行基础零售管理部中后台管理，负责部门指标的任务分配，方案设计，产能数据分析；3、2023年8月至今：平安银行理财经理"
+      },
+      {
+        "company": "福清清荣房地产有限公司",
+        "position": "会计（实习）",
+        "period": "2013.01-2013.12",
+        "description": "制作各类记账凭证"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "三明学院",
+        "degree": "本科",
+        "major": "财务管理",
+        "period": "2011-2013"
+      },
+      {
+        "school": "福建江夏学院",
+        "degree": "大专",
+        "major": "会计电算化",
+        "period": "2008-2011"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c073",
+    "name": "游**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "本月活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 30,
+    "education": "本科",
+    "school": "福州大学",
+    "major": "水利水电工程（211院校）",
+    "currentCompany": "平安银行股份有限公司厦门分行",
+    "currentPosition": "公司客户经理",
+    "yearsOfExperience": 8,
+    "expectedPosition": "融资",
+    "expectedSalary": "20-25K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "银行从业资格证",
+      "理财资格证书"
+    ],
+    "selfEvaluation": "市场洞察力较高，通过与客户的交流匹配适应客户的银行产品，精通银行各项政策及业务流程，在银行对公业务、银行风险与监管方面有较高的理论水平和实践积累，具备出色的学习与逻辑思考能力。专业能力：企业财务分析、授信方案设计、供应链金融产品；工具：熟练使用Word、Excel、PPT。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "workExperience": [
+      {
+        "company": "平安银行股份有限公司厦门分行",
+        "position": "公司客户经理",
+        "period": "2022.02-至今",
+        "description": "业绩：6年银行对公业务经验，熟悉企业信贷、供应链金融、跨境金融等业务，产品应用丰富，已应用产品包括跨境结售汇业务、供应链融资业务、非标业务融资、债券投资、政府产业引导基金、信用敞口授信、结构性存款、票据/保函等，累计服务企业客户超200家，管理资产规模超6亿元，存款年日均超20亿元。内容：客户开发与维护：1、新拓企业客户50家（上市公司华夏眼科、国企信息担保、大型制造业百宏实业等），年日均存款超20亿元，贷款投放超6亿元。2、设计“一揽子”金融服务方案，服务多家离岸企业跨境结算、票据贴现及员工代发工资业务，年创收超2000万元。贷与风险管理：1、独立完成授信报告撰写及风控评估，累计审批通过授信额度8亿元，不良率控制为零。"
+      },
+      {
+        "company": "厦门国际银行三明分行",
+        "position": "公司客户经理",
+        "period": "2018.07-2021.05",
+        "description": "业绩：2019年贷款余额指标8000万，投放共计8000万以上；存款余额4000万元；2020年贷款余额指标1.5亿，投放共计7000万以上；存款余额1亿元。职责：市场调研、客户开拓、产品营销、业务服务、风险管理、贷后管理等对公全流程工作。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "福州大学",
+        "degree": "本科",
+        "major": "水利水电工程（211院校）",
+        "period": "2014-2018"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c074",
+    "name": "王**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "2周内活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 37,
+    "education": "本科",
+    "school": "厦门大学嘉庚学院",
+    "major": "金融学",
+    "currentCompany": "平安银行股份有限公司",
+    "currentPosition": "高级管理职位（支行长、财富团队长）",
+    "yearsOfExperience": 10,
+    "expectedPosition": "高级管理职位",
+    "expectedSalary": "30-60K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "基金从业资格证"
+    ],
+    "selfEvaluation": "15年财富管理，10年一线管理经验，现任支行长。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "workExperience": [
+      {
+        "company": "平安银行股份有限公司",
+        "position": "高级管理职位（支行长、财富团队长）",
+        "period": "2015.10-至今",
+        "description": "支行长；财富团队长"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "厦门大学嘉庚学院",
+        "degree": "本科",
+        "major": "金融学",
+        "period": "2006-2010"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c075",
+    "name": "游**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "本月活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 28,
+    "education": "本科",
+    "school": "西南交通大学",
+    "major": "材料科学与工程（211院校）",
+    "currentCompany": "平安银行股份有限公司厦门分行禾祥西支行",
+    "currentPosition": "贵宾理财经理",
+    "yearsOfExperience": 6,
+    "expectedPosition": "金融产品经理",
+    "expectedSalary": "12-24K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-暂不考虑",
+    "hasSecQualification": false,
+    "certificates": [
+      "基金从业资格证"
+    ],
+    "selfEvaluation": "银行业全流程。项目经历：医院建设项目账户存款承接及工地代发承办（2024.03-至今），工程预算6亿，累计创造存款营收200万，代发农民工千人。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "workExperience": [
+      {
+        "company": "平安银行股份有限公司厦门分行禾祥西支行",
+        "position": "贵宾理财经理",
+        "period": "2023.12-至今",
+        "description": "业绩：2024上半年晋一级至F23，2024下半年连晋三级至F26至今（当前职级产能标准26万/月）；2024年度总行零售管理部“营销菁英奖”（1/37）。内容：客情维护，理财产品销售，做大规模，信用卡代发贷款等。"
+      },
+      {
+        "company": "平安银行股份有限公司厦门分行",
+        "position": "银行对公客户经理",
+        "period": "2022.09-2023.12",
+        "description": "业绩：某专精特新企业银承授信全流程承办；2023年3月获“厦门分行最佳新人成长奖”。内容：客情维护，企业银行项目承办，授信全流程。"
+      },
+      {
+        "company": "中国太平洋财产保险股份有限公司厦门分公司",
+        "position": "核保岗·政保业务部",
+        "period": "2020.07-2022.09",
+        "description": "负责非车险条线中政府保险业务板块的核保。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "西南交通大学",
+        "degree": "本科",
+        "major": "材料科学与工程（211院校）",
+        "period": "2016-2020"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c076",
+    "name": "李**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "刚刚活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 32,
+    "education": "本科",
+    "school": "集美大学诚毅学院",
+    "major": "英语（师范方向）",
+    "currentCompany": "平安银行股份有限公司厦门分行",
+    "currentPosition": "银行客户经理",
+    "yearsOfExperience": 9,
+    "expectedPosition": "培训",
+    "expectedSalary": "15-25K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "英语六级",
+      "计算机二级"
+    ],
+    "selfEvaluation": "本人性格开朗、为人诚恳、乐观向上、兴趣广泛、善于与人交流沟通。拥有良好的组织能力和适应能力、并具有较强的管理策划与组织管理协调能力。能够与他人友好沟通，具备日常的英语交际能力，通过国家英语六级考试，熟练使用Office办公软件。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "workExperience": [
+      {
+        "company": "平安银行股份有限公司厦门分行",
+        "position": "银行客户经理",
+        "period": "2018.02-至今",
+        "description": "从事银行贷款业务，主要负责客户贷前，中，后的一系列服务。"
+      },
+      {
+        "company": "平安银行厦门分行",
+        "position": "客户经理",
+        "period": "2018.01-2024.06",
+        "description": "从事贷款业务，存量客户日常维护拓展及维护渠道。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "集美大学诚毅学院",
+        "degree": "本科",
+        "major": "英语（师范方向）",
+        "period": "2012-2016"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c077",
+    "name": "赵**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "本月活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 35,
+    "education": "本科",
+    "school": "上海电机学院",
+    "major": "财务管理",
+    "currentCompany": "平安银行股份有限公司",
+    "currentPosition": "私行理财经理",
+    "yearsOfExperience": 10,
+    "expectedPosition": "证券经纪人",
+    "expectedSalary": "20-25K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "能力强，团队合作，金融市场。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 截图中未见资格证书栏，证书情况请核实。",
+    "workExperience": [
+      {
+        "company": "平安银行股份有限公司",
+        "position": "私行理财经理",
+        "period": "2022.07-至今",
+        "description": "私行客户维护。"
+      },
+      {
+        "company": "上海钜派投资集团有限公司",
+        "position": "投资总监",
+        "period": "2017.07-2022.07",
+        "description": "业务岗，给大客户提供资产配置（投后管理、股权投资、权益投资、证券投资）。"
+      },
+      {
+        "company": "新联商业银行",
+        "position": "客户经理",
+        "period": "2013.07-2017.07",
+        "description": "资金安排，外汇交易。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "上海电机学院",
+        "degree": "本科",
+        "major": "财务管理",
+        "period": "2009-2013"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c078",
+    "name": "刘**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "3日内活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 25,
+    "education": "本科",
+    "school": "闽江大学",
+    "major": "财务管理",
+    "currentCompany": "平安银行股份有限公司厦门分行",
+    "currentPosition": "客户经理",
+    "yearsOfExperience": 2,
+    "expectedPosition": "销售专员",
+    "expectedSalary": "4-8K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-月内到岗",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "工作积极认真，细心负责，熟练运用办公自动化软件，善于在工作中提出问题、发现问题、解决问题，有较强的分析能力；勤奋好学，踏实肯干，动手能力强，认真负责，有很强的社会责任感；坚毅不拔。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 截图中未见资格证书栏。平台显示在职，但最近一段工作经历截止于2026.07，请核实当前任职状态。",
+    "workExperience": [
+      {
+        "company": "平安银行股份有限公司厦门分行",
+        "position": "客户经理",
+        "period": "2026.05-2026.07",
+        "description": "主要负责平安银行厦门分行个贷业务的费用预算编制、分解与执行管控，审核相关报销并跟踪预算使用进度。定期开展预算数据差异分析，按需办理预算调剂，对接财务部门完成各类业财报表上报工作。主要负责拓展贷款合作渠道、开发个贷客户，跟进业务办理流程并做好客户维护与基础风控工作。"
+      },
+      {
+        "company": "海尔智家股份有限公司",
+        "position": "产品经理/区域业务代表",
+        "period": "2024.08-2025.08",
+        "description": "负责门店进销存管理，产品对阵分析及优化，提升销售转化；区域门店销售管理，产品培训，线上线下销售技能赋能；区域门店活动策划落地，开展异业合作，社区拓展，社群运营；区域形象标准化落地，对接广告公司，保证物料及资源到位；区域经销商/商城/渠道关系维护，开拓优质新客户及产品政策沟通。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "闽江大学",
+        "degree": "本科",
+        "major": "财务管理",
+        "period": "2020-2024"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c079",
+    "name": "林**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "4月内活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 27,
+    "education": "本科",
+    "school": "福建商学院",
+    "major": "金融系",
+    "currentCompany": "平安银行股份有限公司",
+    "currentPosition": "客户经理",
+    "yearsOfExperience": 9,
+    "expectedPosition": "后勤",
+    "expectedSalary": "面议",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-月内到岗",
+    "hasSecQualification": false,
+    "certificates": [
+      "银行从业资格证",
+      "基金从业资格证"
+    ],
+    "selfEvaluation": "本人性格开朗，对待工作认真负责，待人真诚，善于沟通、协调有较强的组织能力与团队精神；活泼开朗、乐观上进、有爱心并善于施教并行；上进心强、勤于学习能不断进步自身的能力与综合素质。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 平台显示工作年限9年，但2021年本科毕业，与实际经历不符，请核实。",
+    "workExperience": [
+      {
+        "company": "平安银行股份有限公司",
+        "position": "客户经理",
+        "period": "2021.11-至今",
+        "description": "一、客户关系管理：积极拓展新客户，维护和深化与现有客户的关系，建立和完善客户档案。二、金融产品销售与服务：熟悉银行各类金融产品，包括储蓄、贷款、信用卡、理财等，根据客户需求进行精准推荐，提供专业金融咨询，协助客户办理各类金融业务。三、团队协作与沟通：与信贷审批、风险管理、运营等部门密切协作，参加银行组织的会议和培训。"
+      },
+      {
+        "company": "仲利国际融资租赁厦门分公司",
+        "position": "销售专员",
+        "period": "2021.04-2021.10",
+        "description": "负责通过电话对新客户的开拓及拜访，老客户的关系维护。同时收集客户相关需求信息，建立客户档案并制定销售计划，定期对市场进行调研、分析、总结并完成工作汇报。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "福建商学院",
+        "degree": "本科",
+        "major": "金融系",
+        "period": "2017-2021"
+      },
+      {
+        "school": "福建商学院",
+        "degree": "本科",
+        "major": "金融工程",
+        "period": "2017-2021"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c080",
+    "name": "肖**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "近半年活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 30,
+    "education": "本科",
+    "school": "辽宁师范大学",
+    "major": "国际商务",
+    "currentCompany": "平安银行股份有限公司",
+    "currentPosition": "客户经理",
+    "yearsOfExperience": 6,
+    "expectedPosition": "AI产品经理",
+    "expectedSalary": "7-12K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-月内到岗",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "1.在西双版纳和银川有庞大的客户群体 2.有肥料领域私人的技术顾问 3.有效明了的表达能力，抓住客户需求 4.有金融业专业知识储备和相关经验",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 截图中未见资格证书栏。多段工作经历时间重叠（平安银行与云南某生物科技公司同时标注至今），公司名“云南若羞生物科技”字迹较小请核实，教育经历两段时间也有出入，请核实。",
+    "workExperience": [
+      {
+        "company": "平安银行股份有限公司",
+        "position": "客户经理",
+        "period": "2023.05-至今",
+        "description": "1.个人贷款、理财 2.优质事业单位团办 3.税贷、流水贷"
+      },
+      {
+        "company": "云南若羞生物科技有限公司",
+        "position": "农业/林业技术员",
+        "period": "2021.12-至今",
+        "description": "1.负责工厂的管理工作分配 2.前段销售和售后回访 3.产品研发和更新迭代"
+      },
+      {
+        "company": "云南若羞生物科技有限公司",
+        "position": "联合创始人",
+        "period": "2019.01-至今",
+        "description": "业绩：不断完善产品并有显著增效；客户精准并掌握客户需求，营业额去年80万。内容：研发新化肥、寻找客户资源并成交、车间管理、成交后尾款催收"
+      },
+      {
+        "company": "云南若羞生物科技有限公司",
+        "position": "分公司/代表处负责人",
+        "period": "2019.01-2023.01",
+        "description": "业绩：扩大云南客户群体，年销售额80w。内容：产品研发、新老客户开发维护、车间运营管理、尾款催收"
+      },
+      {
+        "company": "中国平安保险（集团）股份有限公司",
+        "position": "总助/CEO助理/董事长助理·研究员",
+        "period": "2019.12-2021.03",
+        "description": "业绩：指导132名新入职员工技术培训；行程和会议安排妥当周密。内容：负责新员工指导培训、日常会议记录和员工业绩核查、接送领导上下班、其他交付的指定任务"
+      },
+      {
+        "company": "（家教）",
+        "position": "家教",
+        "period": "2017.08-2017.10",
+        "description": "教授高二学生化学，在开学考试中分数较期末提高20分"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "辽宁师范大学",
+        "degree": "本科",
+        "major": "国际商务",
+        "period": "2016-2021"
+      },
+      {
+        "school": "辽宁师范大学",
+        "degree": "本科",
+        "major": "国际商务",
+        "period": "2015-2019"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c081",
+    "name": "朱**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "本月活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 34,
+    "education": "本科",
+    "school": "南昌航空大学",
+    "major": "视觉传达设计",
+    "currentCompany": "平安银行股份有限公司",
+    "currentPosition": "销售经理/主管",
+    "yearsOfExperience": 10,
+    "expectedPosition": "金融产品经理",
+    "expectedSalary": "10-15K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "11年汽车贷款行业经验，7年团队管理经验。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 截图中未见资格证书栏，证书情况请核实。",
+    "workExperience": [
+      {
+        "company": "平安银行股份有限公司",
+        "position": "销售经理/主管",
+        "period": "2015.09-至今",
+        "description": "1.完成每月放款及各项综合金融指标 2.招聘新人，完成招人育人全流程陪跑 3.开拓并维护渠道 4.管理团队（面销、汽车贷款、团队管理、招聘、开拓渠道）"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "南昌航空大学",
+        "degree": "本科",
+        "major": "视觉传达设计",
+        "period": "2010-2014"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c082",
+    "name": "V**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "本月活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 37,
+    "education": "本科",
+    "school": "福建农林大学",
+    "major": "金融学",
+    "currentCompany": "平安银行股份有限公司厦门分行",
+    "currentPosition": "业务推动岗·零售私财部",
+    "yearsOfExperience": 10,
+    "expectedPosition": "银行客户经理",
+    "expectedSalary": "5-9K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "基金从业资格证",
+      "大学英语四级",
+      "驾驶证A1",
+      "银行从业资格证",
+      "会计从业资格证"
+    ],
+    "selfEvaluation": "10年银行从业经验，熟悉银行零售模块的各项业务，为人谦虚谨慎，求知欲望强烈，对工作一丝不苟。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 平台显示姓名首字为英文字母“V”，非中文姓氏，请核实真实姓名。教育经历时间为2011-2012（仅一年），请核实。",
+    "workExperience": [
+      {
+        "company": "平安银行股份有限公司厦门分行",
+        "position": "业务推动岗·零售私财部",
+        "period": "2025.07-至今",
+        "description": "业绩：25年银管AUM全行1名。内容：目标管理：负责银管AUM指标全流程推动，制定阶段性目标、冲刺策略及KPI考核体系；过程管控：通过数据监测、通报督导、标杆案例萃取、渠道联动及落后机构帮扶，构建闭环督导机制；策略赋能：设计方案激励与活动赋能，协同分支行开展专项营销及技能培训，持续提升银管AUM达成率。"
+      },
+      {
+        "company": "平安银行股份有限公司厦门分行",
+        "position": "用户运营·基础零售部",
+        "period": "2022.03-2025.06",
+        "description": "负责智能银行3.0平台线上长尾客群的全流程经营，设计新客激活、静默召回、首投转化等关键节点策略；独立完成线上活动（签到、打卡、资产达标礼等）的策划、配置与效果追踪，推动客群活跃度与AUM持续增长。"
+      },
+      {
+        "company": "平安银行股份有限公司厦门分行",
+        "position": "业务推动岗",
+        "period": "2018.04-2022.03",
+        "description": "万元户推动，社保卡项目落地。"
+      },
+      {
+        "company": "中国光大银行福州国货路支行",
+        "position": "客户经理·零售",
+        "period": "2012.12-2017.12",
+        "description": "业绩：自营客户数百人，自营资产7000万。内容：负责社区柜台日常操作、担任支行大堂经理、开展理财/保险/基金等零售产品销售、负责信用卡推广、作为个人贷款客户经理主导二手房贷款、经营贷、消费贷及信用贷款的受理与审批流程。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "福建农林大学",
+        "degree": "本科",
+        "major": "金融学",
+        "period": "2011-2012"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c083",
+    "name": "黄**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "本周活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 35,
+    "education": "本科",
+    "school": "福建师范大学",
+    "major": "国贸",
+    "currentCompany": "平安银行股份有限公司厦门分行",
+    "currentPosition": "银行客户经理",
+    "yearsOfExperience": 10,
+    "expectedPosition": "银行客户经理",
+    "expectedSalary": "8-13K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-月内到岗",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "工作积极认真，细心负责，善于在工作中发现问题、解决问题，有较强的分析能力。勤奋好学，踏实肯干，喜欢和勇于迎接新挑战。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 截图中资格证书栏未显示。平台显示在职，但最近一段工作经历截止于2026.05，请核实当前任职状态。",
+    "workExperience": [
+      {
+        "company": "平安银行股份有限公司厦门分行",
+        "position": "银行客户经理",
+        "period": "2025.03-2026.05",
+        "description": "1负责按揭、抵押及信用贷款等信贷业务的客户开发与维护 2根据客户需求提供个性化贷款方案，协助客户完成贷款申请及审批流程 3定期跟进客户贷款进度，协助处理贷后管理相关事务 4积极拓展市场资源，提升业务转化率及客户满意度"
+      },
+      {
+        "company": "厦门房易融海沧分公司",
+        "position": "按揭专员",
+        "period": "2020.10-2023.10",
+        "description": "售后-按揭过户"
+      },
+      {
+        "company": "平安普惠",
+        "position": "客户经理",
+        "period": "2016.03-2017.08",
+        "description": "信用贷款业务，完成任务指标"
+      },
+      {
+        "company": "漳州灿坤实业有限公司",
+        "position": "会计",
+        "period": "2014.09-2015.09",
+        "description": "往来账记录（金蝶、往来账会计）"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "福建师范大学",
+        "degree": "本科",
+        "major": "国贸",
+        "period": "2010-2014"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c084",
+    "name": "曾**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "2周内活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 28,
+    "education": "本科",
+    "school": "黑龙江科技大学",
+    "major": "金融学",
+    "currentCompany": "平安银行股份有限公司泉州分行",
+    "currentPosition": "柜员",
+    "yearsOfExperience": 6,
+    "expectedPosition": "理财顾问",
+    "expectedSalary": "8-10K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": true,
+    "certificates": [
+      "大学英语四级",
+      "证券从业资格证",
+      "基金从业资格证",
+      "会计从业资格证",
+      "证券投资咨询资格",
+      "会计初级职称"
+    ],
+    "selfEvaluation": "1、本科为金融学专业，已取得证券从业、基金从业资格，已通过证券投资顾问业务考试，对券商的核心业务（经纪、投顾、资管等）和银行的各项账户业务、产品有系统性理解；2、有2年上市券商投资顾问岗位从业经验，熟悉股票交易软件及券商办公系统，具备为证券客户提供咨询服务、办理各项业务、达成各项业绩指标的经验能力；3、具有2年商业银行柜员工作经验，且作为行内储备内控合规主任，对“制度落地、流程管控、监督检查”有完整认知，能高效执行业务操作，且有较强的风控意识；4、工作认真细致，责任心强，有良好的抗压能力；乐于沟通，亲和力强，能与团队融洽协作，有良好的服务意识和集体意识。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "workExperience": [
+      {
+        "company": "平安银行股份有限公司泉州分行",
+        "position": "柜员",
+        "period": "2024.05-至今",
+        "description": "1、受理本外币现金业务，以及个人账户和单位账户的开立、变更、撤销等相关业务；2、负责轧平所经手的账务、款项和票据，编制各类内外部报表；3、作为储备内控合规主任，对账户业务和存款业务中存在的可疑交易进行尽职调查、风险识别、异常管控；4、负责支行各项开门费用和宣传活动费用的报销工作；5、与全行其他团队间配合合作，为客户提供业务转介服务。"
+      },
+      {
+        "company": "华夏银行厦门松柏支行",
+        "position": "柜员岗",
+        "period": "2023.04-2023.08",
+        "description": "从事柜面操作业务，包括账户开户、销户、挂失、变更、支付结算等柜面核算业务。"
+      },
+      {
+        "company": "长江证券股份有限公司",
+        "position": "投资顾问·厦门鹭江道营业部",
+        "period": "2020.07-2022.07",
+        "description": "业绩：21年公募基金标销约2000万、私募基金标销240万，业绩在同批入职的应届生员工中名列前茅；22年被选为厦门分公司优秀新员工代表在营业部总裁交流会上发言。内容：资产配置（为名下600+名客户提供以资产配置为核心的全面理财服务）、投资咨询、业务办理、市场早评、营销推广。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "黑龙江科技大学",
+        "degree": "本科",
+        "major": "金融学",
+        "period": "2016-2020"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c085",
+    "name": "蔡**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 26,
+    "education": "本科",
+    "school": "华东师范大学",
+    "major": "会计学（985院校）",
+    "currentCompany": "兴业银行股份有限公司",
+    "currentPosition": "理财顾问",
+    "yearsOfExperience": 3,
+    "expectedPosition": "行政专员/助理",
+    "expectedSalary": "5-9K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-月内到岗",
+    "hasSecQualification": false,
+    "certificates": [
+      "大学英语六级",
+      "初级会计专业技术资格证书"
+    ],
+    "selfEvaluation": "1、毕业于985大学会计学专业，有较为扎实的财务知识基础 2、取得初级会计资格证书，熟悉金蝶软件的基本操作 3、具备良好办公技能，熟练运用Excel（vlookup、数据透视表）、PowerPoint、Word等办公软件 4、有会计、审计、客户经理相关工作经验。专业技能：熟练使用Tableau数据可视化软件，通过大学英语六级考试。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "workExperience": [
+      {
+        "company": "兴业银行股份有限公司",
+        "position": "理财顾问",
+        "period": "2023.07-至今",
+        "description": "1、资产分析：熟练运用Excel进行数据分析，并制作投资分析报告，给客户投资决策提供清晰可靠的数据支撑，进行可视化展示，并结合客户的资产情况和风险承受能力为客户优化资产配置 2、费用报销：负责费用报销工作，审核报销材料的合规性、完整性，跟进报销流程，用台账按月分类汇总费用情况并形成报告 3、客户尽调：了解客户基本信息和账户使用情况，识别风险点并进行评估，对账户功能做出合理设置 4、业务合规：担任支行财富业务合规联络人，负责员工销售行为合规检查、客户风险评估适当性检查工作"
+      },
+      {
+        "company": "美佳爽（中国）有限公司",
+        "position": "会计（实习）",
+        "period": "2022.06-2022.08",
+        "description": "订单审核、单据核对、收款核对、客户对账、账款跟踪。"
+      },
+      {
+        "company": "立信会计师事务所（特殊普通合伙）",
+        "position": "审计（实习）",
+        "period": "2022.01-2022.04",
+        "description": "凭证抽取、信息反馈、底稿填写、数据核对。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "华东师范大学",
+        "degree": "本科",
+        "major": "会计学（985院校）",
+        "period": "2019-2023"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c086",
+    "name": "安**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "2月内活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 33,
+    "education": "本科",
+    "school": "厦门理工大学",
+    "major": "经济系电子商务专业",
+    "currentCompany": "兴业银行股份有限公司厦门分行",
+    "currentPosition": "客户经理",
+    "yearsOfExperience": 10,
+    "expectedPosition": "银行客户经理",
+    "expectedSalary": "8-13K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "电子商务证书",
+      "计算机专业证书",
+      "英语四级"
+    ],
+    "selfEvaluation": "第一：丰富的金融市场开拓经验。这几年的银行工作经历让我较为熟悉银行的业务操作流程和金融产品特性，职业习惯使我较为关心目前金融市场的动态，这让我对市场保持敏感，能够敏锐的判别客户需求。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 个贷规模原文前后写了4.9亿和7.5亿两个数字，请核实。",
+    "workExperience": [
+      {
+        "company": "兴业银行股份有限公司厦门分行",
+        "position": "客户经理",
+        "period": "2021.04-至今",
+        "description": "业绩：截止2025年4月，个人名下自营客户超千户；个人名下客户储蓄存款时点余额规模约5千万左右；个人名下个贷规模约4.9亿（内容段落中另写为约7.5亿，原文前后不一致）。内容：1、拓展零售类各项指标，包含收款商户拓展、贷款、信用卡、理财等业务；2、积极开发小微企业普惠客户，独立负责个人信贷业务的拓展及办理；3、积极开发高净值财富客户综合运用银行理财产品、商户收款产品及结算产品，实现个人财富业务增长。"
+      },
+      {
+        "company": "兴业银行股份有限公司厦门分行",
+        "position": "产品专员/助理",
+        "period": "2016.03-2021.04",
+        "description": "1、营销并落地零售信贷业务2.1亿元。2、成功拓展代发工资企业，实现代发员工1000+人。"
+      },
+      {
+        "company": "兴业银行股份有限公司厦门分行",
+        "position": "产品经理/助理",
+        "period": "2015.06-2016.03",
+        "description": "负责信用卡指标推进，个人业绩排名稳居前3；助力支行连续3个季度进件量位居厦门区域TOP3。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "厦门理工大学",
+        "degree": "本科",
+        "major": "经济系电子商务专业",
+        "period": "2011-2015"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c087",
+    "name": "陈**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "刚刚活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 25,
+    "education": "本科",
+    "school": "福州大学",
+    "major": "地质工程（211院校）",
+    "currentCompany": "兴业银行股份有限公司厦门分行",
+    "currentPosition": "理财经理·支行",
+    "yearsOfExperience": 3,
+    "expectedPosition": "员工关系",
+    "expectedSalary": "8-9K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "大学英语四级",
+      "普通话二级甲等",
+      "基金从业资格证",
+      "保险从业资格证"
+    ],
+    "selfEvaluation": "三年工作经验，岗位为兴业银行厦门同安支行理财经理岗，兼任支行品牌管理员、财务专员、出入库管理员、数字运营联络人等，处理过一段时间消保（投诉），事务性工作经验丰富。在校经历：国际太空城市设计大赛区域赛亚军中国赛冠军；福州大学第六届推理大赛冠军；国际学生环境与可持续发展大会二等奖；环境与资源学院学术科技部副部长。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "workExperience": [
+      {
+        "company": "兴业银行股份有限公司厦门分行",
+        "position": "理财经理·支行",
+        "period": "2023.07-至今",
+        "description": "业绩：支行年合规排名均位于分行中上水平，日常事务性工作成果常作为范例分享给需要学习的支行。内容：1、负责维护理财客户；2、负责支行日常宣传材料审核；3、负责支行出入库管理；4、负责支行财务报销工作；5、负责对接分行数字运营部，推动数字化运营；6、负责对接办公室，做好品牌宣传工作；7、负责管理支行宿舍账目。"
+      },
+      {
+        "company": "福建省盐课堂中小学教育在线培训中心",
+        "position": "助教老师·物理组（实习）",
+        "period": "2022.06-2022.09",
+        "description": "日均批改作业300份左右，答疑50题左右；负责日常答疑、批改作业、跟进网课进度。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "福州大学",
+        "degree": "本科",
+        "major": "地质工程（211院校）",
+        "period": "2019-2023"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c088",
+    "name": "蔡**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "本周活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 31,
+    "education": "硕士",
+    "school": "伦敦国王学院（英国）",
+    "major": "银行与金融（QS世界排名TOP50）",
+    "currentCompany": "兴业银行",
+    "currentPosition": "客户经理",
+    "yearsOfExperience": 7,
+    "expectedPosition": "融资",
+    "expectedSalary": "16-20K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": true,
+    "certificates": [
+      "证券从业资格证",
+      "大学英语六级",
+      "会计从业资格证",
+      "计算机二级",
+      "雅思6.5分"
+    ],
+    "selfEvaluation": "本人拥有支行企金领域全流程实操经验，熟悉授信全流程、小微及科技企业经营特征、区域产业生态，兼具一线业务实操、客户经营维护与风险把控经验。日常围绕客户，开展授信方案设计、产品适配等工作。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "workExperience": [
+      {
+        "company": "兴业银行",
+        "position": "客户经理",
+        "period": "2019.05-至今",
+        "description": "业绩：1、维护客户数超100户；授信客户数超20户；维护客户类型涵盖上市企业、国有企业、小微企业等；涉及业务品种包括并购贷款、固定资产贷款等；2、曾获分行优秀授信报告案例；3、贷款存续期风险识别能力较强，提前识别风险、采取措施，曾全额收回逾期贷款1笔。内容：1、授信业务：全权负责企业授信全流程业务，涵盖客户初步调研、资质初评、授信方案制定、上报审批、业务落地办理及存续期风险管控、贷后管理等全链条工作；2、客户维护：负责存量及新增企业客户的常态化维护与综合经营，提供涵盖企业账户管理、资金结算、财富管理、配套金融产品推介等一站式综合金融服务。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "伦敦国王学院（英国）",
+        "degree": "硕士",
+        "major": "银行与金融（QS世界排名TOP50）",
+        "period": "2017-2018"
+      },
+      {
+        "school": "中国地质大学（北京）",
+        "degree": "本科",
+        "major": "会计学（211院校）",
+        "period": "2013-2017"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c089",
+    "name": "戴**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "4月内活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 28,
+    "education": "本科",
+    "school": "厦门华厦学院",
+    "major": "金融管理",
+    "currentCompany": "兴业银行股份有限公司",
+    "currentPosition": "理财顾问·大堂经理",
+    "yearsOfExperience": 4,
+    "expectedPosition": "工程监理",
+    "expectedSalary": "5-7K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "离职-随时到岗",
+    "hasSecQualification": true,
+    "certificates": [
+      "证券从业资格证",
+      "期货从业资格证",
+      "计算机一级"
+    ],
+    "selfEvaluation": "在校学习了金融知识，在一定程度上对金融方面有相当程度的了解，取得了金融方面的资格证书及计算机方面的等级证书。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 平台标注为“离职-随时到岗”，但工作经历写的是2022.05至今，请核实是否已离职；毕业当年工作经历未填写。",
+    "workExperience": [
+      {
+        "company": "兴业银行股份有限公司",
+        "position": "理财顾问·大堂经理",
+        "period": "2022.05-至今",
+        "description": "业绩：销售基金月均20万+，保险月均5万+，信用卡、收款码、社保卡日均3+。内容：1、理财、保险、基金产品营销销售和推广 2、办理银行综合业务，如信用卡、社保卡、收款码等 3、寻找、拓展高净值优质客户"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "厦门华厦学院",
+        "degree": "本科",
+        "major": "金融管理",
+        "period": "2016-2020"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c090",
+    "name": "戴**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "3日内活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 23,
+    "education": "本科",
+    "school": "福建师范大学协和学院",
+    "major": "金融学",
+    "currentCompany": "龙岩兴业银行",
+    "currentPosition": "理财顾问·贷款业务部门（实习）",
+    "yearsOfExperience": 25,
+    "expectedPosition": "内容运营",
+    "expectedSalary": "4-6K",
+    "location": "",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "离校-随时到岗",
+    "hasSecQualification": false,
+    "certificates": [
+      "普通话二级乙等证书",
+      "CET-4",
+      "初级会计专业技术资格"
+    ],
+    "selfEvaluation": "我是来自福建师范大学协和学院金融学专业的应届毕业生。在校期间成绩优异，GPA达到3.46/4，专业前30%，两次获得奖学金（2021-2022、2023-2024学年优秀学生三等奖学金）；考取了初级会计证书。在校担任系礼仪部副部长，负责“中行杯”活动策划执行。毕业论文：《农业产业链金融促进乡村产业振兴的路径分析》。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 应届生，目前为实习身份；求职意向为内容运营。",
+    "workExperience": [
+      {
+        "company": "龙岩兴业银行",
+        "position": "理财顾问·贷款业务部门（实习）",
+        "period": "2025.02-至今",
+        "description": "在龙岩兴业银行长江支行贷款业务部门实习，参与贷款业务的审核、风险评估及客户咨询工作；协助团队完成贷款申请的审批流程，积累了贷款业务的专业知识和实践经验，提升了风险控制和客户沟通能力。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "福建师范大学协和学院",
+        "degree": "本科",
+        "major": "金融学",
+        "period": "2021-2025"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c091",
+    "name": "段**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "刚刚活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 30,
+    "education": "硕士",
+    "school": "福州大学",
+    "major": "法律（非法学方向，211院校）",
+    "currentCompany": "兴业银行厦门分行",
+    "currentPosition": "网点运营管理",
+    "yearsOfExperience": 4,
+    "expectedPosition": "法务专员/助理",
+    "expectedSalary": "10-13K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "法律职业资格证",
+      "国家统一法律职业资格证书",
+      "计算机一级",
+      "基金从业资格证",
+      "CET4",
+      "计算机二级（C语言）",
+      "财富类销售资格"
+    ],
+    "selfEvaluation": "个人性格开朗活泼，做事沉稳细心，善于文书写作及活动统筹策划等工作，以团队荣誉为重，有专业发展意识与团队意识，希望能步入法律行业发光发热。项目经历：福州大学互联网+比赛市场分析经理（校互联网+比赛三等奖、最佳人气奖）；“互联网+”创新创业大赛市场分析、比赛演讲者（铜奖、最佳人气奖）；《面向物联网技术的多要素感知智能系统》“互联网+”创新创业大赛（总决赛优秀奖）。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 截图显示共8个资格证书，仅展开了7个；工作经历也有“展开全部”未展开的部分。",
+    "workExperience": [
+      {
+        "company": "兴业银行厦门分行",
+        "position": "网点运营管理",
+        "period": "2026.03-至今",
+        "description": "负责网点厅堂服务规范标准制定、监测、分析及通报；负责大堂经理序列人员统筹管理；负责营业网点厅堂一体化建设推动。"
+      },
+      {
+        "company": "兴业银行厦门科学城支行",
+        "position": "理财",
+        "period": "2024.12-2026.03",
+        "description": "理财经理相关工作、党建工作等。"
+      },
+      {
+        "company": "兴业银行厦门分行同安支行",
+        "position": "理财顾问（实习）",
+        "period": "2022.07-2024.12",
+        "description": "主要负责：结合总分行资源，根据场景、客群，牵头策划活动，利用多个对客渠道触达客户，落地及优化营销方案；梳理活动流程、细化操作步骤并撰写成文档；参与推动实施方案；编写支行总结和各类活动报告。主要产出：结合老年人社区体检活动进行营销半日获客可达30户社保卡、场景赛训项目月均发卡量600张，年新增净营收626万元，年新增EVA51万元，其中福卡月均发卡量240张，天天宝月均签约数240户，该项目也获得分行场景赛训总决赛第6名；2023年6月借助兴享惠推送吸引贵宾客户月度新增达113户，位列厦门分行贵宾客户月新增第二。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "福州大学",
+        "degree": "硕士",
+        "major": "法律（非法学方向，211院校）",
+        "period": "2019-2022"
+      },
+      {
+        "school": "福建师范大学",
+        "degree": "本科",
+        "major": "光电信息科学与工程",
+        "period": "2014-2018"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c092",
+    "name": "徐**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "今日活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 28,
+    "education": "硕士",
+    "school": "香港理工大学",
+    "major": "会计与金融分析（QS世界排名TOP50）",
+    "currentCompany": "兴业银行股份有限公司厦门分行",
+    "currentPosition": "客户经理（信贷）",
+    "yearsOfExperience": 5,
+    "expectedPosition": "融资",
+    "expectedSalary": "面议",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": true,
+    "certificates": [
+      "大学英语四级",
+      "大学英语六级",
+      "雅思6.5分",
+      "证券从业资格证"
+    ],
+    "selfEvaluation": "英语六级、雅思6.5分，熟练掌握office、python，能够使用stata、spss等软件进行数据分析，熟练掌握sql语言进行数据库数据的提取、整理、分类。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "workExperience": [
+      {
+        "company": "兴业银行股份有限公司厦门分行",
+        "position": "客户经理（信贷）",
+        "period": "2021.11-至今",
+        "description": "信息收集、尽职调查、业务跟进、风险管理、外部沟通等企业信贷全流程工作。业务经历：2024年年末本外币日均存款4116万元，公司日均贷款7232万元，企金价值客户6户，实现净收入169.83万元。作为支行企金客户经理，拓展小微企业、专精特新企业、高新技术企业的融资业务，使用线上授信、科技贷、增信基金等产品，当前小微企业授信客户数达到20户，余额5000万元。作为主办客户经理，针对厦门国有资本旗下的大明广场及诚毅书城项目，确定专项融资方案并落地，为企业获批固定资产贷款授信8000万元；参与华厦眼科系列的日常账户维护、企业理财产品销售及贷款业务，本年已落地项目贷款5000万元。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "香港理工大学",
+        "degree": "硕士",
+        "major": "会计与金融分析（QS世界排名TOP50）",
+        "period": "2020-2021"
+      },
+      {
+        "school": "江西农业大学",
+        "degree": "本科",
+        "major": "经济学",
+        "period": "2016-2020"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c093",
+    "name": "黄**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "半年前活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 34,
+    "education": "本科",
+    "school": "仰恩大学",
+    "major": "审计学",
+    "currentCompany": "兴业银行股份有限公司厦门分行",
+    "currentPosition": "理财顾问",
+    "yearsOfExperience": 10,
+    "expectedPosition": "其他职位",
+    "expectedSalary": "20-30K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "AFP",
+      "CFP"
+    ],
+    "selfEvaluation": "做事自觉认真，责任心强，自己有想法有目标。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 证书来自工作经历标签，截图中无单独证书栏。",
+    "workExperience": [
+      {
+        "company": "兴业银行股份有限公司厦门分行",
+        "position": "理财顾问",
+        "period": "2013.07-至今",
+        "description": "业绩：理财师大赛金牌理财师；优秀员工。内容：1、为客户提供专业资产管理咨询服务，为其配置产品；2、充分利用人脉资源和公司现有销售渠道，通过多渠道方式完成产品推广及业务拓展；3、为客户提供专业理财服务，做好后续跟进与维护工作；4、定期与客户沟通了解客户理财产品分布情况及收益情况，为客户推销新理财产品；5、按照公司要求完成个人销售目标以及领导安排的其他相关工作。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "仰恩大学",
+        "degree": "本科",
+        "major": "审计学",
+        "period": "2009-2013"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c094",
+    "name": "乐**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "2周内活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 32,
+    "education": "本科",
+    "school": "厦门理工大学",
+    "major": "财务管理",
+    "currentCompany": "兴业银行股份有限公司厦门分行",
+    "currentPosition": "客户经理·零售客户经理",
+    "yearsOfExperience": 10,
+    "expectedPosition": "客户经理",
+    "expectedSalary": "17-20K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "九年的信贷经验，有稳定的合作渠道，风险把控能力强，熟悉银行信贷业务全流程（贷前调查、贷中审批、贷后管理），具备出色的客户沟通、市场开拓及风险管理能力，能适应高强度的业绩指标与合规要求。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 截图中未见资格证书栏。",
+    "workExperience": [
+      {
+        "company": "兴业银行股份有限公司厦门分行",
+        "position": "客户经理·零售客户经理",
+        "period": "2016.07-至今",
+        "description": "业绩：信贷业务：2017年起参与支行一手按揭及二手按揭贷款业务拓展，个人按揭贷款发放年均4千万，至今总个人按揭总规模约3个亿；2018年起大力发展个人经营贷业务，个人经营贷新增年均3千万，至今总个人经营贷总规模约2个亿。渠道与存款：2017年起牵头拓展银行新业务指标收单业务，至今银行收款二维码商户约200户；2020-2021年深度参与拆迁项目；至今个人名下综合存款日均约3千万。全面负责存量信贷业务的贷后管理，成功将管辖资产的不良率控制在3%以下。内容：具备超过9年的全周期客户关系管理与综合金融服务经验。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "厦门理工大学",
+        "degree": "本科",
+        "major": "财务管理",
+        "period": "2012-2016"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c095",
+    "name": "林**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "半年前活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 27,
+    "education": "硕士",
+    "school": "重庆大学",
+    "major": "金融学（985院校）",
+    "currentCompany": "兴业银行股份有限公司武汉分行",
+    "currentPosition": "客户经理·企业金融部",
+    "yearsOfExperience": 2,
+    "expectedPosition": "投资银行业务",
+    "expectedSalary": "7-10K",
+    "location": "武汉",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "1、大型股份制银行信贷全流程 2、多年股票期货实盘经验",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 截图中未见资格证书栏；目前任职地为武汉，求职意向厦门。",
+    "workExperience": [
+      {
+        "company": "兴业银行股份有限公司武汉分行",
+        "position": "客户经理·企业金融部",
+        "period": "2024.07-至今",
+        "description": "业绩：1、完成多个大型集团授信、放款流程 2、完成分支行沟通、管理工作。内容：1、信贷全流程 2、部门管理"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "重庆大学",
+        "degree": "硕士",
+        "major": "金融学（985院校）",
+        "period": "2021-2024"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c096",
+    "name": "赖**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "本周活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 29,
+    "education": "本科",
+    "school": "福州外语外贸学院",
+    "major": "财务管理",
+    "currentCompany": "兴业银行三明分行",
+    "currentPosition": "柜员",
+    "yearsOfExperience": 6,
+    "expectedPosition": "银行客户经理",
+    "expectedSalary": "5-9K",
+    "location": "三明",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "基金从业资格证",
+      "会计从业资格证"
+    ],
+    "selfEvaluation": "适应能力强，能融入团队，在银行的工作培养了认真细致、严谨负责的工作态度。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "workExperience": [
+      {
+        "company": "兴业银行三明分行",
+        "position": "柜员",
+        "period": "2024.11-至今",
+        "description": "1.负责营销对私客户金融产品 2.负责处理客户日常理财业务 3.负责柜面工作办理及清算处理"
+      },
+      {
+        "company": "中国农业银行股份有限公司",
+        "position": "柜员",
+        "period": "2021.02-2024.09",
+        "description": "1.前台对公对私客户接待及业务处理 2.公积金贷款对接 3.后台反诈反洗钱工作及问题客户检查处理 4.个人金融零售产品及企业账户金融产品营销"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "福州外语外贸学院",
+        "degree": "本科",
+        "major": "财务管理",
+        "period": "2018-2020"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c097",
+    "name": "张**",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "5月内活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 31,
+    "education": "硕士",
+    "school": "日本大学（日本）",
+    "major": "法学",
+    "currentCompany": "兴业银行股份有限公司厦门分行",
+    "currentPosition": "客户经理",
+    "yearsOfExperience": 5,
+    "expectedPosition": "日语翻译",
+    "expectedSalary": "面议",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "维护客群关系，多线程处理。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 截图中未见资格证书栏。原图为iPhone HEIC格式（扩展名标为.jpg）。",
+    "workExperience": [
+      {
+        "company": "兴业银行股份有限公司厦门分行",
+        "position": "客户经理",
+        "period": "2021.07-至今",
+        "description": "协助客户完成财富规划（日语、跨境金融、TO B）。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "日本大学（日本）",
+        "degree": "硕士",
+        "major": "法学",
+        "period": "2019-2021"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c098",
+    "name": "郭**",
+    "source": "猎聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "蔡家宝",
+    "activityStatus": "3天内活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 35,
+    "education": "硕士",
+    "school": "福州大学",
+    "major": "工商管理专业（211院校，统招）",
+    "currentCompany": "兴业银行股份有限公司厦门分行",
+    "currentPosition": "综合管理岗",
+    "yearsOfExperience": 12,
+    "expectedPosition": "银行零售业务",
+    "expectedSalary": "15-30k×12薪",
+    "location": "福建",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职，急寻新工作",
+    "hasSecQualification": false,
+    "certificates": [
+      "AFP"
+    ],
+    "selfEvaluation": "从业经历：9年银行工作经历，其中2年支行柜面+7年后台管理，熟悉业务操作、网点建设、绩效考核等。沟通协调：对上响应落实总行规定及部署，对下通报追踪支行执行状况，协调本行内外部综合事务。语言：英语CET6，普通话。",
+    "notes": "来自猎聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "workExperience": [
+      {
+        "company": "兴业银行股份有限公司厦门分行",
+        "position": "综合管理岗",
+        "period": "2014.01-至今",
+        "description": "2023.06-至今｜零售部产品经理，负责支付结算类业务的数据处理和业务推动，包括新市民业务、个人养老金业务、市民卡业务。2020.01-2023.06｜零售部数据分析岗，线上获客平台建设、零售不合规数据治理、数据分析、绩效考核；负责零售MGM活动、零售线上获客平台建设及阶段性线上获客营销活动开展，自年初至今分行线上获客规模已提升至同类行第一。2018.03-2019.12｜综合管理部综合管理岗，负责绩效考核、新系统上线维护、科技需求开发对接；对接总行绩效考核新系统，负责分行零售营销系统升级改造工作，完成辖内百万客户营销从“卡账级”向“证件级”迁移。2017.06-2018.03｜综合管理部网点建设岗，新增1家社区网点、搬迁2家、续签10+家。2016.3-2017.5｜综合管理部服务管理岗，负责消保服务管理、客诉处理、明察暗访、消保活动。2014.1-2016.3｜支行柜面人员。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "福州大学",
+        "degree": "MBA/EMBA",
+        "major": "工商管理专业（211院校，统招）",
+        "period": "2017.09-2021.06"
+      },
+      {
+        "school": "中国农业大学",
+        "degree": "本科",
+        "major": "数学与应用数学（985/211院校，统招）",
+        "period": "2008.09-2012.07"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c099",
+    "name": "陈女士",
+    "source": "猎聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "蔡家宝",
+    "activityStatus": "",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 29,
+    "education": "硕士",
+    "school": "英国布里斯托大学",
+    "major": "Finance and Investment（统招，GPA 3.8/4 distinction，专业前10%）",
+    "currentCompany": "兴业银行",
+    "currentPosition": "理财经理",
+    "yearsOfExperience": 5,
+    "expectedPosition": "投资经理",
+    "expectedSalary": "25-35k×15薪",
+    "location": "泉州-晋江",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "离职，正在找工作",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "4年以上财富管理经验，为同序列唯一一年内提升为中级理财经理，较强的学习能力和营销能力；熟悉金融投资知识、个人财富相关掌握扎实的金融投资学专业知识，熟悉理财、基金、保险、信托和家族服务信托等业务。求职城市：厦门、泉州、福州。技能：银行、战略咨询、excel、python、powerpoint；英语：工作应用·IELTS。项目经历：剑桥大学暑期项目活动（2016.06-2016.07），完成关于香港房地产分析和选址的报告并作为代表演讲。",
+    "notes": "来自猎聘，招聘专员整理截图导入，联系方式尚未获取。 平台标注“离职，正在找工作”，但工作经历写的是2021.07至今，请核实；截图中未见资格证书信息；已上传附件简历，可在猎聘向其索要。",
+    "workExperience": [
+      {
+        "company": "兴业银行",
+        "position": "理财经理",
+        "period": "2021.07-至今",
+        "description": "营销能力：近半年来，累计营销理财6800万，销售产品456次，存款5648万，添利金条150万。客户管理：自营受托管理规模为近7个亿，受托客户1200户，其中百万黑金及以上客户占25%；近半年新挖掘提升600万以上钻石客户8户。沙龙活动：近3年来，共举办主持大小沙龙50场，参与人数累计超过600名。工作内容：客户需求挖掘、客户关系维护、金融产品销售、支行文书负责暨合规总结、客户总结复盘。"
+      },
+      {
+        "company": "第二届数字中国建设峰会",
+        "position": "联络员实习生",
+        "period": "2019.03-2019.04",
+        "description": "会务服务、注册咨询；作为实习小组负责人，每天对更新的数据进行分析与分配。"
+      },
+      {
+        "company": "泉州闽颂品牌咨询公司",
+        "position": "咨询员",
+        "period": "2019.01-2019.03",
+        "description": "资料搜集、协助中高层客户洽谈、品牌战略咨询相关研究与报告。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "英国布里斯托大学",
+        "degree": "硕士",
+        "major": "Finance and Investment（统招，GPA 3.8/4 distinction，专业前10%）",
+        "period": "2019.09-2020.12"
+      },
+      {
+        "school": "安徽财经大学",
+        "degree": "本科",
+        "major": "投资学（统招）",
+        "period": "2015.09-2019.07"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c100",
+    "name": "钟素英",
+    "source": "猎聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "蔡家宝",
+    "activityStatus": "3天内活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 33,
+    "education": "硕士",
+    "school": "厦门大学",
+    "major": "世界经济学（统招，985院校）",
+    "currentCompany": "兴业银行股份",
+    "currentPosition": "企金客户经理",
+    "yearsOfExperience": 7,
+    "expectedPosition": "银行公司业务",
+    "expectedSalary": "15-25k×12薪",
+    "location": "深圳-福田区",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职，急寻新工作",
+    "hasSecQualification": true,
+    "certificates": [
+      "证券从业资格证",
+      "大学英语四级",
+      "大学英语六级"
+    ],
+    "selfEvaluation": "本人性格沉稳，做事认真踏实负责，学习能力较强，积极上进，能专注地做好手中的事情，具有良好的心理素质，能承受一定的工作压力并积极解决工作中遇到的问题，做事能力在工作中受到同事和领导的好评与认可。有较好的文字功底。简历亮点：本科、硕士均就读于985院校厦门大学。项目经历：“原中央苏区（龙岩）红色金融研究”课题调研（2016.11-2017.01）。语言：英语CET6。",
+    "notes": "来自猎聘，招聘专员整理截图导入，联系方式尚未获取。 平台显示的是真实全名；目前现居深圳，求职意向厦门；已上传附件简历，可在猎聘索要。",
+    "workExperience": [
+      {
+        "company": "兴业银行股份",
+        "position": "企金客户经理",
+        "period": "2019.07-至今",
+        "description": "1.撰写企业授信报告，从企业的主营业务、产品构成、上下游客户、融资债务情况、财务状况、经营环境、行业地位、未来发展规划等方面分析企业的生产经营情况，完成授信上报工作，共经手完成过50余家企业的授信审批工作，涉及科技、医疗、电子、贸易、制造业等多个行业；2.对接企业订立业务合同，进行放款操作，做好贷后管理，经手的业务种类有流动资金贷款、银行承兑汇票、票据池、银行保函、国际信用证、私募基金托管等，名下企金存款最高时达1.8亿元左右。"
+      },
+      {
+        "company": "开锐咨询",
+        "position": "实习生",
+        "period": "2018.07-2018.08",
+        "description": "参与项目现场调研、访谈；协助撰写项目报告，为集团各子公司做财务分析。"
+      },
+      {
+        "company": "长城证券",
+        "position": "实习生",
+        "period": "2018.04-2018.06",
+        "description": "券商研究组实习生，搜集整理行业资讯，统计处理行业数据，曾与小组成员一起合力撰写中信证券、中金公司的研究报告。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "厦门大学",
+        "degree": "硕士",
+        "major": "世界经济学（统招，985院校）",
+        "period": "2016.09-2019.06"
+      },
+      {
+        "school": "厦门大学",
+        "degree": "本科",
+        "major": "金融学（统招，985院校）",
+        "period": "2012.09-2016.06"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c101",
+    "name": "黄先生",
+    "source": "猎聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "蔡家宝",
+    "activityStatus": "3天内活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 37,
+    "education": "硕士",
+    "school": "香港中文大学",
+    "major": "中国研究（政治经济方向，统招）",
+    "currentCompany": "福建兴业银行厦门分行",
+    "currentPosition": "财务顾问科副经理（投资银行部）",
+    "yearsOfExperience": 13,
+    "expectedPosition": "投资银行业务",
+    "expectedSalary": "40-50k×15薪",
+    "location": "厦门-思明区",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职，看看新机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "法律职业资格证"
+    ],
+    "selfEvaluation": "13年金融从业，商业银行投行承做+非标及ABS+互联网供应链风控复合背景，聚焦债券承销、非标融资落地。现任兴业银行厦门分行投资银行部财务顾问科副经理。简历亮点：在兴业银行厦门分行曾因工作成绩突出获得奖励；具有上市公司工作经验（10个月上海诺亚金融服务有限公司高级投资经理）。求职城市：厦门、福州、泉州。技能：银行、海外教育背景、海外工作经验、债券市场、投行。语言：英语（工作应用）、普通话、粤语（商务洽谈）、闽南语。",
+    "notes": "来自猎聘，招聘专员整理截图导入，联系方式尚未获取。 工作经历共4段，截图只展开了3段。",
+    "workExperience": [
+      {
+        "company": "福建兴业银行厦门分行",
+        "position": "财务顾问科副经理（投资银行部）",
+        "period": "2019.03-至今",
+        "description": "1、投行业务：深度服务大中型企业客户，累计主导融资项目超百笔、总规模逾400亿元，覆盖银行间债券承销、非标融资（类永续、收益权转让、类资产证券化等）、并购融资、股权投资及资本市场杠杆融资等业务。2、债券承销：覆盖短融、中票、PPN、ABN等多品种，深度参与银行间债券承揽、承做、承销超70笔，牵头主承销全国首单数字人民币混合型科创票据（入选银行间市场创新案例）、全国首单数字人民币并购票据（福建省首单）、厦门首单绿色债券、厦门首单权益出资型票据。3、团队管理：带领精干团队连续多年业务增长，年度融资规模超200亿元，投行主要产品落地金额及笔数均居分行投行部第一。4、荣誉：两度获评总行投行部「年度先进个人」、分行优秀员工；2019年、2022年先后赴总行投行部、兴银理财各培训3个月。"
+      },
+      {
+        "company": "诺亚财富",
+        "position": "高级投资经理",
+        "period": "2018.01-2018.11",
+        "description": "1、非标融资与资管产品：深耕消费金融、汽车金融、供应链金融，定制非标债权融资方案并主导商务谈判；独立设计类固收资管产品结构与风控措施。2、资产证券化（ABS）：主导标准及类标准化ABS项目（交易所、银登中心），作为项目负责人统筹协调团队与中介机构。"
+      },
+      {
+        "company": "菜鸟网络",
+        "position": "风控专员（菜鸟金融）",
+        "period": "2016.12-2017.12",
+        "description": "1、风控体系搭建：作为菜鸟金融首位风控，从0到1搭建风控策略体系。2、创新产品风控：研究评估供应链金融、汽车金融、跨境金融等创新产品风险点。3、风控系统建设：设计贷前、贷中风控系统化产品，对接产品/运营/开发团队落地风控IT解决方案。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "香港中文大学",
+        "degree": "硕士",
+        "major": "中国研究（政治经济方向，统招）",
+        "period": "2012.08-2013.06"
+      },
+      {
+        "school": "岭南大学",
+        "degree": "本科",
+        "major": "风险及保险管理（统招）",
+        "period": "2008.08-2012.05"
+      },
+      {
+        "school": "西佛罗里达大学",
+        "degree": "本科",
+        "major": "工商管理学院（交换学生项目，非统招）",
+        "period": "2010.08-2010.12"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c102",
+    "name": "周洁",
+    "source": "猎聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "蔡家宝",
+    "activityStatus": "今天活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 24,
+    "education": "硕士",
+    "school": "新加坡国立大学",
+    "major": "生物医学工程（统招）",
+    "currentCompany": "兴业银行股份有限公司厦门分行",
+    "currentPosition": "市场营销类（轮岗）",
+    "yearsOfExperience": 1,
+    "expectedPosition": "产品经理（医疗器械、制药）",
+    "expectedSalary": "30-35k×12薪",
+    "location": "新加坡",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职，急寻新工作",
+    "hasSecQualification": false,
+    "certificates": [
+      "大学英语六级",
+      "雅思7.0分",
+      "大学英语四级"
+    ],
+    "selfEvaluation": "语言表达能力强，擅长用英语法语交流；拥有扎实的英文口语、阅读和写作能力，善于英文演讲展示。掌握扎实的生物医学工程专业知识，能灵活运用解决实际问题。技能：银行、编程、英语口语、医学影像、仪器分析。语言：英语（商务洽谈·IELTS）、法语（工作应用）、普通话。获奖：2024年6月优秀本科毕业生（校级）；2021年11月学校一等奖学金、三好学生（校级）。项目：细胞生物学、细胞因子及生物疫苗研发的综合应用（队长，独立一作发表论文《Emerging role of vaccines in cancer therapies》）；可回收磁性光催化抗菌剂对水体污染治理的研究（队员，获国家级三等奖、省级二等奖）。",
+    "notes": "来自猎聘，招聘专员整理截图导入，联系方式尚未获取。 平台显示的是真实全名；工作经历共4段，截图只展开了3段；平台显示现居新加坡，求职意向为深圳医疗器械/制药产品经理，与券商岗位方向差异较大；已上传附件简历，可在猎聘索要。",
+    "workExperience": [
+      {
+        "company": "兴业银行股份有限公司厦门分行",
+        "position": "市场营销类（轮岗）",
+        "period": "2025.07-至今",
+        "description": "正处于运营岗、市场营销岗轮岗中。具有极强的人际关系处理能力、营销能力以及跨部门沟通能力，轮岗期间赋予了我很强的抗压能力和冲突解决能力和学习能力，让我能快速上手适应不同岗位的工作。"
+      },
+      {
+        "company": "厦门大学生命科学学院",
+        "position": "科研助理",
+        "period": "2024.02-2024.04",
+        "description": "跟随李博安教授课题组学习并实操细胞生物学、生物医学、分子生物学（免疫荧光、PCR、Western-Blot、DNA/RNA提取分离等）相关实验操作，担任科研助理。"
+      },
+      {
+        "company": "未名生物",
+        "position": "质检员",
+        "period": "2024.01-2024.02",
+        "description": "进入质检部学习和实操药品质量检测的实验操作技术（免疫检测、色谱分析、质谱技术、生物活性检测、纯度含量测定等），协助科研人员完成神经药物的纯度测定和质谱分析。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "新加坡国立大学",
+        "degree": "硕士",
+        "major": "生物医学工程（统招）",
+        "period": "2024.07-2025.07"
+      },
+      {
+        "school": "武汉理工大学",
+        "degree": "本科",
+        "major": "生物技术（统招，211）",
+        "period": "2020.09-2024.06"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c103",
+    "name": "蔡女士",
+    "source": "猎聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "蔡家宝",
+    "activityStatus": "3天内活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 30,
+    "education": "硕士",
+    "school": "厦门大学",
+    "major": "金融（统招，985）",
+    "currentCompany": "福建兴业银行厦门分行",
+    "currentPosition": "理财经理",
+    "yearsOfExperience": 5,
+    "expectedPosition": "融资经理/主管",
+    "expectedSalary": "7-12k×12薪",
+    "location": "厦门-思明区",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职，看看新机会",
+    "hasSecQualification": true,
+    "certificates": [
+      "证券从业资格证",
+      "基金从业资格证",
+      "CPA（专业阶段合格证书）",
+      "大学英语六级",
+      "BEC剑桥商务英语中级",
+      "全国计算机等级二级"
+    ],
+    "selfEvaluation": "沟通交流能力良好。工作较为细心、观察能力较强。执行力高，总能按计划完成工作任务。简历亮点：工作稳定，最近2份工作平均在职时间超过2年；硕士就读于985院校厦门大学。项目经历：高等学校中长期和“十四五”科技发展规划战略研究学科前沿研究项目（金融科技学科前沿研究，2020.06-2020.12）；厦大人文社科课题研究项目（重大突发公共卫生事件下我国医疗保险和救助机制研究，2020.03-2020.06）。语言：英语（工作应用·CET6）、普通话二级乙等。",
+    "notes": "来自猎聘，招聘专员整理截图导入，联系方式尚未获取。 工作经历共4段，截图只展开了3段；已上传附件简历，可在猎聘索要。",
+    "workExperience": [
+      {
+        "company": "福建兴业银行厦门分行",
+        "position": "理财经理",
+        "period": "2021.07-至今",
+        "description": "负责支行零售客户维护与拓展，统筹高端客群经营与资产提升工作。任职期间管理日均零售资产规模6亿元，维护贵宾客户600+人。2025年成功升级私行客户多名，带动零售资产新增5000余万元。策划并执行客户维护活动，全年组织客户沙龙32场，服务覆盖客户1000余人次，有效提升客户粘性与资产贡献。"
+      },
+      {
+        "company": "长城证券",
+        "position": "投资银行事业部项目助理",
+        "period": "2020.06-2020.08",
+        "description": "参与某医疗器械公司创业板IPO以及某科技公司新三板精选层挂牌项目。对企业经营、财务、股权等事项进行尽职调查，撰写尽职调查报告；撰写招股说明书法律部分及业务部分内容；完成财务穿行测试，编制期间费用、投资人情况核查、供应商核查和员工股权认购等项目底稿；进行医疗器械行业市场调查并撰写调研报告。"
+      },
+      {
+        "company": "建信信托",
+        "position": "信托项目助理（实习）",
+        "period": "2019.12-2020.03",
+        "description": "参与房地产企业和城投企业信托贷款项目，参与集合资金信托计划设计，进行标的项目和融资方基本情况核查、融资方市场经济情况及行业发展情况调查并撰写项目申报书等文件；独立完成2份项目申报书主体部分，完成1个PE项目现场访谈并撰写访谈纪要。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "厦门大学",
+        "degree": "硕士",
+        "major": "金融（统招，985）",
+        "period": "2018.09-2021.06"
+      },
+      {
+        "school": "集美大学",
+        "degree": "本科",
+        "major": "国际经济与贸易（统招）",
+        "period": "2014.09-2018.06"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c104",
+    "name": "江江",
+    "source": "猎聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "蔡家宝",
+    "activityStatus": "30天内活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 34,
+    "education": "本科",
+    "school": "福建师范大学协和学院",
+    "major": "电子商务（统招）",
+    "currentCompany": "兴业银行漳州分行",
+    "currentPosition": "贵宾理财经理",
+    "yearsOfExperience": 12,
+    "expectedPosition": "风险管理/控制（意向城市：厦门、深圳、福州）",
+    "expectedSalary": "15-30k×19薪",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职，看看新机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "基金从业资格证",
+      "AFP金融理财师",
+      "大学英语四级",
+      "大学英语六级"
+    ],
+    "selfEvaluation": "丰富的银行从业经验：拥有12年银行业工作经验，先后任职于中信银行和兴业银行两大知名金融机构，熟悉银行内部运作及业务流程。简历亮点：工作稳定，最近2份工作平均在职时间超过7年。技能：银行、资产配置、财富管理、理财规划、AFP。",
+    "notes": "来自猎聘，招聘专员整理截图导入，联系方式尚未获取。 平台显示名为“江江”，可能不是完整真实姓名；工作经历共5段，截图只展开了3段（各段时间有重叠，以附件简历为准）；已上传附件简历，可在猎聘索要。",
+    "workExperience": [
+      {
+        "company": "兴业银行漳州分行",
+        "position": "贵宾理财经理",
+        "period": "2021.05-至今",
+        "description": "管理9亿零售金融资产，服务3000+客户，含5户千万级私行客户，资产配置安全稳健。主导理财产品、基金、保险、贵金属等多元化中间业务销售，年度理财产品销量突破1亿元，期交保险达400万元，推动中收业务增长。量身定制资产配置方案，帮助90%以上客户实现资产保值增值，2025年投资收益率4%以上。建立并维护长期客户信任关系体系，VIP客户续约率保持在95%以上。"
+      },
+      {
+        "company": "兴业银行股份有限公司漳州分行",
+        "position": "理财经理",
+        "period": "2016.07-至今",
+        "description": "1、负责管理9亿元零售金融资产，服务3000名个人客户及5户千万级私人银行客户。2、通过定制化资产配置方案提升客户AUM规模，年均新增贵宾客户50+。3、主导销售理财产品、基金、保险、贵金属等中间业务产品，年度理财销量破亿元，期交保险400万。4、帮助90%以上客户实现资产保值增值目标。5、VIP客户续约率保持95%以上。6、定期开展投资者教育活动20+场/年，覆盖500人次。"
+      },
+      {
+        "company": "兴业银行漳州分行",
+        "position": "综合文秘",
+        "period": "2019.11-2021.04",
+        "description": "管理公文流转；撰写宣传稿件；运营公众号；监测舆情；参与文化手册编撰；统筹会议材料、跟进决策执行。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "福建师范大学协和学院",
+        "degree": "本科",
+        "major": "电子商务（统招）",
+        "period": "2010.09-2014.06"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c105",
+    "name": "赖惠燕",
+    "source": "猎聘",
+    "acquiredDate": "2026-10-01",
+    "resumeContact": "蔡家宝",
+    "activityStatus": "",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 33,
+    "education": "本科",
+    "school": "厦门理工学院",
+    "major": "国际商务（统招）",
+    "currentCompany": "兴业银行",
+    "currentPosition": "零售客户经理",
+    "yearsOfExperience": 10,
+    "expectedPosition": "其他房地产/建筑/物业职位（银行、房地产开发经营）",
+    "expectedSalary": "6-8k×12薪",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "离职，正在找工作",
+    "hasSecQualification": false,
+    "certificates": [
+      "银行从业资格证",
+      "大学英语六级",
+      "计算机一级"
+    ],
+    "selfEvaluation": "本人性格外向，善于与人沟通和团队合作，有较强的抗压能力，工作认真细致，有较强的责任心。简历亮点：具有上市公司工作经验（9年7个月兴业银行股份有限公司零售客户经理）。技能：银行、计算机一级、CET6、银行从业资格证。语言：英语（工作应用·CET6）、普通话。",
+    "notes": "来自猎聘，招聘专员整理截图导入，联系方式尚未获取。 平台显示的是真实全名；求职状态为“离职，正在找工作”，但工作经历显示兴业银行“至今”，入职时间描述也有出入（2016.09 / 2016.12），请核实；求职意向偏房地产/建筑方向。",
+    "workExperience": [
+      {
+        "company": "兴业银行",
+        "position": "零售客户经理",
+        "period": "2016.12-至今",
+        "description": "2016年9月至今，在兴业银行松柏支行任职零售客户经理，主要从事信贷客户的开发、客户管理和维护、产品销售、市场拓展的工作，个人贷款时点金额1.2亿。同时为客户提供个人存款业务咨询、信用卡、代发工资、基金、理财产品银行和第三方存管业务的营销。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "厦门理工学院",
+        "degree": "本科",
+        "major": "国际商务（统招）",
+        "period": "2012.09-2016.06"
+      }
+    ],
+    "lastContactDate": null
   }
 ];

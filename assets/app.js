@@ -9,7 +9,7 @@ function sourceTagClass(source) {
 }
 
 function isPlaceholderName(name) {
-  return /^[一-龥]{1,3}(先生|女士)$/.test(name || "");
+  return /^[一-龥]{1,3}(先生|女士)$/.test(name || "") || /\*\*$/.test(name || "");
 }
 
 // Contact numbers a recruiter types in via the "待获取" button on the list page
