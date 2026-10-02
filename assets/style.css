@@ -222,6 +222,12 @@ td.muted {
 .tag-zhilian { background: var(--color-tag-zhilian); }
 .tag-other { background: #8a94a6; }
 
+.tag-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
 .status-pill {
   display: inline-block;
   padding: 3px 10px;

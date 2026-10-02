@@ -8,6 +8,21 @@ function sourceTagClass(source) {
   return SOURCE_CLASS[source] || "tag-other";
 }
 
+// A candidate found on several platforms keeps every platform in `sources`
+// (and the matching recruiters in `resumeContacts`); `source` stays the first one.
+function candidateSources(c) {
+  return c.sources && c.sources.length ? c.sources : (c.source ? [c.source] : []);
+}
+
+function candidateContacts(c) {
+  return c.resumeContacts && c.resumeContacts.length ? c.resumeContacts : (c.resumeContact ? [c.resumeContact] : []);
+}
+
+function sourceTagsHtml(c) {
+  return `<span class="tag-list">${candidateSources(c)
+    .map((s) => `<span class="tag ${sourceTagClass(s)}">${escapeHtml(s)}</span>`).join("")}</span>`;
+}
+
 function isPlaceholderName(name) {
   return /^[一-龥]{1,3}(先生|女士)$/.test(name || "") || /\*\*$/.test(name || "");
 }
@@ -161,10 +176,10 @@ function escapeHtml(str) {
 
 function buildSearchIndex(c) {
   const parts = [
-    c.name, c.source, c.education, c.school, c.major,
+    c.name, ...candidateSources(c), c.education, c.school, c.major,
     c.currentCompany, c.currentPosition, c.expectedPosition,
     c.location, c.status, c.jobSeekingStatus, c.email,
-    c.resumeContact, c.activityStatus,
+    ...candidateContacts(c), c.activityStatus,
     c.lastContactDate, c.contactFeedback,
     c.hasSecQualification ? "证券从业资格证" : "",
     ...(c.certificates || []),
@@ -276,8 +291,8 @@ function initListPage() {
     const q = searchInput.value.trim().toLowerCase();
 
     let filtered = allCandidates.filter((c) => {
-      const matchesSource = activeSource === "all" || c.source === activeSource;
-      const matchesResumeContact = activeResumeContact === "all" || c.resumeContact === activeResumeContact;
+      const matchesSource = activeSource === "all" || candidateSources(c).includes(activeSource);
+      const matchesResumeContact = activeResumeContact === "all" || candidateContacts(c).includes(activeResumeContact);
       const matchesQuery = !q || c._searchIndex.includes(q);
       const matchesQual = !qualOnly.checked || c.hasSecQualification;
       const matchesContact = !contactOnly.checked || c.contactObtained;
@@ -377,7 +392,7 @@ function initListPage() {
       <tr data-id="${c.id}">
         <td class="muted">${escapeHtml(c.acquiredDate)}</td>
         <td class="name-cell">${escapeHtml(c.name)}</td>
-        <td><span class="tag ${sourceTagClass(c.source)}">${escapeHtml(c.source)}</span></td>
+        <td>${sourceTagsHtml(c)}</td>
         <td class="muted">${escapeHtml(c.activityStatus)}</td>
         <td class="contact-cell">${contactCellHtml(c)}</td>
         <td class="feedback-cell">${fb.dateCell}</td>
@@ -393,7 +408,7 @@ function initListPage() {
         <td>${escapeHtml(c.expectedPosition)}</td>
         <td class="muted">${escapeHtml(c.location)}</td>
         <td><span class="status-pill">${escapeHtml(c.status || "-")}</span></td>
-        <td>${escapeHtml(c.resumeContact)}</td>
+        <td>${escapeHtml(candidateContacts(c).join("、"))}</td>
       </tr>
     `;
     }).join("");
@@ -744,9 +759,9 @@ function renderDetail(c) {
             </div>
           </div>
           <div class="info-list">
-            <div class="item"><label>简历来源</label><div class="value"><span class="tag ${sourceTagClass(c.source)}">${escapeHtml(c.source)}</span></div></div>
+            <div class="item"><label>简历来源</label><div class="value">${sourceTagsHtml(c)}</div></div>
             <div class="item"><label>获取时间</label><div class="value">${escapeHtml(c.acquiredDate)}</div></div>
-            <div class="item"><label>简历联系人</label><div class="value">${escapeHtml(c.resumeContact) || "-"}</div></div>
+            <div class="item"><label>简历联系人</label><div class="value">${escapeHtml(candidateContacts(c).join("、")) || "-"}</div></div>
             <div class="item"><label>活跃状态</label><div class="value">${escapeHtml(c.activityStatus) || "-"}</div></div>
             <div class="item"><label>联系电话</label>${contactBlock}</div>
             ${c.email ? `<div class="item"><label>邮箱</label><div class="value">${escapeHtml(c.email)}</div></div>` : ""}
