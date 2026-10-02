@@ -208,7 +208,10 @@ window.CANDIDATES_DATA = [
     "resumeContacts": [
       "陈彦汐",
       "蔡家宝"
-    ]
+    ],
+    "lastContactDate": "2026-09-30",
+    "contactFeedback": "暂不考虑换工作，已加微信，聊了一下考核，她不考虑券商",
+    "feedbackEnteredBy": "陈彦汐"
   },
   {
     "id": "c004",
@@ -1282,7 +1285,10 @@ window.CANDIDATES_DATA = [
         "major": "财务管理",
         "period": ""
       }
-    ]
+    ],
+    "lastContactDate": "2026-09-30",
+    "contactFeedback": "同样工作性质的不考虑换，不加微信",
+    "feedbackEnteredBy": "陈彦汐"
   },
   {
     "id": "c024",
@@ -1554,7 +1560,10 @@ window.CANDIDATES_DATA = [
         "major": "会计",
         "period": ""
       }
-    ]
+    ],
+    "lastContactDate": "2026-09-30",
+    "contactFeedback": "在国外玩，已发好友申请",
+    "feedbackEnteredBy": "陈彦汐"
   },
   {
     "id": "c029",
@@ -1600,7 +1609,10 @@ window.CANDIDATES_DATA = [
         "major": "金融学",
         "period": ""
       }
-    ]
+    ],
+    "lastContactDate": "2026-09-30",
+    "contactFeedback": "目前不想换工作，但是加了微信",
+    "feedbackEnteredBy": "陈彦汐"
   },
   {
     "id": "c030",
