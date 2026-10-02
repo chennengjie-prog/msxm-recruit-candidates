@@ -50,6 +50,7 @@ function saveContactOverride(id, phone, editor) {
     // localStorage unavailable (private mode, etc.) — edit still shows for this
     // page view via the in-memory candidate object, just won't persist on reload.
   }
+  updateExportButton();
 }
 
 function clearContactOverride(id) {
@@ -58,6 +59,7 @@ function clearContactOverride(id) {
   try {
     localStorage.setItem(CONTACT_OVERRIDE_KEY, JSON.stringify(all));
   } catch {}
+  updateExportButton();
 }
 
 // If set, edits are POSTed to <WORKER_BASE_URL>/<path> and committed straight
@@ -135,6 +137,7 @@ function saveFeedbackOverride(id, date, feedback, editor) {
   try {
     localStorage.setItem(FEEDBACK_OVERRIDE_KEY, JSON.stringify(all));
   } catch {}
+  updateExportButton();
 }
 
 function clearFeedbackOverride(id) {
@@ -143,6 +146,7 @@ function clearFeedbackOverride(id) {
   try {
     localStorage.setItem(FEEDBACK_OVERRIDE_KEY, JSON.stringify(all));
   } catch {}
+  updateExportButton();
 }
 
 async function syncFeedbackToGitHub(id, date, feedback, editor) {
@@ -162,6 +166,107 @@ async function syncFeedbackToGitHub(id, date, feedback, editor) {
   } catch (err) {
     return { synced: false, reason: "网络错误：" + err.message };
   }
+}
+
+// Local edits the published data doesn't contain yet. Recruiters in mainland
+// China usually can't reach the sync Worker, so the list page exports these as
+// plain text (导出我的录入) to send to the admin over WeChat, who merges them
+// into data/candidates.js. Once merged and pushed they drop off this list.
+function pendingLocalEdits() {
+  const byId = new Map((window.CANDIDATES_DATA || []).map((c) => [c.id, c]));
+  const contacts = loadContactOverrides();
+  const feedbacks = loadFeedbackOverrides();
+  const ids = [...new Set([...Object.keys(contacts), ...Object.keys(feedbacks)])];
+  return ids.map((id) => {
+    const c = byId.get(id);
+    if (!c) return null;
+    const entry = { id, name: c.name };
+    const ct = contacts[id];
+    const fb = feedbacks[id];
+    if (ct && ct.phone && ct.phone !== c.phone) entry.contact = ct;
+    if (fb && (fb.date || fb.feedback) &&
+        !(fb.feedback === (c.contactFeedback || "") && fb.date === (c.lastContactDate || ""))) {
+      entry.feedback = fb;
+    }
+    return entry.contact || entry.feedback ? entry : null;
+  }).filter(Boolean).sort((a, b) => a.id.localeCompare(b.id));
+}
+
+// One candidate per line, "key：value" fields joined by ｜ so the admin side
+// can parse it back reliably.
+function formatPendingEdits(list) {
+  let me = "";
+  try { me = localStorage.getItem(EDITOR_NAME_KEY) || ""; } catch {}
+  const day = (iso) => (iso || "").slice(0, 10);
+  const lines = [
+    `【招聘候选人库·待同步录入】${me || "（未填姓名）"} 导出于 ${new Date().toLocaleString("zh-CN", { hour12: false })}`,
+    `共 ${list.length} 位候选人`,
+  ];
+  list.forEach((e, i) => {
+    const parts = [`${i + 1}. ${e.id} ${e.name}`];
+    if (e.contact) parts.push(`电话：${e.contact.phone}`);
+    if (e.feedback) {
+      if (e.feedback.date) parts.push(`联系时间：${e.feedback.date}`);
+      if (e.feedback.feedback) parts.push(`反馈：${e.feedback.feedback.replace(/\s*\n\s*/g, " ")}`);
+    }
+    const src = e.feedback || e.contact;
+    parts.push(`录入人：${src.editor || me || "未填"}`, `录入日期：${day(src.savedAt)}`);
+    lines.push(parts.join("｜"));
+  });
+  return lines.join("\n");
+}
+
+function updateExportButton() {
+  const btn = document.querySelector("#export-edits-btn");
+  if (!btn) return;
+  const n = pendingLocalEdits().length;
+  btn.textContent = n ? `📤 导出我的录入（${n}）` : "📤 导出我的录入";
+  btn.classList.toggle("has-pending", n > 0);
+}
+
+function copyText(text, textarea) {
+  if (navigator.clipboard && window.isSecureContext) {
+    return navigator.clipboard.writeText(text).then(() => true, () => fallback());
+  }
+  return Promise.resolve(fallback());
+  function fallback() {
+    textarea.select();
+    try { return document.execCommand("copy"); } catch { return false; }
+  }
+}
+
+function openExportDialog() {
+  const list = pendingLocalEdits();
+  if (!list.length) {
+    window.alert("这台设备上没有待同步的录入。\n（已经同步进共享数据的记录不会再出现在这里）");
+    return;
+  }
+  const text = formatPendingEdits(list);
+  const overlay = document.createElement("div");
+  overlay.className = "export-overlay";
+  overlay.innerHTML = `
+    <div class="export-dialog" role="dialog" aria-label="导出我的录入">
+      <h2>导出我的录入（${list.length} 位候选人）</h2>
+      <p class="export-hint">这些电话/反馈目前只保存在这台设备上，其他人还看不到。<br>点“复制”后，把内容通过微信发给管理员，管理员更新后所有人都能看到，这里的条目也会自动消失。</p>
+      <textarea class="export-text" readonly></textarea>
+      <div class="export-actions">
+        <span class="export-status"></span>
+        <button type="button" class="btn btn-secondary export-close">关闭</button>
+        <button type="button" class="btn btn-primary export-copy">复制</button>
+      </div>
+    </div>`;
+  const textarea = overlay.querySelector(".export-text");
+  textarea.value = text;
+  const close = () => overlay.remove();
+  overlay.addEventListener("click", (ev) => { if (ev.target === overlay) close(); });
+  overlay.querySelector(".export-close").addEventListener("click", close);
+  overlay.querySelector(".export-copy").addEventListener("click", async () => {
+    const ok = await copyText(text, textarea);
+    overlay.querySelector(".export-status").textContent = ok
+      ? "已复制，去微信粘贴发送即可"
+      : "自动复制失败，请长按/全选文本框手动复制";
+  });
+  document.body.appendChild(overlay);
 }
 
 function escapeHtml(str) {
@@ -215,6 +320,9 @@ async function loadCandidates() {
 // ---------- index page ----------
 
 function initListPage() {
+  const exportBtn = document.querySelector("#export-edits-btn");
+  if (exportBtn) exportBtn.addEventListener("click", openExportDialog);
+  updateExportButton();
   const tbody = document.querySelector("#candidate-table tbody");
   const searchInput = document.querySelector("#search-input");
   const sourceChips = document.querySelectorAll(".filter-chip[data-source]");
@@ -467,8 +575,8 @@ function initListPage() {
       }
     } else if (CONTACT_API_URL) {
       window.alert(
-        "联系方式已保存在这台电脑上，但同步到共享数据失败：" + result.reason +
-        "\n（其他人暂时还看不到，请稍后重试一次，或联系管理员手动更新）"
+        "联系方式已保存在这台设备上，但暂时无法自动同步（" + result.reason + "）。" +
+        "\n请点右上角“📤 导出我的录入”，复制后用微信发给管理员即可。"
       );
     }
     applyAndRender();
@@ -507,8 +615,8 @@ function initListPage() {
       }
     } else if (FEEDBACK_API_URL) {
       window.alert(
-        "反馈已保存在这台电脑上，但同步到共享数据失败：" + result.reason +
-        "\n（其他人暂时还看不到，请稍后重试一次，或联系管理员手动更新）"
+        "反馈已保存在这台设备上，但暂时无法自动同步（" + result.reason + "）。" +
+        "\n请点右上角“📤 导出我的录入”，复制后用微信发给管理员即可。"
       );
     }
     applyAndRender();
