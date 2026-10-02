@@ -528,18 +528,18 @@ window.CANDIDATES_DATA = [
     "id": "c010",
     "name": "石晓玲",
     "source": "BOSS直聘",
-    "acquiredDate": "2026-09-16",
+    "acquiredDate": "2026-10-01",
     "resumeContact": "陈彦汐",
     "activityStatus": "本月活跃",
     "contactObtained": false,
-    "gender": "",
+    "gender": "女",
     "age": 32,
-    "education": "",
+    "education": "本科",
     "school": "厦门大学嘉庚学院",
-    "major": "物流管理",
+    "major": "物流管理（统招）",
     "currentCompany": "平安银行",
     "currentPosition": "理财经理",
-    "yearsOfExperience": null,
+    "yearsOfExperience": 10,
     "expectedPosition": "其他职位",
     "expectedSalary": "10-12K",
     "location": "厦门",
@@ -548,30 +548,48 @@ window.CANDIDATES_DATA = [
     "status": "待联系",
     "jobSeekingStatus": "在职",
     "hasSecQualification": false,
-    "certificates": [],
-    "selfEvaluation": "",
-    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。",
+    "certificates": [
+      "大学英语四级",
+      "基金从业资格证",
+      "银行从业资格证"
+    ],
+    "selfEvaluation": "本人性格开朗、稳重、有活力，待人热情、真诚。工作认真负责，用心主动，能吃苦耐劳，能认真完成赋予我的每一项任务。有较强的组织潜质、实际动手潜质和团体协作精神，能迅速的适应各种环境，并融合其中。",
+    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。 最早获取时间：2026-09-16。 2026-10-01 BOSS直聘重新上传的截图（平台显示“石**”，在职-暂不考虑，期望其他职位 10-12K）与本条为同一人。 该候选人在智联招聘上也有简历（李祖荃，平台显示为“石女士”，原编号c057，现已合并到本条）：在职-暂不找工作，10天前浏览过职位，期望理财顾问 1万-1.5万，现居思明区；岗位经验：理财顾问8年4个月；两份工作经历间存在6个月空档期（平台标注）；所获证书：理财证书、银行从业资格证（未见证券从业资格证）。",
     "workExperience": [
       {
-        "company": "中国邮政储蓄银行",
-        "position": "柜员",
-        "period": "2018.04-2022.02",
-        "description": ""
-      },
-      {
-        "company": "平安银行",
+        "company": "平安银行股份有限公司",
         "position": "理财经理",
         "period": "2022.02-至今",
-        "description": ""
+        "description": "拓展、维护、管理贵宾客户，为客户定制实施满足客户需求的综合理财方案。"
+      },
+      {
+        "company": "中国邮政储蓄银行股份有限公司",
+        "position": "理财经理",
+        "period": "2018.04-2022.01",
+        "description": "1.建立和维护高净值客户群及其家庭，包括收集和管理客户资料，分析和挖掘客户需求等；2.根据客户需求，为客户提供理财咨询、投资建议，财务分析和规划等全方位的理财服务，做好客户的风险偏好、财务状况评估工作，并根据评估结果向客户推荐适宜的投资产品；3.通过各类营销推广活动开发新客户。"
+      },
+      {
+        "company": "全球国际货运代理中国有限公司厦门分公司",
+        "position": "单证",
+        "period": "2015.10-2017.10",
+        "description": "主要涉及海运出口录单放单等一系列流程，并与国外代理、客户联系，担任单证员让我深得体会到要诚心对待客户，对新老客户要有有耐心，真诚认真的为客户服务，最大满足客户的需求。"
       }
     ],
     "educationExperience": [
       {
         "school": "厦门大学嘉庚学院",
-        "degree": "",
+        "degree": "本科",
         "major": "物流管理",
-        "period": ""
+        "period": "2012-2016"
       }
+    ],
+    "sources": [
+      "BOSS直聘",
+      "智联招聘"
+    ],
+    "resumeContacts": [
+      "陈彦汐",
+      "李祖荃"
     ]
   },
   {
@@ -1701,7 +1719,7 @@ window.CANDIDATES_DATA = [
     "education": "",
     "school": "浙江工商大学",
     "major": "投资学",
-    "currentCompany": "平安银行",
+    "currentCompany": "平安银行杭州分行",
     "currentPosition": "",
     "yearsOfExperience": null,
     "expectedPosition": "理财经理",
@@ -1716,13 +1734,25 @@ window.CANDIDATES_DATA = [
       "证券从业资格证"
     ],
     "selfEvaluation": "",
-    "notes": "来自猎聘，招聘专员整理表格导入，联系方式尚未获取。 工作经历原表格式为连续书写、未分段，已整段保留原文，建议核实后手动拆分为多段。",
+    "notes": "来自猎聘，招聘专员整理表格导入，联系方式尚未获取。 工作经历原表为连续书写，已按时间拆分为3段（原文：2022.04至今 平安银行杭州分行；2021.02-2022.02 中山证券浙分 柜员；2020.03-2020.12 同花顺 数据专员），平安银行的具体职务原表未写明。",
     "workExperience": [
       {
-        "company": "平安银行",
+        "company": "平安银行杭州分行",
         "position": "",
-        "period": "",
-        "description": "2022.04至今  平安银行杭州分行 2021.02-2022.02 中山证券浙分 柜员2020.03-2020.12 同花顺 数据专员"
+        "period": "2022.04-至今",
+        "description": ""
+      },
+      {
+        "company": "中山证券浙江分公司",
+        "position": "柜员",
+        "period": "2021.02-2022.02",
+        "description": ""
+      },
+      {
+        "company": "同花顺",
+        "position": "数据专员",
+        "period": "2020.03-2020.12",
+        "description": ""
       }
     ],
     "educationExperience": [
@@ -2906,74 +2936,6 @@ window.CANDIDATES_DATA = [
         "major": "计算机科学与技术（应用技术，统招）",
         "period": "2016-2020"
       }
-    ]
-  },
-  {
-    "id": "c057",
-    "name": "石女士",
-    "source": "智联招聘",
-    "acquiredDate": "2026-10-01",
-    "resumeContact": "李祖荃",
-    "activityStatus": "10天前浏览过职位",
-    "contactObtained": false,
-    "gender": "女",
-    "age": 32,
-    "education": "本科",
-    "school": "厦门大学嘉庚学院",
-    "major": "物流管理（统招）",
-    "currentCompany": "平安银行股份有限公司",
-    "currentPosition": "理财经理",
-    "yearsOfExperience": 10,
-    "expectedPosition": "理财顾问",
-    "expectedSalary": "1万-1.5万",
-    "location": "思明区",
-    "phone": "",
-    "email": "",
-    "status": "待联系",
-    "jobSeekingStatus": "在职-暂不找工作",
-    "hasSecQualification": false,
-    "certificates": [
-      "大学英语四级",
-      "基金从业资格证",
-      "银行从业资格证"
-    ],
-    "selfEvaluation": "本人性格开朗、稳重、有活力，待人热情、真诚。工作认真负责，用心主动，能吃苦耐劳，能认真完成赋予我的每一项任务。有较强的组织潜质、实际动手潜质和团体协作精神，能迅速的适应各种环境，并融合其中。",
-    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。 求职意向城市为厦门（与现居地思明区不同）。 岗位经验：理财顾问8年4个月。该候选人当前状态为“暂不找工作”，优先级可能较低，建议核实近况后再联系。两份工作经历间存在6个月空档期（平台标注）。所获证书：理财证书、银行从业资格证（未见证券从业资格证）。 该候选人在BOSS直聘上也有简历（陈彦汐，2026-10-01截图，平台显示为“石**”，在职-暂不考虑，期望其他职位 10-12K），已合并到本条，未重复录入。 最早获取时间：2026-09-17。",
-    "workExperience": [
-      {
-        "company": "平安银行股份有限公司",
-        "position": "理财经理",
-        "period": "2022.02-至今",
-        "description": "拓展、维护、管理贵宾客户，为客户定制实施满足客户需求的综合理财方案。"
-      },
-      {
-        "company": "中国邮政储蓄银行股份有限公司",
-        "position": "理财经理",
-        "period": "2018.04-2022.01",
-        "description": "1.建立和维护高净值客户群及其家庭，包括收集和管理客户资料，分析和挖掘客户需求等；2.根据客户需求，为客户提供理财咨询、投资建议，财务分析和规划等全方位的理财服务，做好客户的风险偏好、财务状况评估工作，并根据评估结果向客户推荐适宜的投资产品；3.通过各类营销推广活动开发新客户。"
-      },
-      {
-        "company": "全球国际货运代理中国有限公司厦门分公司",
-        "position": "单证",
-        "period": "2015.10-2017.10",
-        "description": "主要涉及海运出口录单放单等一系列流程，并与国外代理、客户联系，担任单证员让我深得体会到要诚心对待客户，对新老客户要有有耐心，真诚认真的为客户服务，最大满足客户的需求。"
-      }
-    ],
-    "educationExperience": [
-      {
-        "school": "厦门大学嘉庚学院",
-        "degree": "本科",
-        "major": "物流管理",
-        "period": "2012-2016"
-      }
-    ],
-    "sources": [
-      "智联招聘",
-      "BOSS直聘"
-    ],
-    "resumeContacts": [
-      "李祖荃",
-      "陈彦汐"
     ]
   },
   {
