@@ -772,7 +772,7 @@ window.CANDIDATES_DATA = [
     "id": "c015",
     "name": "戴晓婷",
     "source": "BOSS直聘",
-    "acquiredDate": "2026-10-01",
+    "acquiredDate": "2026-10-02",
     "resumeContact": "陈彦汐",
     "activityStatus": "5月内活跃",
     "contactObtained": false,
@@ -794,10 +794,14 @@ window.CANDIDATES_DATA = [
     "hasSecQualification": false,
     "certificates": [
       "基金从业资格证",
-      "大学英语六级"
+      "大学英语六级",
+      "大学英语四级",
+      "日语二级证书",
+      "普通话等级证书",
+      "驾驶执照"
     ],
     "selfEvaluation": "学习能力强，善于与人沟通，注重细节，工作高效且能按时有质量完成。",
-    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。 2026-10-01 招聘专员重新上传了该候选人的BOSS直聘简历截图，已据此补充工作经历/证书等信息。 最早获取时间：2026-09-16。",
+    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。 2026-10-01 招聘专员重新上传了该候选人的BOSS直聘简历截图，已据此补充工作经历/证书等信息。 最早获取时间：2026-09-16。 该候选人在智联招聘上也有简历（李祖荃，2026-10-02截图，平台显示为“戴女士”，在职-正在找工作，半年内活跃，期望理财顾问（厦门；银行、基金、信托） 8千-1.6万，现居集美区），已合并到本条，未重复录入。",
     "workExperience": [
       {
         "company": "平安银行股份有限公司厦门分公司",
@@ -822,15 +826,23 @@ window.CANDIDATES_DATA = [
       {
         "school": "重庆大学",
         "degree": "本科",
-        "major": "法学（辅修，非全日制）",
+        "major": "法学（211 985）",
         "period": "2011-2014"
       },
       {
         "school": "重庆大学",
         "degree": "本科",
-        "major": "日语（985院校）",
+        "major": "日语（211 985）",
         "period": "2010-2014"
       }
+    ],
+    "sources": [
+      "BOSS直聘",
+      "智联招聘"
+    ],
+    "resumeContacts": [
+      "陈彦汐",
+      "李祖荃"
     ]
   },
   {
@@ -2791,9 +2803,9 @@ window.CANDIDATES_DATA = [
     "id": "c055",
     "name": "温女士",
     "source": "智联招聘",
-    "acquiredDate": "2026-09-17",
+    "acquiredDate": "2026-10-02",
     "resumeContact": "李祖荃",
-    "activityStatus": "10天前在线",
+    "activityStatus": "11天前浏览过职位",
     "contactObtained": false,
     "gender": "女",
     "age": 36,
@@ -2802,7 +2814,7 @@ window.CANDIDATES_DATA = [
     "major": "财务管理（统招，211院校）",
     "currentCompany": "兴业银行股份有限公司厦门分行",
     "currentPosition": "银行理财经理",
-    "yearsOfExperience": null,
+    "yearsOfExperience": 13,
     "expectedPosition": "金融产品经理",
     "expectedSalary": "1万-1.5万",
     "location": "思明区",
@@ -2815,10 +2827,14 @@ window.CANDIDATES_DATA = [
       "基金从业资格证",
       "银行从业资格证",
       "证券从业资格证",
-      "会计从业资格证"
+      "会计从业资格证",
+      "AFP金融理财师",
+      "初级会计",
+      "大学英语六级",
+      "全国计算机等级二级"
     ],
-    "selfEvaluation": "",
-    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。 求职意向城市为厦门（与现居地思明区不同）。 岗位经验：理财顾问4年5个月。所获证书：基金从业资格证、银行从业资格证、证券从业资格证、会计从业资格证、初级会计、大学英语六级(CET6)、全国计算机等级二级、AFP金融理财师。",
+    "selfEvaluation": "本人工作认真负责，善于沟通、协调，有较强的推动能力和组织能力。在日常工作中保持学习的习惯，积极主动学习研究新产品、新业务。自2014年2月开始从事零售客户经理至今，对银行的理财、基金、保险等零售业务产品有较深的认识，在理财产品的推广、理财客群的拓展及维护等方面具有较为丰富的经验，其中对于高净值和私人银行客户的维护有较好的心得和认识。岗位经验：理财顾问4年6个月。语言：英语读写/听说良好（CET6）。",
+    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。 求职意向城市为厦门（与现居地思明区不同）。 岗位经验：理财顾问4年5个月。所获证书：基金从业资格证、银行从业资格证、证券从业资格证、会计从业资格证、初级会计、大学英语六级(CET6)、全国计算机等级二级、AFP金融理财师。 最早获取时间：2026-09-17。 2026-10-02 招聘专员重新上传了该候选人的智联招聘简历截图，已据此补充信息。",
     "workExperience": [
       {
         "company": "兴业银行股份有限公司厦门分行",
@@ -3825,7 +3841,7 @@ window.CANDIDATES_DATA = [
     "id": "c072",
     "name": "杨**",
     "source": "BOSS直聘",
-    "acquiredDate": "2026-10-01",
+    "acquiredDate": "2026-10-02",
     "resumeContact": "陈彦汐",
     "activityStatus": "3月内活跃",
     "contactObtained": false,
@@ -3852,10 +3868,15 @@ window.CANDIDATES_DATA = [
       "会计从业资格证",
       "基金从业资格证",
       "计算机一级",
-      "理财规划师一级"
+      "理财规划师一级",
+      "证券分析师资格证",
+      "ChFP理财规划师三级",
+      "国家理财规划师",
+      "保险销售从业人员资格证",
+      "初级会计电算化证"
     ],
     "selfEvaluation": "获得业绩：2015年分行优秀新人；2015年平安银行资产新增奖；2016年分行金牌渠道经理；2018年分行演讲大比武第一名；2018年优秀渠道经理；2019年分行资产大咖；2020年分行荣誉之星；2021年开门红（财富）综金百佳；2021年开门红（获客）综金百佳；2022年开门红荣获总行客户旅程ATO大赛区域第三；2022年配置线上运营活动荣获总行案例分享；2022年担任业务推动岗期间多次受邀总行分享指标推动心得。",
-    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 最早获取时间：2026-10-01。 该候选人在智联招聘上也有简历（李祖荃，2026-10-02截图，平台显示为“杨女士”，在职-正在找工作，半年内活跃，期望财务专员/助理（厦门） 1.5万-2万，现居思明区），已合并到本条，未重复录入。 （智联招聘）证券从业资格证见于工作经历标签，证书栏另列证券分析师资格证；已上传附件简历，可在智联索要。",
     "workExperience": [
       {
         "company": "平安银行股份有限公司",
@@ -3874,17 +3895,25 @@ window.CANDIDATES_DATA = [
       {
         "school": "三明学院",
         "degree": "本科",
-        "major": "财务管理",
+        "major": "财务管理（统招）",
         "period": "2011-2013"
       },
       {
         "school": "福建江夏学院",
         "degree": "大专",
-        "major": "会计电算化",
+        "major": "会计电算化（统招）",
         "period": "2008-2011"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": null,
+    "sources": [
+      "BOSS直聘",
+      "智联招聘"
+    ],
+    "resumeContacts": [
+      "陈彦汐",
+      "李祖荃"
+    ]
   },
   {
     "id": "c073",
@@ -5101,7 +5130,7 @@ window.CANDIDATES_DATA = [
     "id": "c094",
     "name": "乐**",
     "source": "BOSS直聘",
-    "acquiredDate": "2026-10-01",
+    "acquiredDate": "2026-10-02",
     "resumeContact": "陈彦汐",
     "activityStatus": "2周内活跃",
     "contactObtained": false,
@@ -5123,24 +5152,32 @@ window.CANDIDATES_DATA = [
     "hasSecQualification": false,
     "certificates": [],
     "selfEvaluation": "九年的信贷经验，有稳定的合作渠道，风险把控能力强，熟悉银行信贷业务全流程（贷前调查、贷中审批、贷后管理），具备出色的客户沟通、市场开拓及风险管理能力，能适应高强度的业绩指标与合规要求。",
-    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 截图中未见资格证书栏。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 截图中未见资格证书栏。 最早获取时间：2026-10-01。 该候选人在智联招聘上也有简历（李祖荃，2026-10-02截图，平台显示为“乐女士”，在职-看看机会，3天前浏览过职位，期望信贷审核（厦门·海沧区） 1万-1.2万，现居海沧区），已合并到本条，未重复录入。 （智联招聘）已上传附件简历，可在智联索要。",
     "workExperience": [
       {
-        "company": "兴业银行股份有限公司厦门分行",
-        "position": "客户经理·零售客户经理",
+        "company": "兴业银行厦门分行",
+        "position": "客户经理（1.7万/月）",
         "period": "2016.07-至今",
-        "description": "业绩：信贷业务：2017年起参与支行一手按揭及二手按揭贷款业务拓展，个人按揭贷款发放年均4千万，至今总个人按揭总规模约3个亿；2018年起大力发展个人经营贷业务，个人经营贷新增年均3千万，至今总个人经营贷总规模约2个亿。渠道与存款：2017年起牵头拓展银行新业务指标收单业务，至今银行收款二维码商户约200户；2020-2021年深度参与拆迁项目；至今个人名下综合存款日均约3千万。全面负责存量信贷业务的贷后管理，成功将管辖资产的不良率控制在3%以下。内容：具备超过9年的全周期客户关系管理与综合金融服务经验。"
+        "description": "九年的信贷经验，有稳定的合作渠道，风险把控能力强，熟悉银行信贷业务全流程（贷前调查、贷中审批、贷后管理），具备出色的客户沟通、市场开拓及风险管理能力，能适应高强度的业绩指标与合规要求。信贷业务：2017年起参与支行一手按揭及二手按揭贷款业务拓展，个人按揭贷款发放年均4千万，至今总个人按揭总规模约3个亿。2018年起大力发展个人经营贷业务，个人经营贷新增年均3千万，至今总个人经营贷总规模约2个亿。渠道与存款：2017年起牵头拓展银行新业务指标收单业务，至今银行收款二维码商户约200户，有效带动个人活期存款结算量。（后续内容截图未展开）"
       }
     ],
     "educationExperience": [
       {
-        "school": "厦门理工大学",
+        "school": "厦门理工学院",
         "degree": "本科",
-        "major": "财务管理",
+        "major": "财务管理投资学（统招）",
         "period": "2012-2016"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": null,
+    "sources": [
+      "BOSS直聘",
+      "智联招聘"
+    ],
+    "resumeContacts": [
+      "陈彦汐",
+      "李祖荃"
+    ]
   },
   {
     "id": "c095",
@@ -5245,7 +5282,7 @@ window.CANDIDATES_DATA = [
     "id": "c097",
     "name": "张**",
     "source": "BOSS直聘",
-    "acquiredDate": "2026-10-01",
+    "acquiredDate": "2026-10-02",
     "resumeContact": "陈彦汐",
     "activityStatus": "5月内活跃",
     "contactObtained": false,
@@ -5264,10 +5301,14 @@ window.CANDIDATES_DATA = [
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职-考虑机会",
-    "hasSecQualification": false,
-    "certificates": [],
+    "hasSecQualification": true,
+    "certificates": [
+      "证券从业资格证",
+      "大学英语六级",
+      "日语N1"
+    ],
     "selfEvaluation": "维护客群关系，多线程处理。",
-    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 截图中未见资格证书栏。原图为iPhone HEIC格式（扩展名标为.jpg）。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 截图中未见资格证书栏。原图为iPhone HEIC格式（扩展名标为.jpg）。 最早获取时间：2026-10-01。 该候选人在智联招聘上也有简历（李祖荃，2026-10-02截图，平台显示为“张先生”，在职-看看机会，半年内活跃，期望理财顾问（厦门；银行、翻译、课外培训与资格考试） 7千-1.4万，现居湖里区），已合并到本条，未重复录入。",
     "workExperience": [
       {
         "company": "兴业银行股份有限公司厦门分行",
@@ -5278,19 +5319,27 @@ window.CANDIDATES_DATA = [
     ],
     "educationExperience": [
       {
-        "school": "日本大学（日本）",
+        "school": "日本大学",
         "degree": "硕士",
-        "major": "法学",
-        "period": "2019-2021"
+        "major": "法学（统招）",
+        "period": "2017-2020"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": null,
+    "sources": [
+      "BOSS直聘",
+      "智联招聘"
+    ],
+    "resumeContacts": [
+      "陈彦汐",
+      "李祖荃"
+    ]
   },
   {
     "id": "c098",
-    "name": "郭**",
+    "name": "郭骏",
     "source": "猎聘",
-    "acquiredDate": "2026-10-01",
+    "acquiredDate": "2026-10-02",
     "resumeContact": "蔡家宝",
     "activityStatus": "3天内活跃",
     "contactObtained": false,
@@ -5311,10 +5360,11 @@ window.CANDIDATES_DATA = [
     "jobSeekingStatus": "在职，急寻新工作",
     "hasSecQualification": false,
     "certificates": [
-      "AFP"
+      "AFP",
+      "AFP金融理财师"
     ],
     "selfEvaluation": "从业经历：9年银行工作经历，其中2年支行柜面+7年后台管理，熟悉业务操作、网点建设、绩效考核等。沟通协调：对上响应落实总行规定及部署，对下通报追踪支行执行状况，协调本行内外部综合事务。语言：英语CET6，普通话。",
-    "notes": "来自猎聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "notes": "来自猎聘，招聘专员整理截图导入，联系方式尚未获取。 此前平台显示为“郭**”，智联招聘简历显示真实姓名为“郭骏”。 最早获取时间：2026-10-01。 该候选人在智联招聘上也有简历（李祖荃，2026-10-02截图，平台显示为“郭骏”，在职-看看机会，4天前浏览过职位，期望投融资（厦门；银行、证券/期货、基金） 1万-2万，现居思明区），已合并到本条，未重复录入。",
     "workExperience": [
       {
         "company": "兴业银行股份有限公司厦门分行",
@@ -5337,7 +5387,15 @@ window.CANDIDATES_DATA = [
         "period": "2008.09-2012.07"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": null,
+    "sources": [
+      "猎聘",
+      "智联招聘"
+    ],
+    "resumeContacts": [
+      "蔡家宝",
+      "李祖荃"
+    ]
   },
   {
     "id": "c099",
@@ -5743,7 +5801,7 @@ window.CANDIDATES_DATA = [
     "id": "c105",
     "name": "赖惠燕",
     "source": "猎聘",
-    "acquiredDate": "2026-10-01",
+    "acquiredDate": "2026-10-02",
     "resumeContact": "蔡家宝",
     "activityStatus": "",
     "contactObtained": false,
@@ -5769,13 +5827,25 @@ window.CANDIDATES_DATA = [
       "计算机一级"
     ],
     "selfEvaluation": "本人性格外向，善于与人沟通和团队合作，有较强的抗压能力，工作认真细致，有较强的责任心。简历亮点：具有上市公司工作经验（9年7个月兴业银行股份有限公司零售客户经理）。技能：银行、计算机一级、CET6、银行从业资格证。语言：英语（工作应用·CET6）、普通话。",
-    "notes": "来自猎聘，招聘专员整理截图导入，联系方式尚未获取。 平台显示的是真实全名；求职状态为“离职，正在找工作”，但工作经历显示兴业银行“至今”，入职时间描述也有出入（2016.09 / 2016.12），请核实；求职意向偏房地产/建筑方向。",
+    "notes": "来自猎聘，招聘专员整理截图导入，联系方式尚未获取。 平台显示的是真实全名；求职状态为“离职，正在找工作”，但工作经历显示兴业银行“至今”，入职时间描述也有出入（2016.09 / 2016.12），请核实；求职意向偏房地产/建筑方向。 最早获取时间：2026-10-01。 该候选人在智联招聘上也有简历（李祖荃，2026-10-02截图，平台显示为“赖女士”，离职-正在找工作，半年内活跃，期望后勤（厦门；银行） 8千-1万，现居国外），已合并到本条，未重复录入。",
     "workExperience": [
       {
-        "company": "兴业银行",
-        "position": "零售客户经理",
-        "period": "2016.12-至今",
-        "description": "2016年9月至今，在兴业银行松柏支行任职零售客户经理，主要从事信贷客户的开发、客户管理和维护、产品销售、市场拓展的工作，个人贷款时点金额1.2亿。同时为客户提供个人存款业务咨询、信用卡、代发工资、基金、理财产品银行和第三方存管业务的营销。"
+        "company": "兴业银行股份有限公司",
+        "position": "客户经理（平台显示10万/月，疑为填写有误）",
+        "period": "2016.06-至今",
+        "description": "2016年9月毕业至今，在兴业银行松柏支行任职零售客户经理，主要从事为信贷客户的开发、客户管理和维护、产品销售、市场拓展的工作，个人贷款时点金额1.4亿。同时为客户提供个人存款业务咨询、信用卡、代发工资、基金、理财产品银行和第三方存管业务的营销，有较为丰富的银行从业经验。"
+      },
+      {
+        "company": "平安银行信用卡中心",
+        "position": "客户经理（实习，8千/月）",
+        "period": "2016.03-2016.08",
+        "description": "2016年3月至2016年8月在平安银行信用卡中心实习，负责办理平安银行信用卡，月均成功办理80张，最高月办理142张，通过97张，名列卡部第3名，并获得该月PK竞赛第一名。（平台提示与上一段时间重叠）"
+      },
+      {
+        "company": "平安银行股份有限公司厦门分行",
+        "position": "助理/秘书/文员（实习，8千/月）",
+        "period": "2015.07-2015.08",
+        "description": "在银行对公业务部门实习，负责协助总经理处理中小企业的各种业务，如综合授信、贷款和保函等，经常与经理一同外出面见客户。"
       }
     ],
     "educationExperience": [
@@ -5783,7 +5853,509 @@ window.CANDIDATES_DATA = [
         "school": "厦门理工学院",
         "degree": "本科",
         "major": "国际商务（统招）",
-        "period": "2012.09-2016.06"
+        "period": "2012-2016"
+      }
+    ],
+    "lastContactDate": null,
+    "sources": [
+      "猎聘",
+      "智联招聘"
+    ],
+    "resumeContacts": [
+      "蔡家宝",
+      "李祖荃"
+    ]
+  },
+  {
+    "id": "c106",
+    "name": "陈先生",
+    "source": "智联招聘",
+    "acquiredDate": "2026-10-02",
+    "resumeContact": "李祖荃",
+    "activityStatus": "10小时前在线",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 34,
+    "education": "本科",
+    "school": "集美大学",
+    "major": "会计学（统招）",
+    "currentCompany": "厦门国际银行厦门分行",
+    "currentPosition": "银行对公客户经理",
+    "yearsOfExperience": 10,
+    "expectedPosition": "信贷管理（厦门；银行）",
+    "expectedSalary": "1万-1.6万",
+    "location": "思明区",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-正在找工作",
+    "hasSecQualification": false,
+    "certificates": [
+      "会计从业资格证"
+    ],
+    "selfEvaluation": "本人性格开朗，工作认真负责，具备良好的团队协作精神与沟通能力。拥有7年银行从业经验，精通对公、普惠客群综合金融服务方案及多元化产品组合。服务客户覆盖国企、上市公司、民营中小微企业全层级客群。熟悉金融领域政策导向、竞争格局与客群需求变化。熟练财务分析、风险识别、现金流预测、Office套件、金融信贷系统操作、行业分析。爱好：羽毛球、游泳、阅读。项目经历：跨境金融外保内贷（2025.11-2026.01）——境外上市公司担保，授信主体境内企业，NRA美元存单质押发放人民币贷款1亿，2026年一季度被总行作为跨境金融优秀案例全行通报学习。专业技能：银行、信贷金融、风控（84个月，熟练）。语言：英语读写/听说良好。",
+    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "workExperience": [
+      {
+        "company": "厦门国际银行厦门分行",
+        "position": "银行对公客户经理",
+        "period": "2024.06-至今",
+        "description": "完成贷款、存款、结算、中收、公私联动等核心业务指标。为本地化对公客群提供综合金融服务，项目贷、流贷、供应链金融、跨境金融，累计服务对公客户数20+。公私联动的代发薪、高管个人金融、开发商按揭协议准入。"
+      },
+      {
+        "company": "平安银行股份有限公司厦门分行",
+        "position": "银行客户经理",
+        "period": "2019.11-2024.06",
+        "description": "负责中小微企业融资的贷前、贷中、贷后工作。荣获平安银行厦门分行2023年度业务菁英奖及2024年第一季度业务先锋奖，于同年获得职级晋升。"
+      },
+      {
+        "company": "中外运福建有限公司（国有企业）",
+        "position": "财务部实习生",
+        "period": "2016.09-2019.08",
+        "description": "通过校招入职，作为企业财务部管培生。主要从事应收账款和总账的财务工作。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "集美大学",
+        "degree": "本科",
+        "major": "会计学（统招）",
+        "period": "2012-2016"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c107",
+    "name": "蔡女士",
+    "source": "智联招聘",
+    "acquiredDate": "2026-10-02",
+    "resumeContact": "李祖荃",
+    "activityStatus": "近2月活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 34,
+    "education": "本科",
+    "school": "广东金融学院",
+    "major": "会计（统招）",
+    "currentCompany": "广发银行股份有限公司（国有企业）",
+    "currentPosition": "理财经理",
+    "yearsOfExperience": 11,
+    "expectedPosition": "金融产品经理（厦门）",
+    "expectedSalary": "1.5万-3万",
+    "location": "潮州·湘桥区",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-看看机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "基金从业资格证",
+      "AFP金融理财师",
+      "大学英语四级",
+      "会计从业资格证",
+      "C1驾驶证"
+    ],
+    "selfEvaluation": "普通话标准，能听说基本的粤语、潮汕话交流，英语4级。党员。专业能力：AFP国际金融理财师，基金/保险从业资格、资产配置、客户KYC与风险测评。数字化工具：Excel（数据透视表/高级函数）、SQL（基础查询）、BI工具（客户画像可视化）。岗位经验：理财顾问9年9个月。项目经历：文化委员（2011.09-2015.07，组织班级体文化活动）。",
+    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。 现居潮州，求职意向厦门；已上传附件简历，可在智联查看。",
+    "workExperience": [
+      {
+        "company": "广发银行股份有限公司（国有企业）",
+        "position": "理财经理",
+        "period": "2021.09-至今",
+        "description": "客户持仓产品到期智能提醒流程优化：针对客户频繁错过产品到期导致资金闲置的问题，梳理现有客户持仓数据，用Excel设计自动化提醒台账，对接企微实现到期前3天自动推送，实施后客户资金续投率从60%提升至85%。同时任工会代表、文书岗，负责处理公文接收传阅分发、盖章用印申请，协助行长撰写述职报告及ppt，负责办公室员工节日、生日福利品签收、库存物品盘点、健身活动、视频拍摄等活动的组织和策划工作。开展合规双录、反洗钱工作、客户尽职调查工作；负责客户投诉工单处理。"
+      },
+      {
+        "company": "建信人寿保险股份有限公司（央企子公司）",
+        "position": "综合人力岗（1.1万/月）",
+        "period": "2020.03-2021.09",
+        "description": "担任办公室的人力综合岗，员工入职离职、调岗等手续办理，合同签订，员工五险一金申报缴纳汇缴，工资薪酬统计，职场装修沟通协调，各项办公用品采购等工作，负责办公室事务。后任运营岗，负责保险理赔事务处理，负责理赔案件的资料审核。"
+      },
+      {
+        "company": "兴业银行股份有限公司",
+        "position": "理财经理（1.5万/月）",
+        "period": "2015.07-2020.03",
+        "description": "管理200+高净值客户（人均AUM 300万+），基于客户交易行为与风险偏好数据，制定个性化资产配置方案；搭建客户分层模型（使用Excel工具），将高潜力客户识别准确率提升30%，年度新增AUM 2亿元。负责柜台业务，后期学习专业理财知识，维护贵宾客户，为贵宾客户进行各种定期、理财、基金、保险等金融产品介绍，零售活动方案提交申请，营销物品的申请、下单、盘点工作。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "广东金融学院",
+        "degree": "本科",
+        "major": "会计（统招）",
+        "period": "2011-2015"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c108",
+    "name": "陈女士",
+    "source": "智联招聘",
+    "acquiredDate": "2026-10-02",
+    "resumeContact": "李祖荃",
+    "activityStatus": "近2月活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 36,
+    "education": "本科",
+    "school": "南京大学",
+    "major": "计算机工程与技术（统招，985院校）",
+    "currentCompany": "兴业银行股份有限公司",
+    "currentPosition": "产品经理（25500元/月）",
+    "yearsOfExperience": 15,
+    "expectedPosition": "金融产品经理（厦门·思明区）",
+    "expectedSalary": "1万-2万",
+    "location": "思明区",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-正在找工作",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "",
+    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。 简历内容很简略（仅1段工作经历、无证书信息），入职时间2010.07早于毕业时间2011，请核实。",
+    "workExperience": [
+      {
+        "company": "兴业银行股份有限公司",
+        "position": "产品经理（25500元/月）",
+        "period": "2010.07-至今",
+        "description": "投融资业务。负责产品目标客户。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "南京大学",
+        "degree": "本科",
+        "major": "计算机工程与技术（统招，985院校）",
+        "period": "2007-2011"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c109",
+    "name": "黄先生",
+    "source": "智联招聘",
+    "acquiredDate": "2026-10-02",
+    "resumeContact": "李祖荃",
+    "activityStatus": "10小时前在线",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 29,
+    "education": "MBA/EMBA",
+    "school": "江苏大学",
+    "major": "工商管理（统招）",
+    "currentCompany": "厦门夏商水产集团有限公司（国有企业）",
+    "currentPosition": "行政经理/主管（7500元/月）",
+    "yearsOfExperience": 6,
+    "expectedPosition": "党务/党群（厦门）",
+    "expectedSalary": "1.2万-2万",
+    "location": "漳州·芗城区",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-正在找工作",
+    "hasSecQualification": true,
+    "certificates": [
+      "证券从业资格证",
+      "基金从业资格证",
+      "银行从业资格证",
+      "初级会计",
+      "大学英语四级",
+      "普通话等级证书二乙",
+      "驾驶证"
+    ],
+    "selfEvaluation": "一、金融和办公室、党务三料人才：1、毕业后一直在国央企党务和办公室就职，熟练撰写公司公文函件，对于公文格式字体有专业编辑和撰写能力。2、负责的供应链金融投融资板块，制定相对应的业务产品方案开拓合作渠道；负责项目的申请受理、项目尽职调查，识别客户风险，负责项目风险化解。3）在兴业银行里负责客户资源开发与维护、理财规划与产品销售、市场研究与投资建议；负责全支行大堂秩序。岗位经验：理财顾问2年4个月。项目经历：基于感应网络的绿色水墙生态植物网（2017.05-2018.08，国家级立项/专利）；基于大数据的大学生服务平台（2017.05-2018.08，省级立项）。培训：SIYB创业培训（2019.05-2019.06）。专业技能：银行职业资格证（风险管理、个人理财、公司信贷）、证券资格（熟练）、初级会计师（熟练）。语言：英语读写熟练、听说良好。",
+    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。 现居漳州，求职意向厦门党务/党群；夏商水产（2025.07-至今）与兴业银行（2024.06-至今）两段经历时间重叠，目前所在单位请核实；已上传附件简历，可在智联索要。",
+    "workExperience": [
+      {
+        "company": "厦门夏商水产集团有限公司（国有企业）",
+        "position": "行政经理/主管（7500元/月）",
+        "period": "2025.07-至今",
+        "description": "水产交易中心综合管理部副经理（主持工作）：1、公文与制度：负责日常公文、工作总结、请示报告等材料的撰写、校对与流转；负责交易中心各项制度编制（包含管理手册修订等）。2、招商、部门统筹与制度编撰：牵头开展招商信息收集、合作洽谈及对接跟进工作，包括后期合同、挂网招投标等事宜；统筹部门日常事务，协调跨部门沟通。（平台提示与兴业银行经历时间重叠）"
+      },
+      {
+        "company": "兴业银行股份有限公司",
+        "position": "理财顾问（8500元/月）",
+        "period": "2024.06-至今",
+        "description": "1）客户资源开发与维护：通过线上线下多渠道拓展客户资源，建立并维护高净值客户信息库；2）理财规划与产品销售：为客户定制个性化理财规划，精准匹配银行理财产品；3）市场研究与投资建议：跟踪宏观经济形势、金融市场动态及行业趋势，撰写市场分析报告；4）风险控制与合规管理：对每笔理财业务进行风险评估，向客户充分揭示产品风险。"
+      },
+      {
+        "company": "四川省供销金融控股集团有限公司",
+        "position": "党务/党群（8千/月）",
+        "period": "2021.08-2023.11",
+        "description": "1.负责综合办公室工作：熟知“三重一大”机制，撰写并收发各类集团级通知和来往函件；撰写集团会议决议纪要、工作简报、集团新闻；参加省社安全生产会议；负责集团平台系统管理员、集团文化宣传工作。2.党办方面：开展党建工作（三会一课）、党建宣传工作；会议安排，撰写支委会会议纪要、党建工作简报、会议议程。（与下一段工作间有7个月空档期）"
+      },
+      {
+        "company": "甘肃公航旅供应链管理有限公司",
+        "position": "投资经理（4500元/月）",
+        "period": "2020.06-2021.08",
+        "description": "主要业绩：供应链金融（企业金融）。1）负责供应链项目落地（项目谈判、尽职调查、报告撰写、审批流程、项目落地、尾款结算），上游供应商将其对核心企业的应收账款转让给金融机构以获得融资。2）负责供应链金融项目的策划与执行。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "江苏大学",
+        "degree": "MBA/EMBA",
+        "major": "工商管理（统招）",
+        "period": "2023-2025"
+      },
+      {
+        "school": "兰州财经大学",
+        "degree": "本科",
+        "major": "工商管理（创新创业方向，统招）",
+        "period": "2016-2020"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c110",
+    "name": "小先生",
+    "source": "智联招聘",
+    "acquiredDate": "2026-10-02",
+    "resumeContact": "李祖荃",
+    "activityStatus": "近2月活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 29,
+    "education": "本科",
+    "school": "辽宁师范大学",
+    "major": "社会体育指导与管理（统招）",
+    "currentCompany": "兴业银行股份有限公司大连分行",
+    "currentPosition": "银行客户经理",
+    "yearsOfExperience": 6,
+    "expectedPosition": "客户经理（厦门；银行）",
+    "expectedSalary": "1万-2万",
+    "location": "大连·沙河口区",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-看看机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "银行从业资格证"
+    ],
+    "selfEvaluation": "",
+    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。 现居大连，求职意向厦门；已上传附件简历，可在智联索要。",
+    "workExperience": [
+      {
+        "company": "兴业银行股份有限公司大连分行",
+        "position": "银行客户经理",
+        "period": "2020.11-至今",
+        "description": "1.维护存量按揭、非按揭贷款1.5亿，处理存量客户续贷、还款、办产权、商转公等业务。2.投放按揭、非按揭贷款业务。3.办理信用卡、收单业务。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "辽宁师范大学",
+        "degree": "本科",
+        "major": "社会体育指导与管理（统招）",
+        "period": "2014-2018"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c111",
+    "name": "许先生",
+    "source": "智联招聘",
+    "acquiredDate": "2026-10-02",
+    "resumeContact": "李祖荃",
+    "activityStatus": "2天前有投递",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 38,
+    "education": "本科",
+    "school": "厦门大学",
+    "major": "数学与应用数学（统招，985院校）",
+    "currentCompany": "兴业银行厦门分行",
+    "currentPosition": "金融产品经理（2万/月）",
+    "yearsOfExperience": 15,
+    "expectedPosition": "信贷审核（厦门·思明区；货运物流、鞋服箱包批发/零售/贸易）",
+    "expectedSalary": "1.8万-2.4万",
+    "location": "思明区",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-看看机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "银行从业资格证"
+    ],
+    "selfEvaluation": "",
+    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。 简历内容较简略，仅列出兴业银行一段经历（2015年之前的工作经历未展示）。",
+    "workExperience": [
+      {
+        "company": "兴业银行厦门分行",
+        "position": "金融产品经理（2万/月）",
+        "period": "2015.08-至今",
+        "description": "团队管理、政策宣导、业务尽调。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "厦门大学",
+        "degree": "本科",
+        "major": "数学与应用数学（统招，985院校）",
+        "period": "2007-2011"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c112",
+    "name": "赵女士",
+    "source": "智联招聘",
+    "acquiredDate": "2026-10-02",
+    "resumeContact": "李祖荃",
+    "activityStatus": "近2月活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 37,
+    "education": "本科",
+    "school": "厦门大学嘉庚学院",
+    "major": "会计学（统招）",
+    "currentCompany": "兴业银行厦门分行",
+    "currentPosition": "银行客户经理",
+    "yearsOfExperience": 14,
+    "expectedPosition": "理财顾问（厦门·思明区）",
+    "expectedSalary": "2万-3万",
+    "location": "思明区",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-看看机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "银行从业资格证",
+      "会计从业资格证"
+    ],
+    "selfEvaluation": "",
+    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。 简历内容较简略，仅列出2021.11以来的兴业银行经历（此前约10年经历未展示）。",
+    "workExperience": [
+      {
+        "company": "兴业银行厦门分行",
+        "position": "银行客户经理",
+        "period": "2021.11-至今",
+        "description": "贷款客户群体：个人客户；熟悉的销售方式：电话销售、网络销售、渠道销售；持有证书：银行从业资格证、会计从业资格证书。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "厦门大学嘉庚学院",
+        "degree": "本科",
+        "major": "会计学（统招）",
+        "period": "2007-2011"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c113",
+    "name": "陈女士",
+    "source": "智联招聘",
+    "acquiredDate": "2026-10-02",
+    "resumeContact": "李祖荃",
+    "activityStatus": "2天前浏览过职位",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 40,
+    "education": "本科",
+    "school": "",
+    "major": "",
+    "currentCompany": "兴业银行股份有限公司",
+    "currentPosition": "柜员（1.6万/月）",
+    "yearsOfExperience": 18,
+    "expectedPosition": "柜员（厦门·思明区；银行）",
+    "expectedSalary": "1万-1.7万",
+    "location": "思明区",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "离职-正在找工作",
+    "hasSecQualification": true,
+    "certificates": [
+      "证券从业资格证",
+      "基金从业资格证",
+      "银行从业资格证",
+      "会计从业资格证"
+    ],
+    "selfEvaluation": "",
+    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。 截图只有一屏，教育经历等后续内容未截到；求职状态为“离职”，但两段兴业银行经历均标“至今”，请核实。",
+    "workExperience": [
+      {
+        "company": "兴业银行股份有限公司",
+        "position": "柜员（1.6万/月）",
+        "period": "2008.07-至今",
+        "description": "柜面会计工作。"
+      },
+      {
+        "company": "兴业银行股份有限公司",
+        "position": "会计（1.6万/月）",
+        "period": "2008.07-至今",
+        "description": "（截图未展示完整，平台提示与上一段时间重叠）"
+      }
+    ],
+    "educationExperience": [],
+    "lastContactDate": null
+  },
+  {
+    "id": "c114",
+    "name": "杨先生",
+    "source": "智联招聘",
+    "acquiredDate": "2026-10-02",
+    "resumeContact": "李祖荃",
+    "activityStatus": "2天前浏览过职位",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 29,
+    "education": "本科",
+    "school": "福州工商学院",
+    "major": "财务管理（统招）",
+    "currentCompany": "兴业银行股份有限公司",
+    "currentPosition": "金融产品经理",
+    "yearsOfExperience": 8,
+    "expectedPosition": "柜员（厦门；银行、汽车金融）",
+    "expectedSalary": "7千-9千",
+    "location": "湖里区",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-正在找工作",
+    "hasSecQualification": false,
+    "certificates": [
+      "银行从业资格证"
+    ],
+    "selfEvaluation": "工作细致认真，对待工作严谨负责，愿意最大努力完成自己工作目标。",
+    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "workExperience": [
+      {
+        "company": "兴业银行股份有限公司",
+        "position": "金融产品经理",
+        "period": "2023.11-至今",
+        "description": "从事收单业务部门。"
+      },
+      {
+        "company": "银行（平台未显示具体名称）",
+        "position": "档案专员（7千/月）",
+        "period": "2019.11-2023.01",
+        "description": "主要负责银行汽车贷款的审核归档以及其他客户服务工作。（与下一段工作间有10个月空档期）"
+      },
+      {
+        "company": "银行（平台未显示具体名称）",
+        "position": "柜员（6千/月）",
+        "period": "2018.08-2019.10",
+        "description": "运营岗位，在岗期间认真负责业务无差错。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "福州工商学院",
+        "degree": "本科",
+        "major": "财务管理（统招）",
+        "period": "2014-2018"
       }
     ],
     "lastContactDate": null
