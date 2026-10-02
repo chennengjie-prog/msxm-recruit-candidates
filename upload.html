@@ -183,8 +183,14 @@
 
   <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3/build/pdf.min.js"></script>
-  <script src="data/candidates.js"></script>
-  <script src="assets/app.js"></script>
+  <script>
+    // Always fetch the newest data/code: GitHub Pages lets browsers cache files for 10 min.
+    (function () {
+      var v = location.protocol === "file:" ? "" : "?v=" + Date.now();
+      document.write('<script src="data/candidates.js' + v + '"><\/script>');
+      document.write('<script src="assets/app.js' + v + '"><\/script>');
+    })();
+  </script>
   <script src="assets/upload.js"></script>
 </body>
 </html>

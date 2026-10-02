@@ -20,7 +20,13 @@
     <div id="detail-container"></div>
   </main>
 
-  <script src="data/candidates.js"></script>
-  <script src="assets/app.js"></script>
+  <script>
+    // Always fetch the newest data/code: GitHub Pages lets browsers cache files for 10 min.
+    (function () {
+      var v = location.protocol === "file:" ? "" : "?v=" + Date.now();
+      document.write('<script src="data/candidates.js' + v + '"><\/script>');
+      document.write('<script src="assets/app.js' + v + '"><\/script>');
+    })();
+  </script>
 </body>
 </html>

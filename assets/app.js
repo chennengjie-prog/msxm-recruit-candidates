@@ -744,7 +744,7 @@ function renderDetail(c) {
   } else if (c._localPhone) {
     contactBlock = `<div class="value">${escapeHtml(c._localPhone)}<span class="mask-hint">（${c._localContactEnteredBy ? "由 " + escapeHtml(c._localContactEnteredBy) + " " : ""}本地录入，仅你当前浏览器可见，尚未同步进数据文件）</span></div>`;
   } else {
-    contactBlock = `<div class="value"><span class="status-pill pill-pending">待获取</span><span class="mask-hint">需通过BOSS直聘自行联系，可在列表页点"+ 录入联系方式"记录</span></div>`;
+    contactBlock = `<div class="value"><span class="status-pill pill-pending">待获取</span><span class="mask-hint">需通过${escapeHtml(candidateSources(c).join("或"))}自行联系，可在列表页点"+ 录入联系方式"记录</span></div>`;
   }
 
   return `
