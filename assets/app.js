@@ -366,7 +366,7 @@ function initListPage() {
   let activeResumeContact = "all";
   let activeEmployer = null;
   let employerExpanded = false;
-  let lastFiltered = [];
+  let chipBase = [];
   let sortKey = "acquiredDate";
   let sortDir = "desc";
   let editingContactId = null;
@@ -438,6 +438,10 @@ function initListPage() {
       const matchesContact = !contactOnly.checked || c.contactObtained;
       return matchesSource && matchesResumeContact && matchesQuery && matchesQual && matchesContact;
     });
+    chipBase = filtered;
+    if (activeEmployer) {
+      filtered = filtered.filter((c) => employerGroup(c.currentCompany) === activeEmployer);
+    }
 
     filtered.sort((a, b) => {
       let av = a[sortKey];
@@ -454,9 +458,8 @@ function initListPage() {
       return 0;
     });
 
-    lastFiltered = filtered;
     renderRows(filtered);
-    renderEmployerPanel(filtered);
+    renderEmployerChips(chipBase);
     resultMeta.innerHTML = `共 <strong>${allCandidates.length}</strong> 位候选人，当前显示 <strong>${filtered.length}</strong> 位`;
     table.style.display = filtered.length ? "" : "none";
     emptyState.style.display = filtered.length ? "none" : "block";
@@ -466,21 +469,21 @@ function initListPage() {
   const EMPLOYER_COLLAPSED = 12;
   const employerChipsEl = document.querySelector("#employer-chips");
   const employerMoreEl = document.querySelector("#employer-more");
-  const employerListEl = document.querySelector("#employer-list");
   const employerSubEl = document.querySelector("#employer-sub");
 
-  // Chips = one per employer group (counts follow the current search/filters);
-  // clicking one drops down that employer's candidate list underneath.
-  function renderEmployerPanel(list) {
+  // One chip per employer group. The counts follow the other filters (search,
+  // 来源, 联系人, ...) but ignore the chip selection itself; clicking a chip
+  // filters the main table below to that employer so the whole row (and the
+  // inline 录入联系方式 / 记录反馈 buttons) stays available.
+  function renderEmployerChips(list) {
     const groups = new Map();
     list.forEach((c) => {
       const g = employerGroup(c.currentCompany);
-      if (!groups.has(g)) groups.set(g, []);
-      groups.get(g).push(c);
+      groups.set(g, (groups.get(g) || 0) + 1);
     });
     const names = [...groups.keys()].sort((a, b) =>
       (a === EMPLOYER_UNKNOWN) - (b === EMPLOYER_UNKNOWN) ||
-      groups.get(b).length - groups.get(a).length ||
+      groups.get(b) - groups.get(a) ||
       a.localeCompare(b, "zh"));
 
     let shown = names;
@@ -491,52 +494,24 @@ function initListPage() {
         shown.push(activeEmployer);
       }
     }
+    // A selected employer that the other filters have emptied out stays visible
+    // (with 0) so it can still be un-selected.
+    if (activeEmployer && !shown.includes(activeEmployer)) shown.push(activeEmployer);
 
-    employerSubEl.textContent = list.length === allCandidates.length
-      ? `共 ${names.length} 个单位，点击单位查看名单`
-      : `当前筛选结果共 ${names.length} 个单位，点击单位查看名单`;
+    employerSubEl.textContent = activeEmployer
+      ? `已筛选：${activeEmployer}，再点一次该标签可取消`
+      : (list.length === allCandidates.length
+        ? `共 ${names.length} 个单位，点击单位筛选下方名单`
+        : `当前筛选结果共 ${names.length} 个单位，点击单位筛选下方名单`);
     employerChipsEl.innerHTML = shown.map((n) => `
       <button type="button" class="employer-chip${n === activeEmployer ? " active" : ""}" data-employer="${escapeHtml(n)}">
-        ${escapeHtml(n)}<span class="employer-count">${groups.get(n).length}</span>
+        ${escapeHtml(n)}<span class="employer-count">${groups.get(n) || 0}</span>
       </button>`).join("");
 
     employerMoreEl.hidden = !collapsible;
     employerMoreEl.textContent = employerExpanded
       ? "收起"
       : `展开全部 ${names.length} 个单位`;
-
-    if (!activeEmployer) {
-      employerListEl.hidden = true;
-      employerListEl.innerHTML = "";
-      return;
-    }
-    const members = (groups.get(activeEmployer) || []).slice().sort((a, b) =>
-      String(b.acquiredDate).localeCompare(String(a.acquiredDate)) || a.id.localeCompare(b.id));
-    employerListEl.hidden = false;
-    employerListEl.innerHTML = `
-      <div class="employer-list-head">
-        <strong>${escapeHtml(activeEmployer)}</strong>
-        <span>${members.length} 位候选人</span>
-        <button type="button" class="employer-close" aria-label="收起名单">收起 ▲</button>
-      </div>
-      ${members.length ? members.map((c) => {
-        const phone = c.phone || c._localPhone;
-        const meta = [
-          c.education, c.yearsOfExperience != null ? c.yearsOfExperience + "年经验" : "",
-          c.hasSecQualification ? "有证券从业证" : "", c.school,
-        ].filter(Boolean).map(escapeHtml).join(" · ");
-        return `
-        <a class="emp-item" href="candidate.html?id=${encodeURIComponent(c.id)}">
-          <span class="emp-line1">
-            <strong class="emp-name">${escapeHtml(c.name)}</strong>
-            <span class="emp-id">${escapeHtml(c.id)}</span>
-            ${sourceTagsHtml(c)}
-            <span class="emp-phone${phone ? " has" : ""}">${phone ? escapeHtml(phone) : "待获取"}</span>
-          </span>
-          <span class="emp-line2">${escapeHtml([c.currentCompany, c.currentPosition].filter(Boolean).join(" · ") || "-")}</span>
-          <span class="emp-line3">${meta || "-"}${candidateContacts(c).length ? " · 联系人：" + escapeHtml(candidateContacts(c).join("、")) : ""}</span>
-        </a>`;
-      }).join("") : '<div class="emp-empty">当前搜索/筛选条件下，该单位没有候选人。</div>'}`;
   }
 
   employerChipsEl.addEventListener("click", (e) => {
@@ -544,19 +519,18 @@ function initListPage() {
     if (!chip) return;
     const name = chip.dataset.employer;
     activeEmployer = activeEmployer === name ? null : name;
-    renderEmployerPanel(lastFiltered);
-    syncUrlFromState();
-    if (activeEmployer) employerListEl.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    applyAndRender();
+    if (activeEmployer) {
+      // On a phone the chips can fill the screen: bring the table into view.
+      const top = resultMeta.getBoundingClientRect().top;
+      if (top > window.innerHeight * 0.6) {
+        resultMeta.scrollIntoView({ block: "start" });
+      }
+    }
   });
   employerMoreEl.addEventListener("click", () => {
     employerExpanded = !employerExpanded;
-    renderEmployerPanel(lastFiltered);
-  });
-  employerListEl.addEventListener("click", (e) => {
-    if (!e.target.closest(".employer-close")) return;
-    activeEmployer = null;
-    renderEmployerPanel(lastFiltered);
-    syncUrlFromState();
+    renderEmployerChips(chipBase);
   });
 
   function contactCellHtml(c) {
