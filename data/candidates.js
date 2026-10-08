@@ -593,7 +593,10 @@ window.CANDIDATES_DATA = [
     "resumeContacts": [
       "陈彦汐",
       "李祖荃"
-    ]
+    ],
+    "lastContactDate": "2026-10-08",
+    "contactFeedback": "查无此人",
+    "feedbackEnteredBy": "CNJ"
   },
   {
     "id": "c011",
@@ -1774,7 +1777,10 @@ window.CANDIDATES_DATA = [
         "major": "投资学",
         "period": ""
       }
-    ]
+    ],
+    "lastContactDate": "2026-10-08",
+    "contactFeedback": "查无此人",
+    "feedbackEnteredBy": "CNJ"
   },
   {
     "id": "c033",
