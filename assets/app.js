@@ -881,12 +881,29 @@ function initListPage() {
   qualOnly.addEventListener("change", applyAndRender);
   contactOnly.addEventListener("change", applyAndRender);
 
+  // The table is rendered after the data loads, so the browser can't restore
+  // the scroll position when coming back from a detail page. Remember it per
+  // view (the URL carries the filters) and put it back after the first render;
+  // with a company chip selected and nothing saved, jump to the table instead.
+  const scrollKey = () => "recruit_list_scroll:" + window.location.search;
+  try { window.history.scrollRestoration = "manual"; } catch (e) { /* ignore */ }
+  window.addEventListener("pagehide", () => {
+    try { sessionStorage.setItem(scrollKey(), String(Math.round(window.scrollY))); } catch (e) { /* ignore */ }
+  });
+  function restoreScrollAfterFirstRender() {
+    let saved = 0;
+    try { saved = Number(sessionStorage.getItem(scrollKey())) || 0; } catch (e) { /* ignore */ }
+    if (saved > 0) window.scrollTo(0, saved);
+    else if (activeEmployer) resultMeta.scrollIntoView({ block: "start" });
+  }
+
   restoreStateFromUrl();
   loadCandidates()
     .then((list) => {
       allCandidates = list;
       updateSortHeaders();
       applyAndRender();
+      restoreScrollAfterFirstRender();
     })
     .catch((err) => {
       resultMeta.textContent = "数据加载失败：" + err.message;
