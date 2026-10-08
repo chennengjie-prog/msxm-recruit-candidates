@@ -913,3 +913,199 @@ td.muted {
   font-size: 13px;
   color: var(--color-primary);
 }
+
+/* ---------- 按最近一份工作单位分类 ---------- */
+.employer-panel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+
+.employer-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.employer-head h2 {
+  margin: 0;
+  font-size: 15px;
+  color: var(--color-primary-dark);
+}
+
+.employer-sub {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.employer-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.employer-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.employer-chip:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.employer-chip.active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.employer-count {
+  font-size: 12px;
+  min-width: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--color-row-hover);
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.employer-chip.active .employer-count {
+  background: rgba(255, 255, 255, 0.22);
+  color: #fff;
+}
+
+.employer-more {
+  margin-top: 10px;
+  border: none;
+  background: none;
+  color: var(--color-primary);
+  font-size: 13px;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.employer-list {
+  margin-top: 12px;
+  border-top: 1px solid var(--color-border);
+  padding-top: 10px;
+}
+
+.employer-list-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: var(--color-primary-dark);
+}
+
+.employer-list-head span {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.employer-close {
+  margin-left: auto;
+  border: none;
+  background: none;
+  color: var(--color-text-muted);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.emp-item {
+  display: block;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+}
+
+.emp-item:hover {
+  background: var(--color-row-hover);
+  border-color: var(--color-primary);
+}
+
+.emp-line1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+}
+
+.emp-name {
+  font-size: 15px;
+  color: var(--color-primary-dark);
+}
+
+.emp-id {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.emp-phone {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.emp-phone.has {
+  color: var(--color-tag-zhilian);
+  font-weight: 600;
+}
+
+.emp-line2,
+.emp-line3 {
+  display: block;
+  margin-top: 3px;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.emp-line2 {
+  color: var(--color-text);
+}
+
+.emp-line3 {
+  color: var(--color-text-muted);
+  font-size: 12px;
+}
+
+.emp-empty {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  padding: 8px 0;
+}
+
+@media (max-width: 600px) {
+  .employer-panel {
+    padding: 12px;
+  }
+  .employer-chips {
+    gap: 6px;
+  }
+  .employer-chip {
+    padding: 6px 10px;
+  }
+  .emp-phone {
+    margin-left: 0;
+  }
+}

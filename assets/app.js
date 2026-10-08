@@ -23,6 +23,33 @@ function sourceTagsHtml(c) {
     .map((s) => `<span class="tag ${sourceTagClass(s)}">${escapeHtml(s)}</span>`).join("")}</span>`;
 }
 
+// Groups the many spellings of one employer ("兴业银行股份有限公司厦门分行",
+// "福建兴业银行厦门分行", "龙岩兴业银行"...) under a single label for the
+// 按最近一份工作单位分类 panel on the list page.
+const EMPLOYER_UNKNOWN = "未填写单位";
+const EMPLOYER_ALIASES = [
+  [/兴业证券/, "兴业证券"],
+  [/兴业银行/, "兴业银行"],
+  [/工商银行/, "工商银行"],
+  [/建设银行/, "建设银行"],
+  [/民生银行/, "民生银行"],
+  [/银河证券/, "银河证券"],
+];
+
+function employerGroup(company) {
+  const raw = (company || "").replace(/\s+/g, "");
+  if (!raw) return EMPLOYER_UNKNOWN;
+  for (const [re, label] of EMPLOYER_ALIASES) {
+    if (re.test(raw)) return label;
+  }
+  let name = raw
+    .replace(/[（(][^）)]*[）)]/g, "")
+    .replace(/(股份)?有限(责任)?公司/g, "");
+  const m = name.match(/^(.*?(?:银行|证券|基金|信托))(?:.+(?:分行|分公司|支行|营业部|营业厅|总行|部))$/);
+  if (m) name = m[1];
+  return name || raw;
+}
+
 function isPlaceholderName(name) {
   return /^[一-龥]{1,3}(先生|女士)$/.test(name || "") || /\*\*$/.test(name || "");
 }
@@ -337,6 +364,9 @@ function initListPage() {
   let allCandidates = [];
   let activeSource = "all";
   let activeResumeContact = "all";
+  let activeEmployer = null;
+  let employerExpanded = false;
+  let lastFiltered = [];
   let sortKey = "acquiredDate";
   let sortDir = "desc";
   let editingContactId = null;
@@ -354,6 +384,7 @@ function initListPage() {
     if (activeResumeContact !== "all") params.set("contact", activeResumeContact);
     if (qualOnly.checked) params.set("qual", "1");
     if (contactOnly.checked) params.set("hascontact", "1");
+    if (activeEmployer) params.set("employer", activeEmployer);
     if (sortKey !== "acquiredDate") params.set("sort", sortKey);
     if (sortDir !== "desc") params.set("dir", sortDir);
     const qs = params.toString();
@@ -388,6 +419,7 @@ function initListPage() {
 
     if (params.get("qual") === "1") qualOnly.checked = true;
     if (params.get("hascontact") === "1") contactOnly.checked = true;
+    activeEmployer = params.get("employer") || null;
 
     const sort = params.get("sort");
     if (sort) sortKey = sort;
@@ -422,12 +454,110 @@ function initListPage() {
       return 0;
     });
 
+    lastFiltered = filtered;
     renderRows(filtered);
+    renderEmployerPanel(filtered);
     resultMeta.innerHTML = `共 <strong>${allCandidates.length}</strong> 位候选人，当前显示 <strong>${filtered.length}</strong> 位`;
     table.style.display = filtered.length ? "" : "none";
     emptyState.style.display = filtered.length ? "none" : "block";
     syncUrlFromState();
   }
+
+  const EMPLOYER_COLLAPSED = 12;
+  const employerChipsEl = document.querySelector("#employer-chips");
+  const employerMoreEl = document.querySelector("#employer-more");
+  const employerListEl = document.querySelector("#employer-list");
+  const employerSubEl = document.querySelector("#employer-sub");
+
+  // Chips = one per employer group (counts follow the current search/filters);
+  // clicking one drops down that employer's candidate list underneath.
+  function renderEmployerPanel(list) {
+    const groups = new Map();
+    list.forEach((c) => {
+      const g = employerGroup(c.currentCompany);
+      if (!groups.has(g)) groups.set(g, []);
+      groups.get(g).push(c);
+    });
+    const names = [...groups.keys()].sort((a, b) =>
+      (a === EMPLOYER_UNKNOWN) - (b === EMPLOYER_UNKNOWN) ||
+      groups.get(b).length - groups.get(a).length ||
+      a.localeCompare(b, "zh"));
+
+    let shown = names;
+    const collapsible = names.length > EMPLOYER_COLLAPSED;
+    if (collapsible && !employerExpanded) {
+      shown = names.slice(0, EMPLOYER_COLLAPSED);
+      if (activeEmployer && names.includes(activeEmployer) && !shown.includes(activeEmployer)) {
+        shown.push(activeEmployer);
+      }
+    }
+
+    employerSubEl.textContent = list.length === allCandidates.length
+      ? `共 ${names.length} 个单位，点击单位查看名单`
+      : `当前筛选结果共 ${names.length} 个单位，点击单位查看名单`;
+    employerChipsEl.innerHTML = shown.map((n) => `
+      <button type="button" class="employer-chip${n === activeEmployer ? " active" : ""}" data-employer="${escapeHtml(n)}">
+        ${escapeHtml(n)}<span class="employer-count">${groups.get(n).length}</span>
+      </button>`).join("");
+
+    employerMoreEl.hidden = !collapsible;
+    employerMoreEl.textContent = employerExpanded
+      ? "收起"
+      : `展开全部 ${names.length} 个单位`;
+
+    if (!activeEmployer) {
+      employerListEl.hidden = true;
+      employerListEl.innerHTML = "";
+      return;
+    }
+    const members = (groups.get(activeEmployer) || []).slice().sort((a, b) =>
+      String(b.acquiredDate).localeCompare(String(a.acquiredDate)) || a.id.localeCompare(b.id));
+    employerListEl.hidden = false;
+    employerListEl.innerHTML = `
+      <div class="employer-list-head">
+        <strong>${escapeHtml(activeEmployer)}</strong>
+        <span>${members.length} 位候选人</span>
+        <button type="button" class="employer-close" aria-label="收起名单">收起 ▲</button>
+      </div>
+      ${members.length ? members.map((c) => {
+        const phone = c.phone || c._localPhone;
+        const meta = [
+          c.education, c.yearsOfExperience != null ? c.yearsOfExperience + "年经验" : "",
+          c.hasSecQualification ? "有证券从业证" : "", c.school,
+        ].filter(Boolean).map(escapeHtml).join(" · ");
+        return `
+        <a class="emp-item" href="candidate.html?id=${encodeURIComponent(c.id)}">
+          <span class="emp-line1">
+            <strong class="emp-name">${escapeHtml(c.name)}</strong>
+            <span class="emp-id">${escapeHtml(c.id)}</span>
+            ${sourceTagsHtml(c)}
+            <span class="emp-phone${phone ? " has" : ""}">${phone ? escapeHtml(phone) : "待获取"}</span>
+          </span>
+          <span class="emp-line2">${escapeHtml([c.currentCompany, c.currentPosition].filter(Boolean).join(" · ") || "-")}</span>
+          <span class="emp-line3">${meta || "-"}${candidateContacts(c).length ? " · 联系人：" + escapeHtml(candidateContacts(c).join("、")) : ""}</span>
+        </a>`;
+      }).join("") : '<div class="emp-empty">当前搜索/筛选条件下，该单位没有候选人。</div>'}`;
+  }
+
+  employerChipsEl.addEventListener("click", (e) => {
+    const chip = e.target.closest(".employer-chip");
+    if (!chip) return;
+    const name = chip.dataset.employer;
+    activeEmployer = activeEmployer === name ? null : name;
+    renderEmployerPanel(lastFiltered);
+    syncUrlFromState();
+    if (activeEmployer) employerListEl.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  });
+  employerMoreEl.addEventListener("click", () => {
+    employerExpanded = !employerExpanded;
+    renderEmployerPanel(lastFiltered);
+  });
+  employerListEl.addEventListener("click", (e) => {
+    if (!e.target.closest(".employer-close")) return;
+    activeEmployer = null;
+    renderEmployerPanel(lastFiltered);
+    syncUrlFromState();
+  });
 
   function contactCellHtml(c) {
     if (c.contactObtained) {
