@@ -444,6 +444,10 @@ function initListPage() {
     }
 
     filtered.sort((a, b) => {
+      // Candidates with a full real name always come before masked ones
+      // ("李**", "陈先生", "陈女士"); the chosen column sorts within each group.
+      const maskedDiff = isPlaceholderName(a.name) - isPlaceholderName(b.name);
+      if (maskedDiff) return maskedDiff;
       let av = a[sortKey];
       let bv = b[sortKey];
       if (sortKey === "acquiredDate") {
