@@ -2576,7 +2576,9 @@ window.CANDIDATES_DATA = [
         "major": "海洋装备技术（统招，985院校）",
         "period": "2014-2018"
       }
-    ]
+    ],
+    "lastContactDate": "2026-09-28",
+    "contactFeedback": "放弃"
   },
   {
     "id": "c050",
