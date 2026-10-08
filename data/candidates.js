@@ -1349,7 +1349,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-09-16",
     "resumeContact": "陈彦汐",
     "activityStatus": "2周内活跃",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "",
     "age": 30,
     "education": "",
@@ -1361,7 +1361,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "项目专员",
     "expectedSalary": "10-15K",
     "location": "厦门",
-    "phone": "",
+    "phone": "18650198512",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职",
@@ -1370,7 +1370,7 @@ window.CANDIDATES_DATA = [
       "证券从业资格证"
     ],
     "selfEvaluation": "",
-    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。",
+    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。 [2026-10-08 由cnj通过网页录入联系方式]",
     "workExperience": [
       {
         "company": "厦门海豹他趣科技有限公司",
