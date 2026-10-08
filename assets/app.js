@@ -281,7 +281,7 @@ function escapeHtml(str) {
 
 function buildSearchIndex(c) {
   const parts = [
-    c.name, ...candidateSources(c), c.education, c.school, c.major,
+    c.id, c.name, ...candidateSources(c), c.education, c.school, c.major,
     c.currentCompany, c.currentPosition, c.expectedPosition,
     c.location, c.status, c.jobSeekingStatus, c.email,
     ...candidateContacts(c), c.activityStatus,
@@ -517,6 +517,7 @@ function initListPage() {
         <td class="muted">${escapeHtml(c.location)}</td>
         <td><span class="status-pill">${escapeHtml(c.status || "-")}</span></td>
         <td>${escapeHtml(candidateContacts(c).join("、"))}</td>
+        <td class="muted">${escapeHtml(c.id)}</td>
       </tr>
     `;
     }).join("");
@@ -870,6 +871,7 @@ function renderDetail(c) {
             <div class="item"><label>简历来源</label><div class="value">${sourceTagsHtml(c)}</div></div>
             <div class="item"><label>获取时间</label><div class="value">${escapeHtml(c.acquiredDate)}</div></div>
             <div class="item"><label>简历联系人</label><div class="value">${escapeHtml(candidateContacts(c).join("、")) || "-"}</div></div>
+            <div class="item"><label>编号</label><div class="value">${escapeHtml(c.id)}</div></div>
             <div class="item"><label>活跃状态</label><div class="value">${escapeHtml(c.activityStatus) || "-"}</div></div>
             <div class="item"><label>联系电话</label>${contactBlock}</div>
             ${c.email ? `<div class="item"><label>邮箱</label><div class="value">${escapeHtml(c.email)}</div></div>` : ""}
