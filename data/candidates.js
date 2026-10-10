@@ -4609,7 +4609,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-10-08",
     "resumeContact": "陈彦汐",
     "activityStatus": "热搜",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "女",
     "age": 26,
     "education": "本科",
@@ -4621,7 +4621,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "行政专员/助理",
     "expectedSalary": "5-9K",
     "location": "厦门",
-    "phone": "",
+    "phone": "17750853995",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职-月内到岗",
@@ -4721,7 +4721,8 @@ window.CANDIDATES_DATA = [
         "period": "2011-2015"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-10-10",
+    "contactFeedback": "非真名"
   },
   {
     "id": "c087",
@@ -4730,7 +4731,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-10-08",
     "resumeContact": "陈彦汐",
     "activityStatus": "今日活跃",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "男",
     "age": 25,
     "education": "本科",
@@ -4742,7 +4743,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "员工关系",
     "expectedSalary": "8-9K",
     "location": "厦门",
-    "phone": "",
+    "phone": "18020742119",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职-考虑机会",
@@ -5107,7 +5108,8 @@ window.CANDIDATES_DATA = [
         "period": "2009-2013"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-10-10",
+    "contactFeedback": "非真名"
   },
   {
     "id": "c094",
@@ -5325,7 +5327,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-10-02",
     "resumeContact": "蔡家宝",
     "activityStatus": "3天内活跃",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "男",
     "age": 35,
     "education": "硕士",
@@ -5337,7 +5339,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "银行零售业务",
     "expectedSalary": "15-30k×12薪",
     "location": "福建",
-    "phone": "",
+    "phone": "15980888216",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职，急寻新工作",
@@ -5508,7 +5510,8 @@ window.CANDIDATES_DATA = [
         "period": "2012.09-2016.06"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-10-10",
+    "contactFeedback": "无此人"
   },
   {
     "id": "c101",
@@ -5588,7 +5591,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-10-01",
     "resumeContact": "蔡家宝",
     "activityStatus": "今天活跃",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "女",
     "age": 24,
     "education": "硕士",
@@ -5600,7 +5603,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "产品经理（医疗器械、制药）",
     "expectedSalary": "30-35k×12薪",
     "location": "新加坡",
-    "phone": "",
+    "phone": "15959237529",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职，急寻新工作",
@@ -5778,7 +5781,8 @@ window.CANDIDATES_DATA = [
         "period": "2010.09-2014.06"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-10-10",
+    "contactFeedback": "非真名"
   },
   {
     "id": "c105",
@@ -5839,7 +5843,7 @@ window.CANDIDATES_DATA = [
         "period": "2012-2016"
       }
     ],
-    "lastContactDate": null,
+    "lastContactDate": "2026-10-10",
     "sources": [
       "猎聘",
       "智联招聘"
@@ -5847,7 +5851,8 @@ window.CANDIDATES_DATA = [
     "resumeContacts": [
       "蔡家宝",
       "李祖荃"
-    ]
+    ],
+    "contactFeedback": "无此人"
   },
   {
     "id": "c106",
@@ -6350,7 +6355,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-10-08",
     "resumeContact": "陈彦汐",
     "activityStatus": "2周内活跃",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "女",
     "age": 32,
     "education": "本科",
@@ -6362,7 +6367,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "客户经理",
     "expectedSalary": "面议",
     "location": "厦门",
-    "phone": "",
+    "phone": "18850527224",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职-考虑机会",
