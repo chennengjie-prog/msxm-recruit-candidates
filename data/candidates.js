@@ -1395,7 +1395,9 @@ window.CANDIDATES_DATA = [
         "major": "工程管理",
         "period": ""
       }
-    ]
+    ],
+    "lastContactDate": "2026-10-13",
+    "contactFeedback": "暂时不考虑"
   },
   {
     "id": "c026",
