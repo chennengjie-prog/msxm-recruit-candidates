@@ -5376,7 +5376,7 @@ window.CANDIDATES_DATA = [
         "period": "2008.09-2012.07"
       }
     ],
-    "lastContactDate": null,
+    "lastContactDate": "2026-10-13",
     "sources": [
       "猎聘",
       "智联招聘"
@@ -5384,7 +5384,8 @@ window.CANDIDATES_DATA = [
     "resumeContacts": [
       "蔡家宝",
       "李祖荃"
-    ]
+    ],
+    "contactFeedback": "工作时电话不方便，加了微信找时间聊"
   },
   {
     "id": "c099",
