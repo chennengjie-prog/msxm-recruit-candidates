@@ -6467,7 +6467,8 @@ window.CANDIDATES_DATA = [
         "period": "2013-2017"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-10-13",
+    "contactFeedback": "加微信约线下见面"
   },
   {
     "id": "c117",
