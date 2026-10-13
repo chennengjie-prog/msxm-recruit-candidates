@@ -1397,7 +1397,7 @@ window.CANDIDATES_DATA = [
       }
     ],
     "lastContactDate": "2026-10-13",
-    "contactFeedback": "暂时不考虑"
+    "contactFeedback": "暂时不考虑，很久没登录招聘平台"
   },
   {
     "id": "c026",
