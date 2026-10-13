@@ -6593,7 +6593,8 @@ window.CANDIDATES_DATA = [
         "period": "2012-2016"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-10-13",
+    "contactFeedback": "彦汐联系，觉得券商指标难"
   },
   {
     "id": "c119",
