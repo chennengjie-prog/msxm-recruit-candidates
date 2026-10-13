@@ -2344,7 +2344,9 @@ window.CANDIDATES_DATA = [
         "major": "金融",
         "period": ""
       }
-    ]
+    ],
+    "lastContactDate": "2026-10-13",
+    "contactFeedback": "没接，家宝继续跟进"
   },
   {
     "id": "c045",
