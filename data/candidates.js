@@ -4666,7 +4666,8 @@ window.CANDIDATES_DATA = [
         "period": "2019-2023"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-10-13",
+    "contactFeedback": "不太合适，放弃"
   },
   {
     "id": "c086",
