@@ -6547,7 +6547,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-10-09",
     "resumeContact": "陈彦汐",
     "activityStatus": "5月内活跃",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "女",
     "age": 32,
     "education": "本科",
@@ -6559,7 +6559,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "外贸业务员",
     "expectedSalary": "15-30K",
     "location": "厦门",
-    "phone": "",
+    "phone": "15159231271",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职-考虑机会",
@@ -6570,7 +6570,7 @@ window.CANDIDATES_DATA = [
       "基金从业资格证"
     ],
     "selfEvaluation": "利用良好服务及时间不断同客户沟通，帮助客户解决问题，挖掘客户需求。有效转介理财、个贷甚至对公开户及代发等其他业务，完成考核指标。",
-    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 招商银行（2016.07-至今）与中信银行（2019.07-至今）两段经历都标“至今”，实际现任职单位请核实（头部显示为中信银行）。 求职意向为外贸业务员，与金融岗位方向差异较大。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 招商银行（2016.07-至今）与中信银行（2019.07-至今）两段经历都标“至今”，实际现任职单位请核实（头部显示为中信银行）。 求职意向为外贸业务员，与金融岗位方向差异较大。 [2026-10-13 由cnj通过网页录入联系方式]",
     "workExperience": [
       {
         "company": "中信银行股份有限公司厦门分行",
