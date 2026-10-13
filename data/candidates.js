@@ -5653,7 +5653,8 @@ window.CANDIDATES_DATA = [
         "period": "2020.09-2024.06"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-10-13",
+    "contactFeedback": "不考虑金融业，放弃"
   },
   {
     "id": "c103",
