@@ -6414,7 +6414,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-10-08",
     "resumeContact": "陈彦汐",
     "activityStatus": "刚刚活跃",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "女",
     "age": 31,
     "education": "本科",
@@ -6426,7 +6426,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "银行客户经理",
     "expectedSalary": "10-11K",
     "location": "厦门",
-    "phone": "",
+    "phone": "13255952070",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职-考虑机会",
@@ -6438,7 +6438,7 @@ window.CANDIDATES_DATA = [
       "英语专业八级"
     ],
     "selfEvaluation": "银行业的工作经验，使我对银行工作流程有充分了解，切实体会到为客户提供优质服务的重要性，使我的沟通能力、随机应变能力得到提升；在校期间所学的英语专业并且拿到英语专业八级证书，学习能力较强。",
-    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 工作经历显示还有更早的经历，截图未展开全部。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 工作经历显示还有更早的经历，截图未展开全部。 [2026-10-13 由cnj通过网页录入联系方式]",
     "workExperience": [
       {
         "company": "中信银行股份有限公司厦门分行",
