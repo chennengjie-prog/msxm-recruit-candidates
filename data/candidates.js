@@ -3957,7 +3957,8 @@ window.CANDIDATES_DATA = [
         "period": "2014-2018"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-10-13",
+    "contactFeedback": "加微信约时间"
   },
   {
     "id": "c074",
