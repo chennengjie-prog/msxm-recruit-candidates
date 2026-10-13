@@ -5388,7 +5388,7 @@ window.CANDIDATES_DATA = [
       "蔡家宝",
       "李祖荃"
     ],
-    "contactFeedback": "工作时电话不方便，加了微信找时间聊"
+    "contactFeedback": "一直在银行做后台，自觉不匹配，放弃"
   },
   {
     "id": "c099",
