@@ -869,7 +869,7 @@ window.CANDIDATES_DATA = [
       "李祖荃"
     ],
     "lastContactDate": "2026-10-13",
-    "contactFeedback": "工作时电话不方便，晚上联系"
+    "contactFeedback": "二次联系，加微信。暂时不考虑，担心券商考核严，没有安全感"
   },
   {
     "id": "c016",
