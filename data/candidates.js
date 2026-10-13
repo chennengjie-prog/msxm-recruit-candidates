@@ -867,7 +867,9 @@ window.CANDIDATES_DATA = [
     "resumeContacts": [
       "陈彦汐",
       "李祖荃"
-    ]
+    ],
+    "lastContactDate": "2026-10-13",
+    "contactFeedback": "工作时电话不方便，晚上联系"
   },
   {
     "id": "c016",
