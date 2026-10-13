@@ -4784,7 +4784,8 @@ window.CANDIDATES_DATA = [
         "period": "2019-2023"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-10-13",
+    "contactFeedback": "觉得积累不够，暂时不考虑营销岗。加了微信，需较长时间沟通"
   },
   {
     "id": "c088",
