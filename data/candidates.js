@@ -3895,7 +3895,7 @@ window.CANDIDATES_DATA = [
         "period": "2008-2011"
       }
     ],
-    "lastContactDate": null,
+    "lastContactDate": "2026-10-13",
     "sources": [
       "BOSS直聘",
       "智联招聘"
@@ -3903,7 +3903,8 @@ window.CANDIDATES_DATA = [
     "resumeContacts": [
       "陈彦汐",
       "李祖荃"
-    ]
+    ],
+    "contactFeedback": "加微信约时间"
   },
   {
     "id": "c073",
