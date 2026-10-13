@@ -6417,7 +6417,7 @@ window.CANDIDATES_DATA = [
       }
     ],
     "lastContactDate": "2026-10-13",
-    "contactFeedback": "工作时间不方面，加微信"
+    "contactFeedback": "二次联系，不考虑证券，放弃"
   },
   {
     "id": "c116",
