@@ -3823,7 +3823,8 @@ window.CANDIDATES_DATA = [
         "period": "2013-2017"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-10-13",
+    "contactFeedback": "很久没更新信息，还在福州，不考虑换工作"
   },
   {
     "id": "c072",
