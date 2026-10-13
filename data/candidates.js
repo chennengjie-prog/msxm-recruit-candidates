@@ -6411,7 +6411,8 @@ window.CANDIDATES_DATA = [
         "period": "2012-2016"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-10-13",
+    "contactFeedback": "工作时间不方面，加微信"
   },
   {
     "id": "c116",
