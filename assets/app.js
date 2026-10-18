@@ -364,6 +364,17 @@ function initListPage() {
   let allCandidates = [];
   let activeSource = "all";
   let activeResumeContact = "all";
+  // grouped.html (data-layout="grouped") splits the table into three blocks;
+  // index.html keeps the single flat table exactly as before.
+  const GROUPED = document.body.dataset.layout === "grouped";
+  const GROUP_DEFS = [
+    { id: "todo", title: "未联系 · 有完整姓名" },
+    { id: "done", title: "已联系" },
+    { id: "masked", title: "无完整姓名" },
+  ];
+  const GROUP_DEFAULT_OPEN = ["todo"];
+  let openGroups = new Set(GROUP_DEFAULT_OPEN);
+  const pinnedGroup = new Map(); // rows being edited stay in their block until reload
   let activeEmployer = null;
   let employerExpanded = false;
   let chipBase = [];
@@ -385,6 +396,10 @@ function initListPage() {
     if (qualOnly.checked) params.set("qual", "1");
     if (contactOnly.checked) params.set("hascontact", "1");
     if (activeEmployer) params.set("employer", activeEmployer);
+    if (GROUPED) {
+      const cur = GROUP_DEFS.map((g) => g.id).filter((id) => openGroups.has(id)).join(",");
+      if (cur !== GROUP_DEFAULT_OPEN.join(",")) params.set("grp", cur || "none");
+    }
     if (sortKey !== "acquiredDate") params.set("sort", sortKey);
     if (sortDir !== "desc") params.set("dir", sortDir);
     const qs = params.toString();
@@ -420,6 +435,10 @@ function initListPage() {
     if (params.get("qual") === "1") qualOnly.checked = true;
     if (params.get("hascontact") === "1") contactOnly.checked = true;
     activeEmployer = params.get("employer") || null;
+    const grp = params.get("grp");
+    if (GROUPED && grp) {
+      openGroups = new Set(grp.split(",").filter((id) => GROUP_DEFS.some((g) => g.id === id)));
+    }
 
     const sort = params.get("sort");
     if (sort) sortKey = sort;
@@ -464,6 +483,15 @@ function initListPage() {
 
     renderRows(filtered);
     renderEmployerChips(chipBase);
+    if (GROUPED) {
+      const counts = groupCounts(filtered);
+      resultMeta.innerHTML = `共 <strong>${allCandidates.length}</strong> 位候选人，当前筛选 <strong>${filtered.length}</strong> 位`
+        + `（未联系有全名 ${counts.todo} · 已联系 ${counts.done} · 无完整姓名 ${counts.masked}）`;
+      table.style.display = filtered.length ? "" : "none";
+      emptyState.style.display = filtered.length ? "none" : "block";
+      syncUrlFromState();
+      return;
+    }
     resultMeta.innerHTML = `共 <strong>${allCandidates.length}</strong> 位候选人，当前显示 <strong>${filtered.length}</strong> 位`;
     table.style.display = filtered.length ? "" : "none";
     emptyState.style.display = filtered.length ? "none" : "block";
@@ -601,8 +629,55 @@ function initListPage() {
     };
   }
 
-  function renderRows(list) {
-    tbody.innerHTML = list.map((c) => {
+  function isContacted(c) {
+    return !!(c.contactObtained || c._localPhone || c.lastContactDate || c._localFeedbackDate
+      || c.contactFeedback || c._localFeedback);
+  }
+
+  function computeGroup(c) {
+    if (isContacted(c)) return "done";
+    return isPlaceholderName(c.name) ? "masked" : "todo";
+  }
+
+  function groupOf(c) {
+    if (c.id === editingContactId || c.id === editingFeedbackId) {
+      if (!pinnedGroup.has(c.id)) pinnedGroup.set(c.id, computeGroup(c));
+    }
+    return pinnedGroup.get(c.id) || computeGroup(c);
+  }
+
+  function groupCounts(list) {
+    const counts = { todo: 0, done: 0, masked: 0 };
+    list.forEach((c) => { counts[groupOf(c)] += 1; });
+    return counts;
+  }
+
+  // Rows of one block are only rendered while it is open (keeps the page short
+  // on phones); typing in the search box opens every block that has matches.
+  function groupedRowsHtml(list) {
+    const searching = searchInput.value.trim() !== "";
+    const colCount = document.querySelectorAll("#candidate-table thead th").length;
+    const buckets = { todo: [], done: [], masked: [] };
+    list.forEach((c) => buckets[groupOf(c)].push(c));
+    return GROUP_DEFS.map((g) => {
+      const rows = buckets[g.id];
+      if (!rows.length) return "";
+      const open = searching || openGroups.has(g.id);
+      return `
+      <tr class="group-row group-${g.id}" data-group="${g.id}">
+        <td colspan="${colCount}">
+          <button type="button" class="group-head" aria-expanded="${open}">
+            <span class="group-arrow">${open ? "▼" : "▶"}</span>
+            <strong class="group-title">${g.title}</strong>
+            <span class="group-count">${rows.length} 位</span>
+            <span class="group-tip">${searching ? "搜索中，已自动展开" : (open ? "点击折叠" : "点击展开")}</span>
+          </button>
+        </td>
+      </tr>${open ? rows.map(rowHtml).join("") : ""}`;
+    }).join("");
+  }
+
+  function rowHtml(c) {
       const fb = feedbackCellsHtml(c);
       return `
       <tr data-id="${c.id}">
@@ -628,14 +703,29 @@ function initListPage() {
         <td class="muted">${escapeHtml(c.id)}</td>
       </tr>
     `;
-    }).join("");
+  }
 
-    tbody.querySelectorAll("tr").forEach((row) => {
+  function renderRows(list) {
+    tbody.innerHTML = GROUPED ? groupedRowsHtml(list) : list.map(rowHtml).join("");
+
+    tbody.querySelectorAll("tr[data-id]").forEach((row) => {
       row.addEventListener("click", (e) => {
         if (e.target.closest(".contact-cell") || e.target.closest(".feedback-cell")) return;
         window.location.href = "candidate.html?id=" + encodeURIComponent(row.dataset.id);
       });
     });
+
+    if (GROUPED) {
+      const scroller = document.querySelector(".table-scroll");
+      if (scroller) scroller.style.setProperty("--scroll-w", scroller.clientWidth + "px");
+      tbody.querySelectorAll("tr.group-row").forEach((row) => {
+        row.querySelector(".group-head").addEventListener("click", () => {
+          const id = row.dataset.group;
+          if (openGroups.has(id)) openGroups.delete(id); else openGroups.add(id);
+          applyAndRender();
+        });
+      });
+    }
 
     if (editingContactId) {
       const input = tbody.querySelector(`.contact-input[data-id="${editingContactId}"]`);
@@ -877,6 +967,13 @@ function initListPage() {
     });
   });
 
+  if (GROUPED) {
+    window.addEventListener("resize", () => {
+      const scroller = document.querySelector(".table-scroll");
+      if (scroller) scroller.style.setProperty("--scroll-w", scroller.clientWidth + "px");
+    });
+  }
+
   searchInput.addEventListener("input", applyAndRender);
   qualOnly.addEventListener("change", applyAndRender);
   contactOnly.addEventListener("change", applyAndRender);
@@ -885,7 +982,7 @@ function initListPage() {
   // the scroll position when coming back from a detail page. Remember it per
   // view (the URL carries the filters) and put it back after the first render;
   // with a company chip selected and nothing saved, jump to the table instead.
-  const scrollKey = () => "recruit_list_scroll:" + window.location.search;
+  const scrollKey = () => "recruit_list_scroll:" + window.location.pathname + window.location.search;
   try { window.history.scrollRestoration = "manual"; } catch (e) { /* ignore */ }
   window.addEventListener("pagehide", () => {
     try { sessionStorage.setItem(scrollKey(), String(Math.round(window.scrollY))); } catch (e) { /* ignore */ }
@@ -933,7 +1030,7 @@ function initDetailPage() {
     try {
       const ref = new URL(document.referrer);
       const lastSegment = ref.pathname.split("/").pop();
-      if (ref.origin === window.location.origin && (lastSegment === "" || lastSegment === "index.html")) {
+      if (ref.origin === window.location.origin && (lastSegment === "" || lastSegment === "index.html" || lastSegment === "grouped.html")) {
         backLink.href = ref.pathname + ref.search;
       }
     } catch {}

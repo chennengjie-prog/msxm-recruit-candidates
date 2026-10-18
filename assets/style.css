@@ -1011,3 +1011,81 @@ td.muted {
     padding: 6px 10px;
   }
 }
+
+/* ---------- grouped.html：三块分组（未联系有全名 / 已联系 / 无完整姓名） ---------- */
+.version-note {
+  font-size: 12.5px;
+  color: var(--color-text-muted);
+  background: var(--color-row-hover);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
+  padding: 8px 12px;
+  margin-bottom: 12px;
+}
+
+.version-note a {
+  color: var(--color-primary);
+}
+
+tbody tr.group-row,
+tbody tr.group-row:hover {
+  background: var(--color-surface);
+  cursor: default;
+}
+
+tbody tr.group-row td {
+  padding: 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* sticky so the bar stays at the left edge while the wide table scrolls sideways */
+.group-head {
+  position: sticky;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: var(--scroll-w, 100%);
+  box-sizing: border-box;
+  border: none;
+  background: var(--color-row-hover);
+  color: var(--color-primary-dark);
+  font-size: 15px;
+  padding: 12px 14px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.group-row.group-todo .group-head {
+  background: #e6f0fb;
+}
+
+.group-arrow {
+  font-size: 12px;
+  width: 14px;
+  color: var(--color-primary);
+}
+
+.group-count {
+  font-size: 12px;
+  color: var(--color-primary);
+  background: var(--color-surface);
+  border-radius: 999px;
+  padding: 1px 9px;
+}
+
+.group-tip {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 600px) {
+  .group-head {
+    padding: 13px 12px;
+    font-size: 15px;
+  }
+  .group-tip {
+    font-size: 11.5px;
+  }
+}
