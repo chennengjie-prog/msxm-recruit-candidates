@@ -14,6 +14,22 @@ function candidateSources(c) {
   return c.sources && c.sources.length ? c.sources : (c.source ? [c.source] : []);
 }
 
+// Recruiters are shown by surname only on the site (陈 / 李 / 蔡); the full
+// names stay in the data file as the stable filter key.
+const RECRUITER_ALIAS = { "陈彦汐": "陈", "李祖荃": "李", "蔡家宝": "蔡" };
+
+function recruiterAlias(name) {
+  return RECRUITER_ALIAS[name] || name;
+}
+
+function maskRecruiterNames(text) {
+  let out = String(text == null ? "" : text);
+  Object.keys(RECRUITER_ALIAS).forEach((full) => {
+    out = out.split(full).join(RECRUITER_ALIAS[full]);
+  });
+  return out;
+}
+
 function candidateContacts(c) {
   return c.resumeContacts && c.resumeContacts.length ? c.resumeContacts : (c.resumeContact ? [c.resumeContact] : []);
 }
@@ -311,7 +327,7 @@ function buildSearchIndex(c) {
     c.id, c.name, ...candidateSources(c), c.education, c.school, c.major,
     c.currentCompany, c.currentPosition, c.expectedPosition,
     c.location, c.status, c.jobSeekingStatus, c.email,
-    ...candidateContacts(c), c.activityStatus,
+    ...candidateContacts(c).map(recruiterAlias), c.activityStatus,
     c.lastContactDate, c.contactFeedback,
     c.hasSecQualification ? "证券从业资格证" : "",
     ...(c.certificates || []),
@@ -392,7 +408,7 @@ function initListPage() {
     const q = searchInput.value.trim();
     if (q) params.set("q", q);
     if (activeSource !== "all") params.set("source", activeSource);
-    if (activeResumeContact !== "all") params.set("contact", activeResumeContact);
+    if (activeResumeContact !== "all") params.set("contact", recruiterAlias(activeResumeContact));
     if (qualOnly.checked) params.set("qual", "1");
     if (contactOnly.checked) params.set("hascontact", "1");
     if (activeEmployer) params.set("employer", activeEmployer);
@@ -422,7 +438,10 @@ function initListPage() {
       }
     }
 
-    const contact = params.get("contact");
+    const contactParam = params.get("contact");
+    // the URL carries the surname (陈/李/蔡); older links may still carry the full name
+    const contact = contactParam
+      && (Object.keys(RECRUITER_ALIAS).find((full) => RECRUITER_ALIAS[full] === contactParam) || contactParam);
     if (contact) {
       const chip = document.querySelector(`.filter-chip[data-contact="${CSS.escape(contact)}"]`);
       if (chip) {
@@ -699,7 +718,7 @@ function initListPage() {
         <td>${escapeHtml(c.expectedPosition)}</td>
         <td class="muted">${escapeHtml(c.location)}</td>
         <td><span class="status-pill">${escapeHtml(c.status || "-")}</span></td>
-        <td>${escapeHtml(candidateContacts(c).join("、"))}</td>
+        <td>${escapeHtml(candidateContacts(c).map(recruiterAlias).join("、"))}</td>
         <td class="muted">${escapeHtml(c.id)}</td>
       </tr>
     `;
@@ -1071,9 +1090,9 @@ function renderDetail(c) {
 
   let contactBlock;
   if (c.contactObtained) {
-    contactBlock = `<div class="value">${escapeHtml(c.phone)}${c.contactEnteredBy ? `<span class="mask-hint">（由 ${escapeHtml(c.contactEnteredBy)} 录入）</span>` : ""}</div>`;
+    contactBlock = `<div class="value">${escapeHtml(c.phone)}${c.contactEnteredBy ? `<span class="mask-hint">（由 ${escapeHtml(recruiterAlias(c.contactEnteredBy))} 录入）</span>` : ""}</div>`;
   } else if (c._localPhone) {
-    contactBlock = `<div class="value">${escapeHtml(c._localPhone)}<span class="mask-hint">（${c._localContactEnteredBy ? "由 " + escapeHtml(c._localContactEnteredBy) + " " : ""}本地录入，仅你当前浏览器可见，尚未同步进数据文件）</span></div>`;
+    contactBlock = `<div class="value">${escapeHtml(c._localPhone)}<span class="mask-hint">（${c._localContactEnteredBy ? "由 " + escapeHtml(recruiterAlias(c._localContactEnteredBy)) + " " : ""}本地录入，仅你当前浏览器可见，尚未同步进数据文件）</span></div>`;
   } else {
     contactBlock = `<div class="value"><span class="status-pill pill-pending">待获取</span><span class="mask-hint">需通过${escapeHtml(candidateSources(c).join("或"))}自行联系，可在列表页点"+ 录入联系方式"记录</span></div>`;
   }
@@ -1092,7 +1111,7 @@ function renderDetail(c) {
           <div class="info-list">
             <div class="item"><label>简历来源</label><div class="value">${sourceTagsHtml(c)}</div></div>
             <div class="item"><label>获取时间</label><div class="value">${escapeHtml(c.acquiredDate)}</div></div>
-            <div class="item"><label>简历联系人</label><div class="value">${escapeHtml(candidateContacts(c).join("、")) || "-"}</div></div>
+            <div class="item"><label>简历联系人</label><div class="value">${escapeHtml(candidateContacts(c).map(recruiterAlias).join("、")) || "-"}</div></div>
             <div class="item"><label>编号</label><div class="value">${escapeHtml(c.id)}</div></div>
             <div class="item"><label>活跃状态</label><div class="value">${escapeHtml(c.activityStatus) || "-"}</div></div>
             <div class="item"><label>联系电话</label>${contactBlock}</div>
@@ -1115,7 +1134,7 @@ function renderDetail(c) {
           <h2>📞 沟通反馈</h2>
           <div class="feedback-highlight-date">最近联系时间：<strong>${escapeHtml(c.lastContactDate || c._localFeedbackDate) || "暂无"}</strong></div>
           <div class="feedback-highlight-text">${escapeHtml(c.contactFeedback || c._localFeedback) || "暂无反馈记录，可在列表页点\"+ 记录反馈\"填写"}</div>
-          ${(c.feedbackEnteredBy || c._localFeedbackEnteredBy) ? `<div class="feedback-highlight-by">由 ${escapeHtml(c.feedbackEnteredBy || c._localFeedbackEnteredBy)} 记录${!c.contactFeedback && c._localFeedback ? "（本地录入，尚未同步）" : ""}</div>` : ""}
+          ${(c.feedbackEnteredBy || c._localFeedbackEnteredBy) ? `<div class="feedback-highlight-by">由 ${escapeHtml(recruiterAlias(c.feedbackEnteredBy || c._localFeedbackEnteredBy))} 记录${!c.contactFeedback && c._localFeedback ? "（本地录入，尚未同步）" : ""}</div>` : ""}
         </div>
         <div class="card">
           <h2>资格证书</h2>
@@ -1123,7 +1142,7 @@ function renderDetail(c) {
         </div>
         <div class="card">
           <h2>招聘备注</h2>
-          <div class="note-box">${escapeHtml(c.notes || "暂无备注")}</div>
+          <div class="note-box">${escapeHtml(maskRecruiterNames(c.notes) || "暂无备注")}</div>
         </div>
       </div>
       <div>
