@@ -61,7 +61,7 @@ function employerGroup(company) {
   let name = raw
     .replace(/[（(][^）)]*[）)]/g, "")
     .replace(/(股份)?有限(责任)?公司/g, "");
-  const m = name.match(/^(.*?(?:银行|证券|基金|信托))(?:.+(?:分行|分公司|支行|营业部|营业厅|总行|部))$/);
+  const m = name.match(/^(.*?(?:银行|证券|基金|信托))(?:.+(?:分行|分公司|支行|营业部|营业厅|总行|部|中心))$/);
   if (m) name = m[1];
   return name || raw;
 }
