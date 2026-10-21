@@ -7193,7 +7193,8 @@ window.CANDIDATES_DATA = [
         "period": "2017-2020"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-10-21",
+    "contactFeedback": "不考虑券商，不考虑销售"
   },
   {
     "id": "c129",
