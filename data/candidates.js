@@ -7009,7 +7009,8 @@ window.CANDIDATES_DATA = [
         "period": "2012-2016"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-10-20",
+    "contactFeedback": "已联系，约见面"
   },
   {
     "id": "c126",
