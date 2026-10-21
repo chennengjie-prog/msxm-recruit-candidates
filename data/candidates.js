@@ -2656,7 +2656,9 @@ window.CANDIDATES_DATA = [
         "major": "金融学（统招）",
         "period": "2014-2018"
       }
-    ]
+    ],
+    "lastContactDate": "2026-10-21",
+    "contactFeedback": "钟律民。偏好银行，暂时不考虑券商"
   },
   {
     "id": "c051",
