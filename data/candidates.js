@@ -2808,7 +2808,9 @@ window.CANDIDATES_DATA = [
         "major": "工商管理（统招）",
         "period": "2018-2022"
       }
-    ]
+    ],
+    "lastContactDate": "2026-10-21",
+    "contactFeedback": "无联系方式"
   },
   {
     "id": "c054",
