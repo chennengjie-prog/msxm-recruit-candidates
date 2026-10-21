@@ -8246,7 +8246,8 @@ window.CANDIDATES_DATA = [
         "period": "2010-2014"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-10-21",
+    "contactFeedback": "已找到工作，不考虑"
   },
   {
     "id": "c147",
