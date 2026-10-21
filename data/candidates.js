@@ -8321,12 +8321,12 @@ window.CANDIDATES_DATA = [
   },
   {
     "id": "c148",
-    "name": "岳女士",
+    "name": "岳慧娟",
     "source": "智联招聘",
     "acquiredDate": "2026-10-21",
     "resumeContact": "李祖荃",
     "activityStatus": "12天前浏览过职位",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "女",
     "age": 31,
     "education": "本科",
@@ -8338,7 +8338,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "理财顾问（厦门；银行）",
     "expectedSalary": "6千-8千",
     "location": "集美区（住址距工作地17.6km）",
-    "phone": "",
+    "phone": "13177848694",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职-正在找工作",
@@ -8350,7 +8350,7 @@ window.CANDIDATES_DATA = [
       "基金从业资格证"
     ],
     "selfEvaluation": "",
-    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。 已上传附件简历，可在智联索要；已被招聘专员收藏。",
+    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。 已上传附件简历，可在智联索要；已被招聘专员收藏。 此前平台显示为“岳女士”，招聘专员补充全名“岳慧娟”及电话（2026-10-21）。",
     "workExperience": [
       {
         "company": "华夏银行厦门分行",
