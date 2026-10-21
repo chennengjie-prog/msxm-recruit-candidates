@@ -385,7 +385,7 @@ function initListPage() {
   const GROUPED = document.body.dataset.layout === "grouped";
   const GROUP_DEFS = [
     { id: "todo", title: "未联系 · 有完整姓名" },
-    { id: "done", title: "已联系" },
+    { id: "done", title: "已联系 · 有沟通反馈" },
     { id: "masked", title: "无完整姓名" },
   ];
   const GROUP_DEFAULT_OPEN = ["todo"];
@@ -648,9 +648,11 @@ function initListPage() {
     };
   }
 
+  // "已联系" = a 沟通反馈 (date or text) has been recorded. Having a phone number
+  // alone does NOT count: recruiters add numbers by hand before anyone has talked
+  // to the candidate, and those people still belong in the 未联系 block.
   function isContacted(c) {
-    return !!(c.contactObtained || c._localPhone || c.lastContactDate || c._localFeedbackDate
-      || c.contactFeedback || c._localFeedback);
+    return !!(c.lastContactDate || c._localFeedbackDate || c.contactFeedback || c._localFeedback);
   }
 
   function computeGroup(c) {
