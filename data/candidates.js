@@ -7639,7 +7639,7 @@ window.CANDIDATES_DATA = [
       "AFP"
     ],
     "selfEvaluation": "1.专业认证丰富：持有国际反洗钱师（CAMS）和国际制裁师（CGSS）认证；具备扎实的金融合规与风险管理能力；拥有心理咨询师资质，能够有效处理客户关…（后文未展开）。简历亮点：本科就读于985院校厦门大学。附加信息：2019年中信银行总行私人银行客户经理培训班优秀学员。语言：英语（工作应用·CET6）、普通话（商务洽谈·二级甲等）。技能标签：银行、afp、cfp。",
-    "notes": "来自猎聘，招聘专员整理截图导入，联系方式尚未获取。 工作经历两段时间有交叉（2015.08-2023.12 与 2024.01-至今 衔接正常，但页面显示“3段工作经历”）；国际制裁师/心理咨询师来自自我介绍；简历内容以“**”标注部分为平台原样。",
+    "notes": "来自猎聘，招聘专员整理截图导入，联系方式尚未获取。 工作经历两段时间有交叉（2015.08-2023.12 与 2024.01-至今 衔接正常，但页面显示“3段工作经历”）；国际制裁师/心理咨询师来自自我介绍；简历内容以“**”标注部分为平台原样。 备注：无联系方式（招聘专员核实，2026-10-27）。",
     "workExperience": [
       {
         "company": "中信银行股份有限公司厦门分行",
@@ -7698,7 +7698,7 @@ window.CANDIDATES_DATA = [
       "大学英语四级"
     ],
     "selfEvaluation": "善于沟通客户，组织项目开展。简历亮点：本科就读于211院校福州大学。语言：英语（基础沟通·CET4）。",
-    "notes": "来自猎聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "notes": "来自猎聘，招聘专员整理截图导入，联系方式尚未获取。 备注：无联系方式（招聘专员核实，2026-10-27）。",
     "workExperience": [
       {
         "company": "中信银行厦门分行",
@@ -7849,7 +7849,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-10-20",
     "resumeContact": "蔡家宝",
     "activityStatus": "",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "男",
     "age": 32,
     "education": "硕士",
@@ -7861,7 +7861,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "投资者关系",
     "expectedSalary": "20-25k×16薪",
     "location": "北京-朝阳区",
-    "phone": "",
+    "phone": "15011014991",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职，看看新机会",
@@ -8038,7 +8038,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-10-20",
     "resumeContact": "蔡家宝",
     "activityStatus": "",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "女",
     "age": 34,
     "education": "本科",
@@ -8050,7 +8050,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "银行大堂经理",
     "expectedSalary": "5-9k×12薪",
     "location": "厦门",
-    "phone": "",
+    "phone": "15112575782",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职，看看新机会",
@@ -8083,7 +8083,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-10-20",
     "resumeContact": "蔡家宝",
     "activityStatus": "",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "男",
     "age": 40,
     "education": "本科",
@@ -8095,7 +8095,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "投资经理（银行、基金/证券/期货、广播/影视/录音）",
     "expectedSalary": "9-10k×12薪",
     "location": "厦门-思明区",
-    "phone": "",
+    "phone": "18653368629",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职，看看新机会",
@@ -8159,7 +8159,7 @@ window.CANDIDATES_DATA = [
     "hasSecQualification": false,
     "certificates": [],
     "selfEvaluation": "为人乐观积极，学习能力强，做事严谨认真。抗压能力强。技能标签：银行、个人零售、公司业务。",
-    "notes": "来自猎聘，招聘专员整理截图导入，联系方式尚未获取。 平台头部显示现任中信银行厦门分行客户经理，但该段经历时间为2017.03-2018.03，最近一段经历请核实；工作经历共4段，截图展开3段。",
+    "notes": "来自猎聘，招聘专员整理截图导入，联系方式尚未获取。 平台头部显示现任中信银行厦门分行客户经理，但该段经历时间为2017.03-2018.03，最近一段经历请核实；工作经历共4段，截图展开3段。 备注：无联系方式（招聘专员核实，2026-10-27）。",
     "workExperience": [
       {
         "company": "中信银行股份有限公司厦门分行",
