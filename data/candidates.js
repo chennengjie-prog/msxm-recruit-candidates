@@ -1739,7 +1739,9 @@ window.CANDIDATES_DATA = [
         "major": "市场营销",
         "period": ""
       }
-    ]
+    ],
+    "lastContactDate": "2026-10-28",
+    "contactFeedback": "多次电话未接通"
   },
   {
     "id": "c032",
