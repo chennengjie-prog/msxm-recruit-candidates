@@ -6721,7 +6721,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-10-18",
     "resumeContact": "陈彦汐",
     "activityStatus": "2月内活跃",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "男",
     "age": 28,
     "education": "本科",
@@ -6733,7 +6733,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "银行大堂经理",
     "expectedSalary": "8-13K",
     "location": "厦门",
-    "phone": "",
+    "phone": "13538170772",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职-考虑机会",
@@ -6742,7 +6742,7 @@ window.CANDIDATES_DATA = [
       "基金从业资格证"
     ],
     "selfEvaluation": "背景：拥有3年招商银行零售条线一线实战经验，从厅堂助理到大堂主管代履职，沉淀了客户拓展、产品营销、活动策划、厅堂管理、合规风控全方位能力。擅长厅堂流量转化、社区企业外拓、存量客户资…（后文未展开）",
-    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 项目经历：物业费减免专项活动方案（项目负责人，2026.03-至今）——活动暂覆盖3个小区，累计新开卡42户，其中达标金卡客户15户，达标金葵花8户，新增理财和存款约600万。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 项目经历：物业费减免专项活动方案（项目负责人，2026.03-至今）——活动暂覆盖3个小区，累计新开卡42户，其中达标金卡客户15户，达标金葵花8户，新增理财和存款约600万。 [2026-10-28 由cnj通过网页录入联系方式]",
     "workExperience": [
       {
         "company": "招商银行股份有限公司厦门分行",
