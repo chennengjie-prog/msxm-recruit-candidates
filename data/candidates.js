@@ -8799,7 +8799,8 @@ window.CANDIDATES_DATA = [
         "period": "2015.09-2019.06"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-10-28",
+    "contactFeedback": "已离职，无联系方方式"
   },
   {
     "id": "c156",
