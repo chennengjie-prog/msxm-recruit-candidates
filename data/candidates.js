@@ -6767,7 +6767,8 @@ window.CANDIDATES_DATA = [
         "period": "2017-2021"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-10-28",
+    "contactFeedback": "拒绝"
   },
   {
     "id": "c121",
