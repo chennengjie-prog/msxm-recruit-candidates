@@ -7917,7 +7917,8 @@ window.CANDIDATES_DATA = [
         "period": "2012.09-2016.06"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-10-28",
+    "contactFeedback": "已找到工作，去基金公司做银行渠道销售"
   },
   {
     "id": "c141",
