@@ -8404,7 +8404,8 @@ window.CANDIDATES_DATA = [
         "period": "2019-2023"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-10-21",
+    "contactFeedback": "对券商比较抗拒，放弃"
   },
   {
     "id": "c149",
