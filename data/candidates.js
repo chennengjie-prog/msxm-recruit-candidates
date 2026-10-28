@@ -8147,7 +8147,8 @@ window.CANDIDATES_DATA = [
         "period": ""
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-10-28",
+    "contactFeedback": "山东人，表示没有投简历"
   },
   {
     "id": "c145",
