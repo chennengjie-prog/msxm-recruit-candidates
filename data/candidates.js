@@ -8717,7 +8717,8 @@ window.CANDIDATES_DATA = [
         "period": "2011.07-2014.06"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-11-02",
+    "contactFeedback": "无联系方式"
   },
   {
     "id": "c154",
