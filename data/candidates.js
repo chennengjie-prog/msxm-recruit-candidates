@@ -967,7 +967,9 @@ window.CANDIDATES_DATA = [
         "major": "物流管理",
         "period": ""
       }
-    ]
+    ],
+    "lastContactDate": "2026-11-02",
+    "contactFeedback": "简历不合适"
   },
   {
     "id": "c018",
