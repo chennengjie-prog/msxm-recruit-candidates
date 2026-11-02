@@ -790,7 +790,9 @@ window.CANDIDATES_DATA = [
         "major": "金融学",
         "period": ""
       }
-    ]
+    ],
+    "lastContactDate": "2026-11-02",
+    "contactFeedback": "意向不对"
   },
   {
     "id": "c015",
