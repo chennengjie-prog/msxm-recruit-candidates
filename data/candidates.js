@@ -1537,7 +1537,7 @@ window.CANDIDATES_DATA = [
       }
     ],
     "lastContactDate": "2026-11-02",
-    "contactFeedback": "投资顾问，放弃"
+    "contactFeedback": "投资顾问，已离职，放弃"
   },
   {
     "id": "c028",
