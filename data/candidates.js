@@ -1531,7 +1531,9 @@ window.CANDIDATES_DATA = [
         "major": "会计",
         "period": ""
       }
-    ]
+    ],
+    "lastContactDate": "2026-11-02",
+    "contactFeedback": "投资顾问，放弃"
   },
   {
     "id": "c028",
