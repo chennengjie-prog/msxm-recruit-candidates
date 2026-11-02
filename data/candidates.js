@@ -4078,11 +4078,11 @@ window.CANDIDATES_DATA = [
   },
   {
     "id": "c075",
-    "name": "游**",
+    "name": "游凤至",
     "source": "BOSS直聘",
-    "acquiredDate": "2026-10-01",
+    "acquiredDate": "2026-11-02",
     "resumeContact": "陈彦汐",
-    "activityStatus": "本月活跃",
+    "activityStatus": "2月内活跃",
     "contactObtained": false,
     "gender": "女",
     "age": 28,
@@ -4104,7 +4104,7 @@ window.CANDIDATES_DATA = [
       "基金从业资格证"
     ],
     "selfEvaluation": "银行业全流程。项目经历：医院建设项目账户存款承接及工地代发承办（2024.03-至今），工程预算6亿，累计创造存款营收200万，代发农民工千人。",
-    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 此前平台显示为“游**”，BOSS直聘简历显示真实姓名为“游凤至”。 最早获取时间：2026-10-01。 2026-11-02 招聘专员重新上传了该候选人的BOSS直聘简历截图，已据此补充信息。",
     "workExperience": [
       {
         "company": "平安银行股份有限公司厦门分行禾祥西支行",
@@ -4129,7 +4129,7 @@ window.CANDIDATES_DATA = [
       {
         "school": "西南交通大学",
         "degree": "本科",
-        "major": "材料科学与工程（211院校）",
+        "major": "材料科学与工程（211）",
         "period": "2016-2020"
       }
     ],
@@ -9072,6 +9072,228 @@ window.CANDIDATES_DATA = [
         "degree": "本科",
         "major": "土木工程（统招，211）",
         "period": "2009-2013"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c161",
+    "name": "李淑婷",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-11-02",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "本月活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 27,
+    "education": "本科",
+    "school": "仰恩大学",
+    "major": "金融学",
+    "currentCompany": "中国民生银行股份有限公司",
+    "currentPosition": "银行大堂经理",
+    "yearsOfExperience": 4,
+    "expectedPosition": "银行大堂经理",
+    "expectedSalary": "6-8K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "大学英语四级",
+      "大学英语六级",
+      "基金从业资格证",
+      "计算机一级",
+      "计算机二级",
+      "普通话二级甲等"
+    ],
+    "selfEvaluation": "1.能快速融入新环境，良好的团队协作能力和高度责任感；2.目标明确，擅于管理时间，基于制作详细的计划来实现目标；…（后文未展开）",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 平台提示“毕业同年未填写工作经历”（2021毕业，2023.02入职）。",
+    "workExperience": [
+      {
+        "company": "中国民生银行股份有限公司",
+        "position": "银行大堂经理",
+        "period": "2023.02-至今",
+        "description": "主导厅堂全流程服务与运营：负责营业大厅客户接待、引导、咨询与秩序维护，办理客户开卡、转账等日常基础业务，优化服务动线及资源调配，确保高效运转与卓越客户体验；精准识别与高价值客户转介：通过专业沟通敏锐洞察客户需求，识别潜在贵宾客户及复杂业务需求，并高效转介至理财经理/客户经理；策划与执行营销活动：协作策划并落地执行客户沙龙、节日主题、产品推广等线上线下活动，有效提升客户参与度及品牌影响力；严守合规与风险管控：严格执行服务规范与操作流程，主动识别并化解服务风险与客户异议，保障业务合规性。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "仰恩大学",
+        "degree": "本科",
+        "major": "金融学",
+        "period": "2017-2021"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c162",
+    "name": "方基炜",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-11-02",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "刚刚活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 36,
+    "education": "本科",
+    "school": "华侨大学",
+    "major": "金融学（部属高校）",
+    "currentCompany": "中国邮政储蓄银行股份有限公司",
+    "currentPosition": "客户经理",
+    "yearsOfExperience": 10,
+    "expectedPosition": "银行客户经理（银行·基金·证券/期货）",
+    "expectedSalary": "10-15K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "本人长期从事银行客户经理岗位，从事过个人贷款及小企业信贷工作。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "workExperience": [
+      {
+        "company": "中国邮政储蓄银行股份有限公司",
+        "position": "客户经理",
+        "period": "2018.01-至今",
+        "description": "业绩：本人从事小企业信贷业务较长，贷款余额最高达到1.8亿元，最高管理小企业客户43户。内容：小企业客户经理。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "华侨大学",
+        "degree": "本科",
+        "major": "金融学（部属高校）",
+        "period": "2009-2013"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c163",
+    "name": "张锦钰",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-11-02",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "刚刚活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 28,
+    "education": "硕士",
+    "school": "中国人民大学",
+    "major": "工商管理（985）",
+    "currentCompany": "中国农业银行股份有限公司",
+    "currentPosition": "银行客户经理",
+    "yearsOfExperience": 4,
+    "expectedPosition": "审计",
+    "expectedSalary": "10-15K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "CPA"
+    ],
+    "selfEvaluation": "CPA持证人，有志于在财务会计领域深耕。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 平台提示“毕业同年未填写工作经历”；两段经历时间有重叠（农行客户经理2022.08-至今与农行北京市分行产品经理（实习）2024.09-2026.07），实际情况请核实；求职意向为审计，CPA来自自我介绍。",
+    "workExperience": [
+      {
+        "company": "中国农业银行股份有限公司",
+        "position": "银行客户经理",
+        "period": "2022.08-至今",
+        "description": "银行信贷业务"
+      },
+      {
+        "company": "中国农业银行北京市分行",
+        "position": "产品经理（实习）",
+        "period": "2024.09-2026.07",
+        "description": "数据驱动运营：运用SQL语言、Python语言进行海量用户行为数据挖掘，进构建客户画像与产品偏好模型；基于分析结果优化线上运营策略，精准推送促活内容。在任期间主导线上精细化运用，协助团队将北京分行掌银月活数从380万提升至500万，推送北京分行在全国一级分行排名提升7名。数字营销赋能：策划并执行线上营销活动，通过A/B测试优化活动页面转化率；针对长尾客户设计自动化触达策略，有效提升沉睡客户唤醒率。营销推动执行：承接上级行年度营销战略，制定支行外呼与外拓标准化动作指引，推动网点全体营销，助力分行掌银月活（MAU）指标达成。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "中国人民大学",
+        "degree": "硕士",
+        "major": "工商管理（985）",
+        "period": "2016-2020"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c164",
+    "name": "庄婉玲",
+    "source": "智联招聘",
+    "acquiredDate": "2026-11-02",
+    "resumeContact": "李祖荃",
+    "activityStatus": "3小时前浏览过职位",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 24,
+    "education": "本科",
+    "school": "福州理工学院",
+    "major": "金融工程（统招）",
+    "currentCompany": "湘财证券厦门湖滨中路证券营业部",
+    "currentPosition": "理财顾问（7千/月）",
+    "yearsOfExperience": 2,
+    "expectedPosition": "理财顾问（厦门）",
+    "expectedSalary": "6千-9千",
+    "location": "湖里区（住址距工作地12.1km）",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "离职-正在找工作",
+    "hasSecQualification": true,
+    "certificates": [
+      "证券从业资格证",
+      "基金从业资格证"
+    ],
+    "selfEvaluation": "有证券从业资格证和基金从业资格证。本人性格开朗外向，自信阳光，天马行空，平常有自己剪辑视频，电影赏析的爱好，在工作中有较强的沟通能力，推动能力、协调能力、团队融入能力，拥有强烈的责任心和团队合作精神，具备良好的客户开拓、服务能力，优秀的谈判以及口笔表达交流的技巧，熟练掌握专业设计工具软件。岗位经验：理财顾问1年。",
+    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。 工作单位湘财证券（证券公司），2025.10-2026.10，现为离职状态；平台提示两份工作间有19个月空档期；项目经历：招投标（2023.02-2023.08）；已上传附件简历，可在智联查看；学生干部经历：班级干事（2020.07-2023.06）。",
+    "workExperience": [
+      {
+        "company": "湘财证券厦门湖滨中路证券营业部",
+        "position": "理财顾问（7千/月）",
+        "period": "2025.10-2026.10",
+        "description": "1.客户的日常维护和服务，完成投资顾问产品的签约和金融产品的销售；2.兼岗Fintech专员。协助客户金融科技系统签约与开通，并解答客户公司量化系统的问题；3.兼投资顾问助理。协助投资顾问分析金融市场行情，挖掘产业研究，抓住市场热点，从个股的基本面，技术面分析个股投资的持续性，形成研究报告。协助投顾在营业部，银行开展投资沙龙活动。"
+      },
+      {
+        "company": "中国太平洋人寿保险股份有限公司",
+        "position": "大客户经理",
+        "period": "2025.03-2025.09",
+        "description": "1. 通过渠道获客、转介绍、老客户挖掘等方式，开发个人及企业客户，挖掘保险需求（重疾、医疗、年金、寿险、团险、车险等）；2. 维护存量客户，建立客户档案，持续跟进，提升客户粘性、复购与转介绍；3. 负责客户开发与维护，评估客户风险，定制保险保障方案；完成投保、核保跟进、保单递送；提供保全、续期提醒、理赔协助服务；落实合规销售，完成业绩目标，做好长期客户经营。"
+      },
+      {
+        "company": "福建安捷工程检测有限公司",
+        "position": "办公室职员",
+        "period": "2023.05-2023.08",
+        "description": "招投标工作"
+      },
+      {
+        "company": "中创名建工程管理集团有限公司漳州分公司",
+        "position": "工程招投标",
+        "period": "2022.09-2023.01",
+        "description": "学习并完成相关类型（采购，施工，监理等类型）的标书制作，备案制作等招投标相关内容的流程。参与协助开标评标会议的完成。招投标代理等内容。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "福州理工学院",
+        "degree": "本科",
+        "major": "金融工程（统招）",
+        "period": "2023-2025"
+      },
+      {
+        "school": "福建农业职业技术学院",
+        "degree": "大专",
+        "major": "工程造价（统招）",
+        "period": "2020-2023"
       }
     ],
     "lastContactDate": null
