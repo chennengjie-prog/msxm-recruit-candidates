@@ -9304,5 +9304,790 @@ window.CANDIDATES_DATA = [
       }
     ],
     "lastContactDate": null
+  },
+  {
+    "id": "c165",
+    "name": "王琦",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-11-05",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "本周活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 34,
+    "education": "硕士",
+    "school": "厦门大学",
+    "major": "经济学（985，QS世界大学排名TOP500）",
+    "currentCompany": "中国农业银行股份有限公司厦门市分行",
+    "currentPosition": "客户经理·客户部门",
+    "yearsOfExperience": 7,
+    "expectedPosition": "风控",
+    "expectedSalary": "7-12K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": true,
+    "certificates": [
+      "大学英语六级",
+      "经济师中级职称",
+      "基金从业资格证",
+      "证券从业资格证"
+    ],
+    "selfEvaluation": "创造能力强，学习能力强，责任感强，工作热情，能够按时按量完成工作任务。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "workExperience": [
+      {
+        "company": "中国农业银行股份有限公司厦门市分行",
+        "position": "客户经理·客户部门",
+        "period": "2019.07-至今",
+        "description": "三年柜台经验（含国际业务柜台），三年客户经理经验，目前主要工作为维护网点存量对公客户，拓展新客户，完成存款、贷款任务以及相关贷后和反洗钱工作等，曾经手厦门火炬集团有限公司及其子公司若干项目贷款总金额超8.4亿元，手下管理超100个信贷客户，600多个结算客户，对本市信贷、普惠金融政策、农行信贷政策较为了解，对农行对公存款信贷产品较为精通，与客户沟通良好，个人业绩稳中有进。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "厦门大学",
+        "degree": "硕士",
+        "major": "经济学（985，QS世界大学排名TOP500）",
+        "period": "2016-2019"
+      },
+      {
+        "school": "厦门大学",
+        "degree": "本科",
+        "major": "金融学（985，QS世界大学排名TOP500）",
+        "period": "2011-2015"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c166",
+    "name": "万佳",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-11-05",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "本月活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 25,
+    "education": "本科",
+    "school": "贵州大学",
+    "major": "旅游管理（211）",
+    "currentCompany": "中国农业银行股份有限公司",
+    "currentPosition": "银行客户经理",
+    "yearsOfExperience": 3,
+    "expectedPosition": "文员",
+    "expectedSalary": "7-8K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-月内到岗",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "会礼仪 形象好气质佳 有银行工作经验 亲和力强",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 求职意向为文员，与金融岗位方向差异较大。",
+    "workExperience": [
+      {
+        "company": "中国农业银行股份有限公司",
+        "position": "银行客户经理",
+        "period": "2023.07-至今",
+        "description": "负责客户维护；开拓新客户；帮助客户解决问题。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "贵州大学",
+        "degree": "本科",
+        "major": "旅游管理（211）",
+        "period": "2019-2023"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c167",
+    "name": "康津津",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-11-05",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "本周活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 25,
+    "education": "本科",
+    "school": "闽南师范大学",
+    "major": "经济学（公办本科）",
+    "currentCompany": "中国农业银行股份有限公司厦门市分行",
+    "currentPosition": "柜员",
+    "yearsOfExperience": 3,
+    "expectedPosition": "项目经理/主管",
+    "expectedSalary": "7-12K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "1.具有较强的学习能力，认真刻苦、勤奋务实；2.学生干部经验与社会实践经验丰富，能熟练操作办公软件，工作责任心强，具有一定的团队合作能力、统筹协调能力与执行力；3.亲和力强，有耐心、沟通能力强，能很好地处理突发情况，应变能力强；4.为人严谨认真，诚实守信，公私分明，具有良好的思想品德和操守；5.乐观开朗，工作积极主动，抗压能力强。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 求职意向为项目经理/主管，与现岗位（柜员）方向差异较大。",
+    "workExperience": [
+      {
+        "company": "中国农业银行股份有限公司厦门市分行",
+        "position": "柜员",
+        "period": "2023.07-至今",
+        "description": "负责网点柜面业务"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "闽南师范大学",
+        "degree": "本科",
+        "major": "经济学（公办本科）",
+        "period": "2019-2023"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c168",
+    "name": "张帆",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-11-05",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "今日活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 29,
+    "education": "本科",
+    "school": "闽江学院",
+    "major": "金融学（公办本科）",
+    "currentCompany": "中国农业银行股份有限公司厦门市分行",
+    "currentPosition": "柜员",
+    "yearsOfExperience": 7,
+    "expectedPosition": "合规稽查",
+    "expectedSalary": "10-11K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "六年银行工作经验，口齿伶俐，思维灵敏，营销能力强，学习能力强，记忆力强",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 截图里学校名称为“闽江大学”（校徽为闽江学院）。",
+    "workExperience": [
+      {
+        "company": "中国农业银行股份有限公司厦门市分行",
+        "position": "柜员",
+        "period": "2019.07-至今",
+        "description": "负责银行与公司业务的对接，包含开户销户变更等公司业务"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "闽江学院",
+        "degree": "本科",
+        "major": "金融学（公办本科）",
+        "period": "2015-2019"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c169",
+    "name": "钟文东",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-11-05",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "3日内活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 29,
+    "education": "本科",
+    "school": "福州大学至诚学院",
+    "major": "国际经济与贸易",
+    "currentCompany": "中国农业银行股份有限公司",
+    "currentPosition": "综合柜员",
+    "yearsOfExperience": 5,
+    "expectedPosition": "产品运营（互联网·互联网金融·银行）",
+    "expectedSalary": "8-12K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-月内到岗",
+    "hasSecQualification": true,
+    "certificates": [
+      "驾驶证C1",
+      "计算机一级",
+      "证券从业资格证"
+    ],
+    "selfEvaluation": "认为自己是一个认真严谨的普通人。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "workExperience": [
+      {
+        "company": "中国农业银行股份有限公司",
+        "position": "综合柜员",
+        "period": "2021.07-至今",
+        "description": "负责网点每天整体运营。信用卡进件能手、外呼分期能手。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "福州大学至诚学院",
+        "degree": "本科",
+        "major": "国际经济与贸易",
+        "period": "2019-2021"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c170",
+    "name": "许雅婧",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-11-05",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "3月内活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 25,
+    "education": "本科",
+    "school": "厦门理工学院",
+    "major": "财务管理（公办本科）",
+    "currentCompany": "中国农业银行股份有限公司",
+    "currentPosition": "柜员",
+    "yearsOfExperience": 3,
+    "expectedPosition": "行政专员/助理",
+    "expectedSalary": "5-10K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "大学英语四级",
+      "驾驶证C2",
+      "普通话二级甲等",
+      "教师资格证（小学）"
+    ],
+    "selfEvaluation": "性格开朗，与人友善，做事有责任心，有较强的沟通能力，擅于维护人际关系，业余爱好广泛，诸如书法、绘画、游泳等。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 志愿服务经历：社区核酸志愿者（2021.07-2021.08）、“来自星星的孩子”关爱自闭症儿童活动（2019.07）；求职意向为行政专员/助理。",
+    "workExperience": [
+      {
+        "company": "中国农业银行股份有限公司",
+        "position": "柜员",
+        "period": "2023.07-至今",
+        "description": "从事业务受理和客户维护工作。沟通能力强、服务态度好。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "厦门理工学院",
+        "degree": "本科",
+        "major": "财务管理（公办本科）",
+        "period": "2019-2023"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c171",
+    "name": "子建",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-11-05",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "今日活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 27,
+    "education": "本科",
+    "school": "福建农林大学",
+    "major": "会计学（省部共建）",
+    "currentCompany": "中国农业银行股份有限公司厦门市分行",
+    "currentPosition": "客户经理·个贷部",
+    "yearsOfExperience": 5,
+    "expectedPosition": "保险顾问",
+    "expectedSalary": "6-7K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "有热情，有激情",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 BOSS上显示名为“子建”，疑似昵称而非完整姓名，待获取真实姓名。",
+    "workExperience": [
+      {
+        "company": "中国农业银行股份有限公司厦门市分行",
+        "position": "客户经理·个贷部",
+        "period": "2021.07-至今",
+        "description": "信贷销售员，从事个人信贷业务5年，对于个人信贷产品和银行业运作规则有着较深了解。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "福建农林大学",
+        "degree": "本科",
+        "major": "会计学（省部共建）",
+        "period": "2017-2021"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c172",
+    "name": "谢媛",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-11-05",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "本月活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 30,
+    "education": "本科",
+    "school": "福建江夏学院",
+    "major": "信息管理与信息系统（公办本科）",
+    "currentCompany": "中国农业银行股份有限公司",
+    "currentPosition": "银行客户经理",
+    "yearsOfExperience": 8,
+    "expectedPosition": "客户经理",
+    "expectedSalary": "10-11K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "本人2018年入职中国农业银行建宁县支行，2022年10月担任建宁人和支行网点主任",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 自我介绍称2022年10月起担任建宁人和支行网点主任（工作地可能在三明建宁，期望城市为厦门）。",
+    "workExperience": [
+      {
+        "company": "中国农业银行股份有限公司",
+        "position": "银行客户经理",
+        "period": "2018.07-至今",
+        "description": "专业为信息管理，偏向从事管理岗位。标签：面销、风险控制、信贷风控、电话销售、管理。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "福建江夏学院",
+        "degree": "本科",
+        "major": "信息管理与信息系统（公办本科）",
+        "period": "2014-2018"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c173",
+    "name": "黄小建",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-11-05",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "2周内活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 35,
+    "education": "本科",
+    "school": "华侨大学",
+    "major": "工商管理（部属高校）",
+    "currentCompany": "中国农业银行股份有限公司",
+    "currentPosition": "银行客户经理",
+    "yearsOfExperience": 10,
+    "expectedPosition": "出纳",
+    "expectedSalary": "5-6K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 求职意向为出纳，与现岗位方向差异较大。",
+    "workExperience": [
+      {
+        "company": "中国农业银行股份有限公司",
+        "position": "银行客户经理",
+        "period": "2015.08-至今",
+        "description": "负责客户拓展。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "华侨大学",
+        "degree": "本科",
+        "major": "工商管理（部属高校）",
+        "period": "2011-2015"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c174",
+    "name": "史宇彬",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-11-05",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "4月内活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 28,
+    "education": "本科",
+    "school": "福建农林大学金山学院",
+    "major": "投资学",
+    "currentCompany": "中国农业银行股份有限公司",
+    "currentPosition": "银行客户经理",
+    "yearsOfExperience": 6,
+    "expectedPosition": "其他职位",
+    "expectedSalary": "5-10K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "workExperience": [
+      {
+        "company": "中国农业银行股份有限公司",
+        "position": "银行客户经理",
+        "period": "2020.09-至今",
+        "description": "对公客户经理。标签：TO G、TO B、TO C、市场策划。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "福建农林大学金山学院",
+        "degree": "本科",
+        "major": "投资学",
+        "period": "2016-2020"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c175",
+    "name": "林奕尘",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-11-05",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "2月内活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 31,
+    "education": "硕士",
+    "school": "麦考瑞大学（澳大利亚）",
+    "major": "金融（QS世界大学排名TOP200）",
+    "currentCompany": "中国农业银行股份有限公司",
+    "currentPosition": "柜员",
+    "yearsOfExperience": 5,
+    "expectedPosition": "行业研究（证券/期货·互联网金融·投资/融资）",
+    "expectedSalary": "8-12K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "本科会计专业，硕士金融专业，经济、金融、财务等相关理论知识扎实，对金融市场有良好的认知和分析能力，熟练掌握各类金融分析工具与财务软件，逻辑性强，思路清晰，具有较强的信息搜集处理能力…（后文未展开）",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 平台提示“毕业同年未填写工作经历”（2021毕业，2022.03入职农行）。",
+    "workExperience": [
+      {
+        "company": "中国农业银行股份有限公司",
+        "position": "柜员",
+        "period": "2022.03-至今",
+        "description": "个贷客户经理"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "麦考瑞大学（澳大利亚）",
+        "degree": "硕士",
+        "major": "金融（QS世界大学排名TOP200）",
+        "period": "2019-2021"
+      },
+      {
+        "school": "麦考瑞大学（澳大利亚）",
+        "degree": "本科",
+        "major": "会计学（QS世界大学排名TOP200）",
+        "period": "2015-2019"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c176",
+    "name": "吴少锦",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-11-05",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "3月内活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 27,
+    "education": "硕士",
+    "school": "山西财经大学",
+    "major": "财政学",
+    "currentCompany": "中国农业银行股份有限公司",
+    "currentPosition": "客户经理",
+    "yearsOfExperience": 2,
+    "expectedPosition": "税务",
+    "expectedSalary": "10-11K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-月内到岗",
+    "hasSecQualification": false,
+    "certificates": [
+      "大学英语六级",
+      "普通话二级乙等",
+      "计算机二级"
+    ],
+    "selfEvaluation": "自我学习能力还是比较强的，想做的事很认真。专业知识扎实，有积极的工作态度，能够独立工作，又有团队精神。具有良好的文化素质，善于与他人沟通在未来的工作中，我将以充沛的精力，努力工作，稳定提升…（后文未展开）",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 在校经历：曾在院团委记者站工作，获校级“五四新闻”优秀奖，获三等奖学金；大二曾在本地文化馆实习（高平市文化活动中心，2019.07-2019.08）；综测奖学金。求职意向为税务。",
+    "workExperience": [
+      {
+        "company": "中国农业银行股份有限公司",
+        "position": "客户经理",
+        "period": "2024.08-至今",
+        "description": "从事大堂服务工作，引导来访客户办理业务，协助客户经理处理相关数据整理工作，对银行业有了初步的了解。目前从事对公客户经理，主要做公账户开户审核及后续管理，公司信贷业务等，同时也做零售方面的工作，个人信贷业务以及大堂业务的营销，在工作中锻炼了自己沟通能力和营销能力。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "山西财经大学",
+        "degree": "硕士",
+        "major": "财政学",
+        "period": "2021-2024"
+      },
+      {
+        "school": "中北大学",
+        "degree": "本科",
+        "major": "经济学（省部共建）",
+        "period": "2017-2021"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c177",
+    "name": "李任尔",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-11-05",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "2周内活跃",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 37,
+    "education": "本科",
+    "school": "厦门大学嘉庚学院",
+    "major": "国际经济与贸易",
+    "currentCompany": "中国农业银行股份有限公司厦门分行",
+    "currentPosition": "柜员",
+    "yearsOfExperience": 10,
+    "expectedPosition": "客户经理",
+    "expectedSalary": "5-8K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "本人工作细致谨慎。能很好地完成工作任务。热爱拍摄和制作短视频，会pr，vedioleap等剪辑软件，会简单的手绘，曾经为银行拍摄产品宣传短视频。做过宣传软文撰写工作，写过活动策划。银行工作多年…（后文未展开）",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "workExperience": [
+      {
+        "company": "中国农业银行股份有限公司厦门分行",
+        "position": "柜员",
+        "period": "2011.07-至今",
+        "description": "1.从事各类现金业务的复核、零钞清点、大额现金清点等工作。2.从事各类柜台业务，包括各类对公、对私业务的经办。当日帐务的核对、结帐等。3.经办包括个人消费贷款、个人住房贷款、个人理财（基金业务、银行代理保险业务）等非现金业务的柜台人员。4.轮值大堂，负责对银行业务进行宣传、对网点客户进行分类引导、对于客户的各类业务咨询负责解答，对银行工作人员与客户之间的纠纷和矛盾进行调解和疏导等工作。标签：柜员、大堂经理、零售业务。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "厦门大学嘉庚学院",
+        "degree": "本科",
+        "major": "国际经济与贸易",
+        "period": "2007-2011"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c178",
+    "name": "吴远韬",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-11-05",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "本月活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 29,
+    "education": "本科",
+    "school": "逢甲大学",
+    "major": "会计学系",
+    "currentCompany": "中国农业银行股份有限公司",
+    "currentPosition": "客户经理",
+    "yearsOfExperience": 4,
+    "expectedPosition": "外贸业务员",
+    "expectedSalary": "5-10K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-考虑机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "雅思5.5分"
+    ],
+    "selfEvaluation": "本人拥有良好的心里素质、责任心以及积极的工作态度，能正确认识和评价自己，能虚心接受前辈的建议，并且乐于团队合作。在未来，我将以认真负责的态度对待工作，逐步提高自己的工作能力，以求更…（后文未展开）",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 毕业院校逢甲大学（疑为台湾逢甲大学）；求职意向为外贸业务员。",
+    "workExperience": [
+      {
+        "company": "中国农业银行股份有限公司",
+        "position": "客户经理",
+        "period": "2023.07-至今",
+        "description": "银行柜员、客户经理。IELTS5.5。"
+      },
+      {
+        "company": "智业软件股份有限公司",
+        "position": "会计",
+        "period": "2023.02-2023.03",
+        "description": "1、辅助编制年终报表；2、辅助提供年终审计资料；3、参与部分IPO审计流程。标签：费用管理、票据管理、报表编制、总账会计。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "逢甲大学",
+        "degree": "本科",
+        "major": "会计学系",
+        "period": "2017-2023"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c179",
+    "name": "钟志豪",
+    "source": "BOSS直聘",
+    "acquiredDate": "2026-11-05",
+    "resumeContact": "陈彦汐",
+    "activityStatus": "本月活跃",
+    "contactObtained": false,
+    "gender": "男",
+    "age": 27,
+    "education": "本科",
+    "school": "集美大学",
+    "major": "智能科学与技术（省部共建）",
+    "currentCompany": "中国农业银行股份有限公司",
+    "currentPosition": "客户经理",
+    "yearsOfExperience": 3,
+    "expectedPosition": "人力资源专员/助理",
+    "expectedSalary": "8-9K",
+    "location": "厦门",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-月内到岗",
+    "hasSecQualification": false,
+    "certificates": [],
+    "selfEvaluation": "1. 工作能力强，执行能力高，有强烈的责任心和上进心，能适应不同节奏的工作强度。2. 能够接受一定程度的加班，并且保持高效率的工作。3. 热爱学习新的技术，能够边工作边学习，不断提高自己。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 2025年3月至2026年6月在厦门市工信局挂职；求职意向为人力资源专员/助理。",
+    "workExperience": [
+      {
+        "company": "中国农业银行股份有限公司",
+        "position": "客户经理",
+        "period": "2023.08-至今",
+        "description": "业绩：2025年3月到2026年6月在厦门市工信局挂职。内容：对公科创普惠。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "集美大学",
+        "degree": "本科",
+        "major": "智能科学与技术（省部共建）",
+        "period": "2019-2023"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c180",
+    "name": "许红玲",
+    "source": "猎聘",
+    "acquiredDate": "2026-11-05",
+    "resumeContact": "蔡家宝",
+    "activityStatus": "",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 31,
+    "education": "硕士",
+    "school": "香港理工大学",
+    "major": "知识及科技管理（统招）",
+    "currentCompany": "华福证券",
+    "currentPosition": "财富顾问",
+    "yearsOfExperience": 6,
+    "expectedPosition": "证券事务代表",
+    "expectedSalary": "12-13k×14薪",
+    "location": "厦门-思明区",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职，看看新机会",
+    "hasSecQualification": true,
+    "certificates": [
+      "证券从业资格证",
+      "基金从业资格证"
+    ],
+    "selfEvaluation": "出色的客户关系和投资者关系管理：在华福证券有限责任公司的工作中，我通过个性化的客户管理策略，成功提升了客户满意度和留存率。这种以客户为中心的方法和对客户关系的深刻理解，将有助于在证券事务经理岗位上建立和…（后文未展开）。简历亮点：具有上市公司工作经验：1年9个月光大银行股份有限公司综合柜员。技能标签：基金/证券/期货。语言：英语（工作应用）。",
+    "notes": "来自猎聘，招聘专员整理截图导入，联系方式尚未获取。 工作单位为华福证券（证券公司）；华福证券（2022.08-至今）与厦门市地方金融监督管理局上市专员（2023.11-2024.08）时间重叠，可能为借调/挂职，请核实；已上传附件简历，可在猎聘索要。",
+    "workExperience": [
+      {
+        "company": "华福证券",
+        "position": "财富顾问",
+        "period": "2022.08-至今",
+        "description": "客户开发：通过现场活动与客户转介绍等方式开发了近百位客户，其中高净值客户占比约25%，引进资产约6000万；客户管理：实施个性化客户管理策略，包括定期回访、生日礼遇等，有效安抚投资亏损客户，提升客户满意度至90%，客户留存率保持在85%；渠道合作：与多家银行渠道合作，包括光大、兴业、建设、平安银行等，落地3个机构业务；上市业务承揽：引荐上市潜力企业，定期整理并发送政策资讯，促成合作协议签署。"
+      },
+      {
+        "company": "厦门市地方金融监督管理局",
+        "position": "上市专员",
+        "period": "2023.11-2024.08",
+        "description": "企业服务与培训：组织带领交易所、律所、快所、券商开展了9次“企业服务日”活动，走访了35家上市后备企业；组织近6场“产融直通车”上市培训活动；企业问题协调与支持：负责265家上市后备企业的协调工作，提高与多政府部门的沟通效率；文案撰写与信息处理：撰写活动新闻稿、上市工作季度年度报告、日常公文办件、定期更新上市数据。"
+      },
+      {
+        "company": "光大银行股份有限公司",
+        "position": "综合柜员",
+        "period": "2020.09-2022.06",
+        "description": "业务办理：精准对接客户，高效完成存取款等业务，单月服务客户超500人；资料整理：细致核对、整理凭证及客户资料，确保信息准确无误，助力业务合规；报表制作：编制日、月、季、年度报表300余次，数据严谨。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "香港理工大学",
+        "degree": "硕士",
+        "major": "知识及科技管理（统招）",
+        "period": "2019.09-2022.06"
+      },
+      {
+        "school": "香港理工大学",
+        "degree": "本科",
+        "major": "市场营销管理&工商管理（统招）",
+        "period": "2014.08-2018.09"
+      }
+    ],
+    "lastContactDate": null
   }
 ];
