@@ -424,7 +424,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-09-16",
     "resumeContact": "陈彦汐",
     "activityStatus": "2月内活跃",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "",
     "age": 33,
     "education": "",
@@ -436,7 +436,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "其他金融职位",
     "expectedSalary": "15-30K",
     "location": "厦门",
-    "phone": "",
+    "phone": "15359203668",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职",
@@ -445,7 +445,7 @@ window.CANDIDATES_DATA = [
       "证券从业资格证"
     ],
     "selfEvaluation": "",
-    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。",
+    "notes": "来自BOSS直聘，招聘专员整理表格导入，联系方式尚未获取。 [2026-11-06 由cnj通过网页录入联系方式]",
     "workExperience": [
       {
         "company": "瑞达期货",
