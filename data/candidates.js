@@ -6707,7 +6707,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-10-09",
     "resumeContact": "陈彦汐",
     "activityStatus": "本月活跃",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "女",
     "age": 28,
     "education": "本科",
@@ -6719,7 +6719,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "英语教师",
     "expectedSalary": "10-13K",
     "location": "厦门",
-    "phone": "",
+    "phone": "13313857414",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职-考虑机会",
@@ -6729,7 +6729,7 @@ window.CANDIDATES_DATA = [
       "托福101-110分"
     ],
     "selfEvaluation": "4年银行金融市场经验，精通宏观经济分析、商品价格走势研判及衍生品工具。熟悉金融行业严苛合规要求，具备极强的风险敏感度，擅长在波动市场中识别机会与控制回撤。具备优秀的跨部门协作与客户沟…（后文未展开）",
-    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 两段本科（宾夕法尼亚州立大学2018-2019、弗吉尼亚大学2019-2022，疑为转学）；求职意向为英语教师，与金融岗位方向差异较大。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 两段本科（宾夕法尼亚州立大学2018-2019、弗吉尼亚大学2019-2022，疑为转学）；求职意向为英语教师，与金融岗位方向差异较大。 [2026-11-06 由cnj通过网页录入联系方式]",
     "workExperience": [
       {
         "company": "兴业银行厦门分行",
