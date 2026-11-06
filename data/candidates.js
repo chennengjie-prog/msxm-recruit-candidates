@@ -9232,7 +9232,8 @@ window.CANDIDATES_DATA = [
         "period": "2016-2020"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-11-06",
+    "contactFeedback": "意向审计，放弃"
   },
   {
     "id": "c164",
