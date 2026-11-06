@@ -4883,7 +4883,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-10-09",
     "resumeContact": "陈彦汐",
     "activityStatus": "3日内活跃",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "女",
     "age": 31,
     "education": "硕士",
@@ -4895,7 +4895,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "融资",
     "expectedSalary": "16-20K",
     "location": "厦门",
-    "phone": "",
+    "phone": "15501293968",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职-考虑机会",
@@ -4908,7 +4908,7 @@ window.CANDIDATES_DATA = [
       "雅思6.5分"
     ],
     "selfEvaluation": "本人拥有支行企金领域全流程实操经验，熟悉授信全流程、小微及科技企业经营特征、区域产业生态，兼具一线业务实操、客户经营维护与风险把控经验。日常围绕客户，开展授信方案设计、产品适配等工作。",
-    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 此前平台显示为“蔡**”，BOSS直聘简历显示真实姓名为“蔡诗晴”。 最早获取时间：2026-10-01。 2026-10-09 招聘专员重新上传了该候选人的BOSS直聘简历截图，已据此补充信息。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 此前平台显示为“蔡**”，BOSS直聘简历显示真实姓名为“蔡诗晴”。 最早获取时间：2026-10-01。 2026-10-09 招聘专员重新上传了该候选人的BOSS直聘简历截图，已据此补充信息。 [2026-11-06 由cnj通过网页录入联系方式]",
     "workExperience": [
       {
         "company": "兴业银行",
