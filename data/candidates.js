@@ -9888,7 +9888,8 @@ window.CANDIDATES_DATA = [
         "period": "2017-2021"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-11-06",
+    "contactFeedback": "对公客户经理，放弃"
   },
   {
     "id": "c177",
