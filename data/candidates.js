@@ -9360,7 +9360,8 @@ window.CANDIDATES_DATA = [
         "period": "2011-2015"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-11-06",
+    "contactFeedback": "意向不符，放弃"
   },
   {
     "id": "c166",
