@@ -525,7 +525,9 @@ window.CANDIDATES_DATA = [
         "major": "财务管理",
         "period": ""
       }
-    ]
+    ],
+    "lastContactDate": "2026-11-06",
+    "contactFeedback": "无此人"
   },
   {
     "id": "c010",
