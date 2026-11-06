@@ -7087,7 +7087,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-10-18",
     "resumeContact": "陈彦汐",
     "activityStatus": "刚刚活跃",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "女",
     "age": 27,
     "education": "本科",
@@ -7099,7 +7099,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "保险顾问",
     "expectedSalary": "10-15K",
     "location": "厦门",
-    "phone": "",
+    "phone": "13055726208",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职-考虑机会",
@@ -7108,7 +7108,7 @@ window.CANDIDATES_DATA = [
       "保险公估从业人员资格证书"
     ],
     "selfEvaluation": "深耕保险相关知识，持续学习产品条款、理赔规则及行业政策，专业功底扎实。注重服务细节，全程跟进客户咨询、投保、理赔等全流程，耐心解决客户疑问，重视客户长期服务体验。…（后文未展开）",
-    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。",
+    "notes": "来自BOSS直聘，招聘专员整理截图导入，联系方式尚未获取。 [2026-11-06 由cnj通过网页录入联系方式]",
     "workExperience": [
       {
         "company": "泰康养老保险股份有限公司厦门分公司",
