@@ -8988,7 +8988,8 @@ window.CANDIDATES_DATA = [
         "period": "2020.10-2024.06"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-11-06",
+    "contactFeedback": "无此人"
   },
   {
     "id": "c159",
