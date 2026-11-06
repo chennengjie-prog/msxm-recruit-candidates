@@ -2005,7 +2005,9 @@ window.CANDIDATES_DATA = [
         "major": "英语（统招）",
         "period": "2005.09-2009.07"
       }
-    ]
+    ],
+    "lastContactDate": "2026-11-06",
+    "contactFeedback": "无此人"
   },
   {
     "id": "c037",
