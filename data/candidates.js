@@ -9086,7 +9086,8 @@ window.CANDIDATES_DATA = [
         "period": "2009-2013"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-11-06",
+    "contactFeedback": "无此人"
   },
   {
     "id": "c161",
