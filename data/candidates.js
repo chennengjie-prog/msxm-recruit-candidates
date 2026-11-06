@@ -9690,7 +9690,8 @@ window.CANDIDATES_DATA = [
         "period": "2014-2018"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-11-06",
+    "contactFeedback": "异地，不考虑"
   },
   {
     "id": "c173",
