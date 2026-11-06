@@ -9644,7 +9644,8 @@ window.CANDIDATES_DATA = [
         "period": "2017-2021"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-11-06",
+    "contactFeedback": "个贷经理不合适"
   },
   {
     "id": "c172",
