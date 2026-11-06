@@ -9832,7 +9832,8 @@ window.CANDIDATES_DATA = [
         "period": "2015-2019"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-11-06",
+    "contactFeedback": "柜员，不考虑"
   },
   {
     "id": "c176",
