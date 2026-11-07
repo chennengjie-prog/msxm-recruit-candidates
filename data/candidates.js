@@ -3641,7 +3641,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-10-23",
     "resumeContact": "陈彦汐",
     "activityStatus": "2月内活跃",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "男",
     "age": 26,
     "education": "本科",
@@ -3653,7 +3653,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "国内电商运营",
     "expectedSalary": "6-9K",
     "location": "厦门",
-    "phone": "",
+    "phone": "17609045627",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职-考虑机会",
@@ -3766,7 +3766,7 @@ window.CANDIDATES_DATA = [
         "period": "2010.09-2014.07"
       }
     ],
-    "lastContactDate": null,
+    "lastContactDate": "2026-11-07",
     "sources": [
       "BOSS直聘",
       "猎聘"
@@ -3774,7 +3774,8 @@ window.CANDIDATES_DATA = [
     "resumeContacts": [
       "陈彦汐",
       "蔡家宝"
-    ]
+    ],
+    "contactFeedback": "无此人"
   },
   {
     "id": "c070",
@@ -4093,7 +4094,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-11-02",
     "resumeContact": "陈彦汐",
     "activityStatus": "2月内活跃",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "女",
     "age": 28,
     "education": "本科",
@@ -4105,7 +4106,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "金融产品经理",
     "expectedSalary": "12-24K",
     "location": "厦门",
-    "phone": "",
+    "phone": "15528026925",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职-暂不考虑",
@@ -4206,7 +4207,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-10-27",
     "resumeContact": "陈彦汐",
     "activityStatus": "本周活跃",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "男",
     "age": 35,
     "education": "本科",
@@ -4218,7 +4219,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "证券经纪人",
     "expectedSalary": "20-25K",
     "location": "厦门",
-    "phone": "",
+    "phone": "18605028110",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职-考虑机会",
@@ -7660,7 +7661,8 @@ window.CANDIDATES_DATA = [
         "period": "2014-2018"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-11-07",
+    "contactFeedback": "无此人"
   },
   {
     "id": "c136",
@@ -7836,7 +7838,7 @@ window.CANDIDATES_DATA = [
     "acquiredDate": "2026-10-20",
     "resumeContact": "蔡家宝",
     "activityStatus": "3天内活跃",
-    "contactObtained": false,
+    "contactObtained": true,
     "gender": "男",
     "age": 25,
     "education": "硕士",
@@ -7848,7 +7850,7 @@ window.CANDIDATES_DATA = [
     "expectedPosition": "固定收益业务",
     "expectedSalary": "12-13k×12薪",
     "location": "上海",
-    "phone": "",
+    "phone": "13779939560",
     "email": "",
     "status": "待联系",
     "jobSeekingStatus": "在职，看看新机会",
@@ -8792,7 +8794,8 @@ window.CANDIDATES_DATA = [
         "period": "2012.09-2014.12"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-11-07",
+    "contactFeedback": "无此人"
   },
   {
     "id": "c155",
