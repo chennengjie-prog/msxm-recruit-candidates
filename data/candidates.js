@@ -7901,7 +7901,8 @@ window.CANDIDATES_DATA = [
         "period": "2019.06-2023.06"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-11-11",
+    "contactFeedback": "无意向，放弃"
   },
   {
     "id": "c140",
