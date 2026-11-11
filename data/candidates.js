@@ -4144,7 +4144,8 @@ window.CANDIDATES_DATA = [
         "period": "2016-2020"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-11-11",
+    "contactFeedback": "今年8月转后台，暂无离职打算"
   },
   {
     "id": "c076",
