@@ -469,7 +469,7 @@ window.CANDIDATES_DATA = [
       }
     ],
     "lastContactDate": "2026-11-16",
-    "contactFeedback": "加了微信，他现在是营销总监，要跳槽不能低于现在的职务和薪资"
+    "contactFeedback": "银河自贸区网点，区域经理，有意向做团队长，约见面"
   },
   {
     "id": "c009",
