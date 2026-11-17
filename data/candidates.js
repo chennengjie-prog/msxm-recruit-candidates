@@ -11229,6 +11229,7 @@ window.CANDIDATES_DATA = [
         "period": "2007.09-2010.07"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-11-17",
+    "contactFeedback": "已离职，未完成国金考核，零售为主，加微信约见面"
   }
 ];
