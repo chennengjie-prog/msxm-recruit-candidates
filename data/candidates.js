@@ -10129,7 +10129,8 @@ window.CANDIDATES_DATA = [
         "period": "2014.08-2018.09"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-11-17",
+    "contactFeedback": "华福考核太细，想要多陪陪家庭。创收定薪为主，加微信约见面"
   },
   {
     "id": "c181",
