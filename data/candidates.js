@@ -5269,7 +5269,7 @@ window.CANDIDATES_DATA = [
         "period": "2009-2012"
       }
     ],
-    "lastContactDate": null,
+    "lastContactDate": "2026-11-17",
     "sources": [
       "BOSS直聘",
       "智联招聘"
@@ -5277,7 +5277,8 @@ window.CANDIDATES_DATA = [
     "resumeContacts": [
       "陈彦汐",
       "李祖荃"
-    ]
+    ],
+    "contactFeedback": "个贷岗，对券商没兴趣，放弃"
   },
   {
     "id": "c095",
