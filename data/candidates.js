@@ -467,7 +467,9 @@ window.CANDIDATES_DATA = [
         "major": "金融学",
         "period": ""
       }
-    ]
+    ],
+    "lastContactDate": "2026-11-16",
+    "contactFeedback": "加了微信，他现在是营销总监，要跳槽不能低于现在的职务和薪资"
   },
   {
     "id": "c009",
@@ -3690,7 +3692,8 @@ window.CANDIDATES_DATA = [
         "period": "2018-2022"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-11-16",
+    "contactFeedback": "不考虑换工作，加了微信，聊了一下考核和薪资后没有回复了"
   },
   {
     "id": "c069",
@@ -4940,7 +4943,8 @@ window.CANDIDATES_DATA = [
         "period": "2013-2017"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-11-16",
+    "contactFeedback": "不考虑销售岗"
   },
   {
     "id": "c089",
@@ -6761,7 +6765,8 @@ window.CANDIDATES_DATA = [
         "period": "2018-2019"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-11-16",
+    "contactFeedback": "不考虑金融，想转行"
   },
   {
     "id": "c120",
@@ -7134,7 +7139,8 @@ window.CANDIDATES_DATA = [
         "period": "2017-2021"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-11-16",
+    "contactFeedback": "加了微信，介绍完岗位后她说要考虑一下，月底给答复"
   },
   {
     "id": "c127",
