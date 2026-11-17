@@ -3200,11 +3200,11 @@ window.CANDIDATES_DATA = [
   },
   {
     "id": "c061",
-    "name": "张女士",
+    "name": "张文轻",
     "source": "智联招聘",
-    "acquiredDate": "2026-09-17",
+    "acquiredDate": "2026-11-17",
     "resumeContact": "李祖荃",
-    "activityStatus": "16天前浏览过职位",
+    "activityStatus": "5天前在线",
     "contactObtained": false,
     "gender": "女",
     "age": 28,
@@ -3213,9 +3213,9 @@ window.CANDIDATES_DATA = [
     "major": "财务管理（统招）",
     "currentCompany": "华夏银行股份有限公司厦门分行",
     "currentPosition": "理财经理",
-    "yearsOfExperience": null,
+    "yearsOfExperience": 8,
     "expectedPosition": "理财顾问",
-    "expectedSalary": "8千-1.5万",
+    "expectedSalary": "1万-2万",
     "location": "湖里区",
     "phone": "",
     "email": "",
@@ -3223,10 +3223,15 @@ window.CANDIDATES_DATA = [
     "jobSeekingStatus": "在职-看看机会",
     "hasSecQualification": false,
     "certificates": [
-      "基金从业资格证"
+      "基金从业资格证",
+      "AFP金融理财师",
+      "会计从业资格证",
+      "普通话二级甲等",
+      "计算机二级",
+      "大学英语六级"
     ],
-    "selfEvaluation": "",
-    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。 求职意向城市为漳州·龙海区（与现居地湖里区不同）。 岗位经验：理财顾问5年2个月。注意：其中民生银行是同名银行，与本公司（民生证券）无关联关系。所获证书：AFP国际金融理财师、基金从业资格证、会计从业资格证、普通话二级甲等证书、大学计算机等级二级证书（未见证券从业资格证）。语言能力：英语CET6-500分。",
+    "selfEvaluation": "待人真诚，做事认真负责，具有较强的学习能力和沟通能力。能够尽快的理解并掌握新的知识，具有较强的团结协作能力。乐观开朗，抗压能力较好！岗位经验：理财顾问5年4个月。语言：英语（读写良好，听说一般，CET6 500分）。",
+    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。 求职意向城市为漳州·龙海区（与现居地湖里区不同）。 岗位经验：理财顾问5年2个月。注意：其中民生银行是同名银行，与本公司（民生证券）无关联关系。所获证书：AFP国际金融理财师、基金从业资格证、会计从业资格证、普通话二级甲等证书、大学计算机等级二级证书（未见证券从业资格证）。语言能力：英语CET6-500分。 此前平台显示为“张女士”，智联招聘简历显示真实姓名为“张文轻”。 最早获取时间：2026-09-17。 2026-11-17 招聘专员重新上传了该候选人的智联招聘简历截图，已据此补充信息。",
     "workExperience": [
       {
         "company": "华夏银行股份有限公司厦门分行",
@@ -10064,7 +10069,7 @@ window.CANDIDATES_DATA = [
     "id": "c180",
     "name": "许红玲",
     "source": "猎聘",
-    "acquiredDate": "2026-11-05",
+    "acquiredDate": "2026-11-17",
     "resumeContact": "蔡家宝",
     "activityStatus": "",
     "contactObtained": false,
@@ -10089,7 +10094,7 @@ window.CANDIDATES_DATA = [
       "基金从业资格证"
     ],
     "selfEvaluation": "出色的客户关系和投资者关系管理：在华福证券有限责任公司的工作中，我通过个性化的客户管理策略，成功提升了客户满意度和留存率。这种以客户为中心的方法和对客户关系的深刻理解，将有助于在证券事务经理岗位上建立和…（后文未展开）。简历亮点：具有上市公司工作经验：1年9个月光大银行股份有限公司综合柜员。技能标签：基金/证券/期货。语言：英语（工作应用）。",
-    "notes": "来自猎聘，招聘专员整理截图导入，联系方式尚未获取。 工作单位为华福证券（证券公司）；华福证券（2022.08-至今）与厦门市地方金融监督管理局上市专员（2023.11-2024.08）时间重叠，可能为借调/挂职，请核实；已上传附件简历，可在猎聘索要。",
+    "notes": "来自猎聘，招聘专员整理截图导入，联系方式尚未获取。 工作单位为华福证券（证券公司）；华福证券（2022.08-至今）与厦门市地方金融监督管理局上市专员（2023.11-2024.08）时间重叠，可能为借调/挂职，请核实；已上传附件简历，可在猎聘索要。 最早获取时间：2026-11-05。 2026-11-17 招聘专员重新上传了该候选人的猎聘简历截图，已据此补充信息。",
     "workExperience": [
       {
         "company": "华福证券",
@@ -10787,7 +10792,7 @@ window.CANDIDATES_DATA = [
     "source": "智联招聘",
     "acquiredDate": "2026-11-17",
     "resumeContact": "李祖荃",
-    "activityStatus": "13天前浏览过职位",
+    "activityStatus": "14天前浏览过职位",
     "contactObtained": true,
     "gender": "女",
     "age": 36,
@@ -10812,7 +10817,7 @@ window.CANDIDATES_DATA = [
       "中级经济师（金融）"
     ],
     "selfEvaluation": "岗位经验：理财顾问5年4个月。",
-    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。 工作单位厦门银行（发债企业）；已上传附件简历，可在智联查看；招聘专员已在智联收藏该候选人。",
+    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。 工作单位厦门银行（发债企业）；已上传附件简历，可在智联查看；招聘专员已在智联收藏该候选人。 2026-11-17 招聘专员重新上传了该候选人的智联招聘简历截图，已据此补充信息。",
     "workExperience": [
       {
         "company": "厦门银行股份有限公司",
@@ -11099,6 +11104,53 @@ window.CANDIDATES_DATA = [
         "degree": "本科",
         "major": "金融学双学位（统招，211）",
         "period": "2010.09-2014.06"
+      }
+    ],
+    "lastContactDate": null
+  },
+  {
+    "id": "c198",
+    "name": "王雪平",
+    "source": "智联招聘",
+    "acquiredDate": "2026-11-17",
+    "resumeContact": "李祖荃",
+    "activityStatus": "23小时前有回复",
+    "contactObtained": false,
+    "gender": "女",
+    "age": 28,
+    "education": "本科",
+    "school": "赣南科技学院",
+    "major": "国际经济与贸易（统招）",
+    "currentCompany": "招商银行股份有限公司厦门分行",
+    "currentPosition": "银行大堂经理",
+    "yearsOfExperience": 4,
+    "expectedPosition": "客户经理（厦门·集美区）",
+    "expectedSalary": "7千-1万",
+    "location": "集美区",
+    "phone": "",
+    "email": "",
+    "status": "待联系",
+    "jobSeekingStatus": "在职-看看机会",
+    "hasSecQualification": false,
+    "certificates": [
+      "会计从业资格证"
+    ],
+    "selfEvaluation": "个人优势是喜欢与人交流，具有较强的服务意识，善于倾听需求并解决问题；有良好的表达能力和客户拓展意识，营销意识强且享受营销过程，善于挖掘客户与业务机会。",
+    "notes": "来自智联招聘，招聘专员整理截图导入，联系方式尚未获取。 平台显示“23小时前有回复”，招聘专员已在智联收藏该候选人；已上传附件简历，可在智联查看。",
+    "workExperience": [
+      {
+        "company": "招商银行股份有限公司厦门分行",
+        "position": "银行大堂经理",
+        "period": "2022.08-至今",
+        "description": "1. 厅堂引导分流，维持秩序；2. 客户咨询、业务指引、简单答疑；3. 协助自助机具办理业务；4. 识别客户需求，推介产品；5. 处理现场投诉与矛盾；6. 厅堂服务、环境及巡检。标签：会计从业资格证。"
+      }
+    ],
+    "educationExperience": [
+      {
+        "school": "赣南科技学院",
+        "degree": "本科",
+        "major": "国际经济与贸易（统招）",
+        "period": "2018-2022"
       }
     ],
     "lastContactDate": null
