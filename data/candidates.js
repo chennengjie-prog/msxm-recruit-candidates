@@ -11153,7 +11153,8 @@ window.CANDIDATES_DATA = [
         "period": "2018-2022"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-11-17",
+    "contactFeedback": "对券商没信心，放弃"
   },
   {
     "id": "c199",
