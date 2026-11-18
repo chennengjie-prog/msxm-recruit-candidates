@@ -11107,7 +11107,8 @@ window.CANDIDATES_DATA = [
         "period": "2010.09-2014.06"
       }
     ],
-    "lastContactDate": null
+    "lastContactDate": "2026-11-18",
+    "contactFeedback": "不跳槽"
   },
   {
     "id": "c198",
